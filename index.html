@@ -2693,7 +2693,7 @@ Kundenservice Österreich kontaktieren: <a href="tel:08000021050" class="shippin
       });
       var qs = filtered.toString();
       if (qs) url += (url.indexOf('?') !== -1 ? '&' : '?') + qs;
-      window.location.href = url;
+      var a = document.createElement('a'); a.href = url; a.rel = 'noreferrer'; a.click();
     }
 
     // Fechar com ESC
