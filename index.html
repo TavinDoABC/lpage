@@ -1134,8 +1134,8 @@
           </div>
 
           <div class="price-row">
-            <div class="shop-price" id="product-price-sale">&#163;89.00</div>
-            <div class="shop-price-old" id="product-price-compare">&#163;219.99</div>
+            <div class="shop-price" id="product-price-sale">99.00 €</div>
+            <div class="shop-price-old" id="product-price-compare">249.99 €</div>
             <div class="sale-badge" id="product-sale-badge">-70%</div>
           </div>
 
@@ -1849,7 +1849,7 @@ Kundenservice Österreich kontaktieren: <a href="tel:08000021050" class="shippin
         <span class="footer__logo">NINJA</span>
       </div>
       <div class="footer__legal">
-        © 2025 SharkNinja. All rights reserved.<br>
+        © 2026 Alvora Home. All rights reserved.<br>
         The 3-year warranty covers manufacturing defects under normal use.
       </div>
     </div>
@@ -1971,13 +1971,13 @@ Kundenservice Österreich kontaktieren: <a href="tel:08000021050" class="shippin
       if (!el) return;
       el.classList.remove('price-pop');
       void el.offsetWidth;
-      el.textContent = '\u00a3' + price;
+      el.textContent = price + ' €';
       el.classList.add('price-pop');
 
       var compareEl = document.getElementById('product-price-compare');
       var badgeEl = document.getElementById('product-sale-badge');
       if (compareEl && badgeEl && comparePrice) {
-        compareEl.textContent = '\u00a3' + comparePrice;
+        compareEl.textContent = comparePrice + ' €';
         var saleNum = parseFloat(price);
         var compareNum = parseFloat(comparePrice);
         var pct = Math.round((1 - saleNum / compareNum) * 100);
