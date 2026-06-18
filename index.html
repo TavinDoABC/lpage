@@ -2077,26 +2077,16 @@
 
 <!-- CUSTOMER REVIEWS -->
 <style>
-.reviews-pagination-container {
-    overflow: hidden;
-    position: relative;
-    padding-bottom: 20px;
+.tumi-reviews-section {
+    background-color: #fcfcfc;
+    padding: 60px 20px;
+    font-family: 'Jost', sans-serif;
 }
-.reviews-slider {
-    display: flex;
-    transition: transform 0.4s ease-in-out;
-}
-.review-page {
-    min-width: 100%;
+.reviews-grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 30px;
-    padding: 0 5px;
-}
-@media(max-width: 768px) {
-    .review-page {
-        grid-template-columns: 1fr;
-    }
+    min-height: 400px;
 }
 .review-card {
     background: #fff;
@@ -2104,54 +2094,66 @@
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.03);
     border: 1px solid #f0f0f0;
+    animation: fadeIn 0.4s ease-in-out;
 }
-.pagination-controls {
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.reviews-pagination-numbers {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
-    gap: 15px;
+    margin-top: 40px;
+    gap: 8px;
 }
-.pagination-btn {
-    background: #fff;
+.page-num-btn {
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    width: 36px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    color: #555;
+    transition: all 0.2s;
+}
+.page-num-btn:hover:not(:disabled) {
+    background: #f0f0f0;
+    color: #1a1a1a;
+}
+.page-num-btn.active {
+    background: #1a1a1a;
+    color: #fff;
+    border-color: #1a1a1a;
+}
+.page-arrow-btn {
+    background: transparent;
     border: 1px solid #ddd;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    border-radius: 4px;
+    width: 36px;
+    height: 36px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
     transition: all 0.2s;
-    color: #333;
+    color: #1a1a1a;
 }
-.pagination-btn:hover:not(:disabled) {
-    background: #1a1a1a;
-    color: #fff;
-    border-color: #1a1a1a;
+.page-arrow-btn:hover:not(:disabled) {
+    background: #f0f0f0;
 }
-.pagination-btn:disabled {
+.page-arrow-btn:disabled {
     opacity: 0.3;
     cursor: not-allowed;
 }
-.pagination-dots {
-    display: flex;
-    gap: 8px;
-}
-.dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: #ddd;
-    cursor: pointer;
-    transition: background 0.2s;
-}
-.dot.active {
-    background: #1a1a1a;
-}
 </style>
 
-<section class="tumi-reviews-section" style="background-color: #fcfcfc; padding: 60px 20px; font-family: 'Jost', sans-serif;">
+<section class="tumi-reviews-section">
     <div style="max-width: 1000px; margin: 0 auto;">
         <h2 style="font-size: 32px; font-weight: 300; text-align: center; margin-bottom: 40px; color: #1a1a1a;">Customer Reviews</h2>
         
@@ -2163,113 +2165,82 @@
             </div>
         </div>
 
-        <div class="reviews-pagination-container">
-            <div class="reviews-slider" id="reviewsSlider">
-                <div class="review-page">
-                    <div class="review-card">
-                        <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
-                            <div style="color: #1a1a1a; letter-spacing: 1px;">★★★★★</div>
-                            <div style="font-size: 12px; color: #999;">1 month ago</div>
-                        </div>
-                        <h4 style="font-size: 16px; font-weight: 600; margin: 0 0 10px 0; color: #1a1a1a;">Exceptional Build Quality and Style</h4>
-                        <p style="font-size: 14px; color: #555; line-height: 1.6; margin: 0 0 16px 0;">"I've owned several carry-ons over the years, but this 19 Degree Aluminum case is in a league of its own. It glides effortlessly through the airport and fits perfectly in overhead bins. The aluminum does scuff over time, but it just adds to the character. Highly recommend for frequent travelers."</p>
-                        <div style="font-size: 13px; font-weight: 500; color: #333;">James C. <span style="color: #888; font-weight: 400;">- Verified Buyer</span></div>
-                    </div>
-                    <div class="review-card">
-                        <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
-                            <div style="color: #1a1a1a; letter-spacing: 1px;">★★★★★</div>
-                            <div style="font-size: 12px; color: #999;">3 weeks ago</div>
-                        </div>
-                        <h4 style="font-size: 16px; font-weight: 600; margin: 0 0 10px 0; color: #1a1a1a;">Worth every penny!</h4>
-                        <p style="font-size: 14px; color: #555; line-height: 1.6; margin: 0 0 16px 0;">"I was hesitant about the price point, but after taking this on a two-week trip across Europe, I'm a believer. The packing compartments keep everything organized, and the exterior is absolutely stunning. I received so many compliments!"</p>
-                        <div style="font-size: 13px; font-weight: 500; color: #333;">Sarah M. <span style="color: #888; font-weight: 400;">- Verified Buyer</span></div>
-                    </div>
-                    <div class="review-card">
-                        <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
-                            <div style="color: #1a1a1a; letter-spacing: 1px;">★★★★☆</div>
-                            <div style="font-size: 12px; color: #999;">2 months ago</div>
-                        </div>
-                        <h4 style="font-size: 16px; font-weight: 600; margin: 0 0 10px 0; color: #1a1a1a;">Great piece, slightly heavy</h4>
-                        <p style="font-size: 14px; color: #555; line-height: 1.6; margin: 0 0 16px 0;">"Beautiful luggage and very durable. The locks are secure and the wheels are the smoothest I've ever experienced. My only minor complaint is that being aluminum, it is slightly heavier than polycarbonate cases even when empty. Still an amazing piece of luggage."</p>
-                        <div style="font-size: 13px; font-weight: 500; color: #333;">Michael T. <span style="color: #888; font-weight: 400;">- Verified Buyer</span></div>
-                    </div>
-                </div>
-                <div class="review-page">
-                    <div class="review-card">
-                        <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
-                            <div style="color: #1a1a1a; letter-spacing: 1px;">★★★★★</div>
-                            <div style="font-size: 12px; color: #999;">1 week ago</div>
-                        </div>
-                        <h4 style="font-size: 16px; font-weight: 600; margin: 0 0 10px 0; color: #1a1a1a;">A timeless classic</h4>
-                        <p style="font-size: 14px; color: #555; line-height: 1.6; margin: 0 0 16px 0;">"The craftsmanship on this Tumi carry-on is incredible. The silver aluminum looks sleek and professional. I love the attention to detail on the interior straps and pockets. It perfectly holds a weekend's worth of clothes."</p>
-                        <div style="font-size: 13px; font-weight: 500; color: #333;">Elizabeth W. <span style="color: #888; font-weight: 400;">- Verified Buyer</span></div>
-                    </div>
-                    <div class="review-card">
-                        <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
-                            <div style="color: #1a1a1a; letter-spacing: 1px;">★★★★★</div>
-                            <div style="font-size: 12px; color: #999;">4 months ago</div>
-                        </div>
-                        <h4 style="font-size: 16px; font-weight: 600; margin: 0 0 10px 0; color: #1a1a1a;">Best carry-on on the market</h4>
-                        <p style="font-size: 14px; color: #555; line-height: 1.6; margin: 0 0 16px 0;">"This is exactly what you expect from Tumi. Indestructible, stylish, and highly functional. The dual-spinner wheels make rushing through connections a breeze. It's a statement piece that also performs flawlessly."</p>
-                        <div style="font-size: 13px; font-weight: 500; color: #333;">David R. <span style="color: #888; font-weight: 400;">- Verified Buyer</span></div>
-                    </div>
-                    <div class="review-card">
-                        <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
-                            <div style="color: #1a1a1a; letter-spacing: 1px;">★★★★★</div>
-                            <div style="font-size: 12px; color: #999;">5 months ago</div>
-                        </div>
-                        <h4 style="font-size: 16px; font-weight: 600; margin: 0 0 10px 0; color: #1a1a1a;">Amazing maneuverability</h4>
-                        <p style="font-size: 14px; color: #555; line-height: 1.6; margin: 0 0 16px 0;">"This is my second Tumi and the aluminum just looks stunning. Pushing this through a crowded terminal feels completely effortless. The telescopic handle is very sturdy. Completely worth the investment."</p>
-                        <div style="font-size: 13px; font-weight: 500; color: #333;">Sophia L. <span style="color: #888; font-weight: 400;">- Verified Buyer</span></div>
-                    </div>
-                </div>
-            </div>
+        <div id="reviews-container" class="reviews-grid-container">
+            <!-- Reviews will be injected here via JS -->
         </div>
 
-        <div class="pagination-controls">
-            <button class="pagination-btn" id="prevReview" onclick="changeReviewPage(-1)" disabled>
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-            </button>
-            <div class="pagination-dots" id="reviewDots">
-                <div class="dot active" onclick="goToReviewPage(0)"></div>
-                <div class="dot" onclick="goToReviewPage(1)"></div>
-            </div>
-            <button class="pagination-btn" id="nextReview" onclick="changeReviewPage(1)">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-            </button>
+        <div class="reviews-pagination-numbers" id="reviews-pagination">
+            <!-- Pagination will be injected here via JS -->
         </div>
 
         <script>
-            let currentReviewPage = 0;
-            const totalReviewPages = 2; // Hardcoded for 2 pages
-            
-            function updateReviewPagination() {
-                const slider = document.getElementById('reviewsSlider');
-                const prevBtn = document.getElementById('prevReview');
-                const nextBtn = document.getElementById('nextReview');
-                const dots = document.querySelectorAll('#reviewDots .dot');
+            const reviewsData = [{"rating": 5, "title": "Worth every penny!", "text": "I was hesitant about the price point, but after taking this on a two-week trip across Europe, I'm a believer. The packing compartments keep everything organized, and the exterior is stunning.", "author": "James F.", "date": "2 months ago"}, {"rating": 5, "title": "A timeless classic", "text": "The craftsmanship on this Tumi carry-on is incredible. The silver aluminum looks sleek and professional. I love the attention to detail on the interior straps and pockets.", "author": "Emily T.", "date": "2 weeks ago"}, {"rating": 5, "title": "Luxury on wheels", "text": "You can immediately feel the quality when you touch the handle and zippers. It's a premium product that delivers a premium experience from check-in to arrival.", "author": "Michael D.", "date": "4 months ago"}, {"rating": 5, "title": "Exceptional Build Quality and Style", "text": "I've owned several carry-ons over the years, but this 19 Degree Aluminum case is in a league of its own. It glides effortlessly through the airport and fits perfectly in overhead bins.", "author": "James M.", "date": "1 month ago"}, {"rating": 5, "title": "A timeless classic", "text": "The craftsmanship on this Tumi carry-on is incredible. The silver aluminum looks sleek and professional. I love the attention to detail on the interior straps and pockets.", "author": "John D.", "date": "1 week ago"}, {"rating": 5, "title": "Luxury on wheels", "text": "You can immediately feel the quality when you touch the handle and zippers. It's a premium product that delivers a premium experience from check-in to arrival.", "author": "Robert F.", "date": "6 months ago"}, {"rating": 4, "title": "Solid, but scuffs easily", "text": "The suitcase itself is fantastic and fits a lot. However, being aluminum, it does pick up scratches and scuffs rather quickly. Tumi says it adds character, which I suppose is true!", "author": "Emily B.", "date": "8 months ago"}, {"rating": 5, "title": "Best carry-on on the market", "text": "This is exactly what you expect from Tumi. Indestructible, stylish, and highly functional. The dual-spinner wheels make rushing through connections a breeze.", "author": "James G.", "date": "3 weeks ago"}, {"rating": 4, "title": "Solid, but scuffs easily", "text": "The suitcase itself is fantastic and fits a lot. However, being aluminum, it does pick up scratches and scuffs rather quickly. Tumi says it adds character, which I suppose is true!", "author": "Daniel R.", "date": "3 weeks ago"}, {"rating": 5, "title": "A timeless classic", "text": "The craftsmanship on this Tumi carry-on is incredible. The silver aluminum looks sleek and professional. I love the attention to detail on the interior straps and pockets.", "author": "Daniel M.", "date": "2 weeks ago"}, {"rating": 4, "title": "Solid, but scuffs easily", "text": "The suitcase itself is fantastic and fits a lot. However, being aluminum, it does pick up scratches and scuffs rather quickly. Tumi says it adds character, which I suppose is true!", "author": "Elizabeth L.", "date": "3 months ago"}, {"rating": 5, "title": "Exceeded my expectations", "text": "I upgraded from a basic nylon bag to this, and the difference is night and day. The rigid frame protects my electronics perfectly, and it fits into every overhead bin I've tried.", "author": "William G.", "date": "1 week ago"}, {"rating": 5, "title": "Perfect for business travel", "text": "I travel weekly for work and this is my go-to. It looks incredibly professional, and the built-in TSA locks give me peace of mind. Highly recommended.", "author": "Mia M.", "date": "4 months ago"}, {"rating": 5, "title": "Worth every penny!", "text": "I was hesitant about the price point, but after taking this on a two-week trip across Europe, I'm a believer. The packing compartments keep everything organized, and the exterior is stunning.", "author": "Mia R.", "date": "8 months ago"}, {"rating": 5, "title": "Amazing maneuverability", "text": "This is my second Tumi and the aluminum just looks stunning. Pushing this through a crowded terminal feels completely effortless. The telescopic handle is very sturdy.", "author": "Robert F.", "date": "2 weeks ago"}, {"rating": 5, "title": "Exceptional Build Quality and Style", "text": "I've owned several carry-ons over the years, but this 19 Degree Aluminum case is in a league of its own. It glides effortlessly through the airport and fits perfectly in overhead bins.", "author": "Emily G.", "date": "2 months ago"}, {"rating": 5, "title": "Worth every penny!", "text": "I was hesitant about the price point, but after taking this on a two-week trip across Europe, I'm a believer. The packing compartments keep everything organized, and the exterior is stunning.", "author": "Emily K.", "date": "2 weeks ago"}, {"rating": 4, "title": "Solid, but scuffs easily", "text": "The suitcase itself is fantastic and fits a lot. However, being aluminum, it does pick up scratches and scuffs rather quickly. Tumi says it adds character, which I suppose is true!", "author": "William B.", "date": "3 months ago"}, {"rating": 4, "title": "Great piece, slightly heavy", "text": "Beautiful luggage and very durable. The locks are secure and the wheels are the smoothest I've ever experienced. Slightly heavier than polycarbonate, but worth it.", "author": "Emma L.", "date": "1 month ago"}, {"rating": 5, "title": "Best carry-on on the market", "text": "This is exactly what you expect from Tumi. Indestructible, stylish, and highly functional. The dual-spinner wheels make rushing through connections a breeze.", "author": "Michael D.", "date": "3 weeks ago"}, {"rating": 5, "title": "Luxury on wheels", "text": "You can immediately feel the quality when you touch the handle and zippers. It's a premium product that delivers a premium experience from check-in to arrival.", "author": "Emily T.", "date": "5 months ago"}, {"rating": 4, "title": "Solid, but scuffs easily", "text": "The suitcase itself is fantastic and fits a lot. However, being aluminum, it does pick up scratches and scuffs rather quickly. Tumi says it adds character, which I suppose is true!", "author": "William H.", "date": "6 months ago"}, {"rating": 5, "title": "A timeless classic", "text": "The craftsmanship on this Tumi carry-on is incredible. The silver aluminum looks sleek and professional. I love the attention to detail on the interior straps and pockets.", "author": "Daniel K.", "date": "1 week ago"}, {"rating": 5, "title": "A timeless classic", "text": "The craftsmanship on this Tumi carry-on is incredible. The silver aluminum looks sleek and professional. I love the attention to detail on the interior straps and pockets.", "author": "Sarah G.", "date": "3 months ago"}];
+            const reviewsPerPage = 6; // Let's show 6 per page for a nicer grid, it's 24 reviews total = 4 pages
+            let currentPage = 1;
+            const totalPages = Math.ceil(reviewsData.length / reviewsPerPage);
+
+            function renderReviews() {
+                const container = document.getElementById('reviews-container');
+                container.innerHTML = '';
                 
-                slider.style.transform = `translateX(-${currentReviewPage * 100}%)`;
-                
-                prevBtn.disabled = currentReviewPage === 0;
-                nextBtn.disabled = currentReviewPage === totalReviewPages - 1;
-                
-                dots.forEach((dot, index) => {
-                    dot.classList.toggle('active', index === currentReviewPage);
+                const start = (currentPage - 1) * reviewsPerPage;
+                const end = start + reviewsPerPage;
+                const pageReviews = reviewsData.slice(start, end);
+
+                pageReviews.forEach(r => {
+                    const stars = '★'.repeat(r.rating) + '☆'.repeat(5 - r.rating);
+                    const card = document.createElement('div');
+                    card.className = 'review-card';
+                    card.innerHTML = `
+                        <div style="display: flex; justify-content: space-between; margin-bottom: 12px;">
+                            <div style="color: #1a1a1a; letter-spacing: 1px;">${stars}</div>
+                            <div style="font-size: 12px; color: #999;">${r.date}</div>
+                        </div>
+                        <h4 style="font-size: 16px; font-weight: 600; margin: 0 0 10px 0; color: #1a1a1a;">${r.title}</h4>
+                        <p style="font-size: 14px; color: #555; line-height: 1.6; margin: 0 0 16px 0;">"${r.text}"</p>
+                        <div style="font-size: 13px; font-weight: 500; color: #333;">${r.author} <span style="color: #888; font-weight: 400;">- Verified Buyer</span></div>
+                    `;
+                    container.appendChild(card);
                 });
+                
+                renderPagination();
             }
 
-            function changeReviewPage(dir) {
-                currentReviewPage += dir;
-                if (currentReviewPage < 0) currentReviewPage = 0;
-                if (currentReviewPage >= totalReviewPages) currentReviewPage = totalReviewPages - 1;
-                updateReviewPagination();
+            function renderPagination() {
+                const pagination = document.getElementById('reviews-pagination');
+                pagination.innerHTML = '';
+
+                // Prev Button
+                const prevBtn = document.createElement('button');
+                prevBtn.className = 'page-arrow-btn';
+                prevBtn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>';
+                prevBtn.disabled = currentPage === 1;
+                prevBtn.onclick = () => { if(currentPage > 1) { currentPage--; renderReviews(); } };
+                pagination.appendChild(prevBtn);
+
+                // Numbered Buttons
+                for (let i = 1; i <= totalPages; i++) {
+                    const numBtn = document.createElement('button');
+                    numBtn.className = `page-num-btn ${i === currentPage ? 'active' : ''}`;
+                    numBtn.innerText = i;
+                    numBtn.onclick = () => {
+                        currentPage = i;
+                        renderReviews();
+                    };
+                    pagination.appendChild(numBtn);
+                }
+
+                // Next Button
+                const nextBtn = document.createElement('button');
+                nextBtn.className = 'page-arrow-btn';
+                nextBtn.innerHTML = '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>';
+                nextBtn.disabled = currentPage === totalPages;
+                nextBtn.onclick = () => { if(currentPage < totalPages) { currentPage++; renderReviews(); } };
+                pagination.appendChild(nextBtn);
             }
 
-            function goToReviewPage(pageIndex) {
-                currentReviewPage = pageIndex;
-                updateReviewPagination();
-            }
+            // Init
+            renderReviews();
         </script>
     </div>
 </section>
