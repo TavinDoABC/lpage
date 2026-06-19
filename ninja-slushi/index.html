@@ -1,0 +1,2877 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="Ninja SLUSHi FS301EU — Die Ninja SLUSHi verwandelt Flüssigkeiten in nur 30 Minuten in einen eiskalten Slush und hält Getränke bis zu 12 Stunden lang auf der perfekten Temperatur." />
+  <meta name="facebook-domain-verification" content="1g80j8bv075hjnws2auwdroa9qhcjw" />
+  <title>Ninja SLUSHi FS301EU — Die ultimative Slush-Eismaschine</title>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <!-- Non-blocking Google Fonts: load as print, swap to all on load -->
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Jost:wght@300;400;500;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Jost:wght@300;400;500;700&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Jost:wght@300;400;500;700&display=swap" /></noscript>
+
+  <!-- Preload hero image for faster LCP -->
+  <link rel="preload" as="image" type="image/webp" href="assets/img_6_FS301EU_01.jpg" />
+
+  <style>
+    /* ── TOKENS ── */
+    :root {
+      --bg-primary: #FFFFFF;
+      --bg-alternate: #F5F4F2;
+      --bg-surface: #F8F7F6;
+      --bg-dark: #27221D;
+      --text-primary: #27221D;
+      --text-body: #3D3A37;
+      --text-muted: #817367;
+      --text-disabled: #A9A7A5;
+      --accent-blue: #00A1E0;
+      --cta-campaign: #D61012;
+      --cta-campaign-hover: #BB0E10;
+      --star: #FFC107;
+      --grey-100: #EFECEA;
+      --grey-300: #C6BEB8;
+      --grey-500: #A9A7A5;
+      --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px;
+      --space-xl: 32px; --space-2xl: 48px; --space-3xl: 64px; --space-4xl: 96px;
+      --font-display: 'Playfair Display', serif;
+      --font-ui: 'Jost', sans-serif;
+      --t-fast: 150ms ease; --t-base: 200ms ease; --t-slow: 300ms ease;
+    }
+
+    /* ── RESET ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; touch-action: pan-x pan-y; }
+    body { font-family: var(--font-ui); color: var(--text-body); background: var(--bg-primary); overflow-x: hidden; }
+    ul { list-style: none; }
+    a { text-decoration: none; }
+    button { font-family: var(--font-ui); cursor: pointer; border: none; touch-action: manipulation; }
+    a { touch-action: manipulation; }
+
+    /* ── LAYOUT ── */
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 78px; }
+    @media (max-width: 767px) { .container { padding: 0 24px; } }
+    .section { padding: var(--space-4xl) 0; }
+    .section--alt { background: var(--bg-alternate); }
+    .section--dark { background: var(--bg-dark); }
+
+    /* Feature cards grid */
+    .feature-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; max-width: 900px; margin: 0 auto; }
+    @media (max-width: 767px) {
+      .feature-cards {
+        display: flex; gap: 12px; overflow-x: auto; overflow-y: hidden;
+        scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
+        padding-bottom: 8px;
+      }
+      .feature-cards::-webkit-scrollbar { display: none; }
+      .feature-card { width: 80vw; max-width: 80vw; scroll-snap-align: start; flex-shrink: 0; }
+    }
+    .feature-card {
+      background: #fff;
+      border: 1px solid var(--grey-100);
+      border-radius: 10px;
+      padding: 28px 24px;
+      text-align: center;
+      transition: transform 0.22s ease-out, box-shadow 0.22s ease-out;
+      cursor: default;
+    }
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 28px rgba(0,0,0,0.10);
+    }
+    .feature-card__icon {
+      width: 40px; height: 40px; margin: 0 auto 14px;
+      color: var(--text-primary); opacity: 0.7;
+      transition: opacity 0.22s ease-out;
+    }
+    .feature-card:hover .feature-card__icon { opacity: 1; }
+    .feature-card__img {
+      width: 100%; aspect-ratio: 1; margin-bottom: 16px;
+      border-radius: 50%; overflow: hidden;
+    }
+    .feature-card__img img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.3s ease-out;
+    }
+    .feature-card:hover .feature-card__img img { transform: scale(1.05); }
+    .feature-card__title {
+      font-family: var(--font-display);
+      font-size: 17px; font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+    .feature-card--full { grid-column: 1 / -1; }
+
+    /* ── How it works — carousel ── */
+    .steps-carousel {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+    .steps-track {
+      display: flex;
+      transition: transform 0.45s cubic-bezier(0.22,1,0.36,1);
+    }
+    .step-slide {
+      min-width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .step-slide__img {
+      width: 100%; aspect-ratio: 3/2;
+      overflow: hidden; background: var(--grey-100);
+    }
+    .step-slide__img img {
+      width: 100%; height: 100%; object-fit: cover;
+    }
+    .step-slide__content {
+      padding: 20px 4px;
+    }
+    .step-slide__step {
+      font-family: var(--font-ui);
+      font-size: 12px; font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--cta-campaign);
+      margin-bottom: 4px;
+    }
+    .step-slide__title {
+      font-family: var(--font-display);
+      font-size: 18px; font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+    .step-slide__body {
+      font-family: var(--font-ui);
+      font-size: 14px; color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .steps-arrows {
+      position: absolute; top: 0; bottom: 0; left: 0; right: 0;
+      pointer-events: none;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 8px;
+    }
+    .steps-arrows .arrow {
+      pointer-events: auto;
+      width: 36px; height: 36px;
+      background: rgba(255,255,255,0.85);
+      border: 1px solid var(--grey-200);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; color: var(--text-primary);
+      cursor: pointer;
+      transition: background 0.2s, box-shadow 0.2s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      margin-top: -40px;
+    }
+    .steps-arrows .arrow:hover {
+      background: #fff;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+    }
+    .steps-dots {
+      display: flex; justify-content: center; gap: 6px;
+      margin-top: 8px;
+    }
+    .steps-dot {
+      width: 48px; height: 3px; border-radius: 2px;
+      background: var(--grey-300);
+      border: none; cursor: pointer;
+      position: relative; overflow: hidden;
+      transition: background 0.2s;
+    }
+    .steps-dot::after {
+      content: '';
+      position: absolute; left: 0; top: 0; bottom: 0;
+      width: 0; background: var(--cta-campaign);
+      border-radius: 2px;
+    }
+    .steps-dot.active::after {
+      width: 100%;
+      transition: width 4.5s linear;
+    }
+
+    /* ── Description modal ── */
+    .desc-modal-overlay {
+      position: fixed; inset: 0; z-index: 9999;
+      background: rgba(0,0,0,0.55);
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.25s ease;
+    }
+    .desc-modal-overlay.open { opacity: 1; pointer-events: auto; }
+    .desc-modal {
+      background: #fff; border-radius: 12px;
+      width: 92%; max-width: 640px; max-height: 85vh;
+      overflow-y: auto; padding: 32px 28px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+      transform: translateY(20px);
+      transition: transform 0.3s cubic-bezier(0.22,1,0.36,1);
+    }
+    .desc-modal-overlay.open .desc-modal { transform: translateY(0); }
+    .desc-modal__close {
+      position: sticky; top: 0; float: right;
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--grey-100); border: none;
+      font-size: 18px; cursor: pointer; color: var(--text-primary);
+      display: flex; align-items: center; justify-content: center;
+      z-index: 1;
+    }
+    .desc-modal__close:hover { background: var(--grey-200); }
+    .desc-modal h4 {
+      font-family: var(--font-display);
+      font-size: 18px; font-weight: 700;
+      color: var(--text-primary);
+      margin: 24px 0 8px;
+    }
+    .desc-modal h4:first-of-type { margin-top: 0; }
+    .desc-modal p {
+      font-family: var(--font-ui);
+      font-size: 14px; color: var(--text-body);
+      line-height: 1.65; margin-bottom: 12px;
+    }
+    .desc-modal .program-name {
+      font-weight: 700; color: var(--text-primary);
+    }
+    .btn--ver-mas {
+      display: inline-block;
+      font-family: var(--font-ui);
+      font-size: 13px; font-weight: 600;
+      color: var(--cta-campaign);
+      background: none; border: none;
+      cursor: pointer; padding: 8px 0;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .btn--ver-mas:hover { opacity: 0.75; }
+
+    /* ── Use cases grid ── */
+    .usecases-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-md);
+    }
+    .usecase-card {
+      border-radius: 12px; overflow: hidden;
+      background: var(--bg-light);
+      border: 1px solid var(--grey-100);
+      transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+    .usecase-card:hover {
+      border-color: rgba(214,16,18,0.3);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    }
+    .usecase-card__img {
+      width: 100%; aspect-ratio: 3/2; overflow: hidden;
+    }
+    .usecase-card__img img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.4s ease-out;
+    }
+    .usecase-card:hover .usecase-card__img img { transform: scale(1.05); }
+    .usecase-card__body {
+      padding: 16px 20px;
+    }
+    .usecase-card__title {
+      font-family: var(--font-display);
+      font-size: 16px; font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+    .usecase-card__desc {
+      font-family: var(--font-ui);
+      font-size: 13px; color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    @media (max-width: 767px) {
+      .usecases-grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-sm); }
+      .usecase-card__body { padding: 12px 14px; }
+      .usecase-card__title { font-size: 14px; }
+      .usecase-card__desc { font-size: 12px; }
+    }
+    .feature-card__body {
+      font-size: 14px; line-height: 1.6;
+      color: var(--text-muted);
+    }
+    .text-center { text-align: center; }
+
+    /* ── TYPOGRAPHY ── */
+    .label {
+      display: block; font-size: 11px; font-weight: 500;
+      letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted);
+      margin-bottom: var(--space-lg);
+    }
+    h1.section-title {
+      font-family: var(--font-ui); font-size: clamp(26px, 3vw, 36px); font-weight: 700;
+      color: var(--text-primary); text-transform: uppercase; line-height: 1.15;
+      letter-spacing: 0.02em; margin-bottom: var(--space-lg);
+    }
+    h2.section-subtitle {
+      font-family: var(--font-ui); font-size: clamp(22px, 2.5vw, 28px); font-weight: 700;
+      color: var(--text-primary); text-transform: uppercase; line-height: 1.2;
+      margin-bottom: var(--space-lg);
+    }
+    .h3 { font-family: var(--font-ui); font-size: 20px; font-weight: 500; color: var(--text-primary); line-height: 1.3; margin-bottom: var(--space-lg); text-align: center; }
+    .body-lg { font-size: clamp(16px, 1.3vw, 18px); line-height: 1.6; color: var(--text-body); margin-bottom: var(--space-lg); }
+    .body-lg p { margin-bottom: 1em; }
+    .body-lg p:last-child { margin-bottom: 0; }
+
+
+
+    /* ── BUTTONS ── */
+    .btn {
+      display: inline-block; font-size: 13px; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; border-radius: 0; padding: 12px 40px;
+      transition: background var(--t-fast), box-shadow var(--t-fast), color var(--t-fast);
+    }
+    .btn--sm { padding: 10px 24px; font-size: 11px; }
+    .btn--primary { color: #fff; background: #27221D; border: none; }
+    .btn--primary:hover { background: #000; box-shadow: rgba(0,0,0,0.15) 0 -1px 0 0 inset; }
+    .btn--ghost { color: var(--text-primary); background: transparent; border: 1px solid var(--text-primary); }
+    .btn--ghost:hover { background: var(--text-primary); color: #fff; }
+    .btn--ghost-dark { color: #fff; background: transparent; border: 1px solid rgba(255,255,255,0.5); }
+    .btn--ghost-dark:hover { background: #fff; color: var(--text-primary); }
+    .btn--white { color: var(--text-primary); background: #fff; border: none; }
+    .btn--white:hover { background: var(--bg-alternate); }
+    .btn--campaign { color: #fff; background: var(--cta-campaign); border: none; }
+    .btn--campaign:hover { background: var(--cta-campaign-hover); }
+
+    /* ── TRUST BADGES ── */
+    .badge {
+      display: inline-flex; align-items: center; gap: var(--space-2xs); font-size: 12px; font-weight: 400;
+      letter-spacing: 0.04em; padding: 6px 12px; border-radius: 2px;
+    }
+    .badge__icon { font-size: 14px; }
+
+    /* ── DIAGONAL SECTION TRANSITIONS ── */
+    .section--dark + .section::before,
+    .section--dark + .section--alt::before {
+      content: '';
+      display: block;
+      height: 60px;
+      background: inherit;
+      clip-path: polygon(0 0, 100% 40px, 100% 100%, 0 100%);
+      margin-top: -60px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* ── SCROLL REVEAL ── */
+    .sr { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .sr.in { opacity: 1; transform: none; }
+    .d1 { transition-delay: 120ms; }
+    .d2 { transition-delay: 240ms; }
+    .d3 { transition-delay: 360ms; }
+
+
+
+    /* ══════════════════════════════
+       SECTION 8 — FAQ + CTA
+    ══════════════════════════════ */
+    .faq-wrap { max-width: 720px; margin: 0 auto; }
+    .faq { margin-bottom: 0px; }
+    .faq__item { border-top: 1px solid var(--grey-100); }
+    .faq__item:last-child { border-bottom: 1px solid var(--grey-100); }
+    .faq__q {
+      width: 100%; display: flex; justify-content: space-between; align-items: center;
+      padding: 20px 0; background: none; border: none; cursor: pointer;
+      font-size: 16px; font-weight: 500; color: var(--text-primary); text-align: left;
+      transition: background var(--t-fast), padding var(--t-fast);
+    }
+    .faq__q:hover { background: var(--bg-surface); padding-left: 12px; padding-right: 12px; margin-left: -12px; margin-right: -12px; }
+    .faq__icon { font-size: 20px; color: var(--text-primary); transition: transform 200ms ease; flex-shrink: 0; margin-left: 16px; line-height: 1; }
+    .faq__item--open .faq__icon { transform: rotate(45deg); }
+    .faq__a { max-height: 0; overflow: hidden; transition: max-height 250ms ease-in-out; }
+    .faq__item--open .faq__a { max-height: 400px; }
+    .faq__a p { font-size: 15px; color: var(--text-body); line-height: 1.6; padding-bottom: 20px; }
+    .badges-row { display: flex; flex-wrap: wrap; gap: var(--space-sm); justify-content: center; margin-bottom: var(--space-2xl); }
+    #faq { padding-bottom: var(--space-lg) !important; }
+    #reviews { padding-bottom: 0px; }
+
+    /* ══════════════════════════════
+       FOOTER
+    ══════════════════════════════ */
+    .footer { background: var(--bg-dark); padding: var(--space-2xl) 0; border-top: 1px solid rgba(255,255,255,0.08); }
+    .footer__inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-lg); }
+    .footer__logo { font-family: var(--font-display); font-size: 18px; font-weight: 700; color: #fff; letter-spacing: 0.15em; display: block; margin-bottom: 4px; }
+    .footer__since { font-size: 11px; color: rgba(255,255,255,0.4); letter-spacing: 0.08em; text-transform: uppercase; }
+    .footer__legal { font-size: 12px; color: rgba(255,255,255,0.35); line-height: 1.5; }
+
+    /* ============================================================
+       #SHOP — Gallery + Variant Selector + Reviews
+    ============================================================ */
+    #shop .shop-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: var(--space-xl);
+      align-items: start;
+    }
+    .shop-gallery-col { min-width: 0; max-width: 100%; overflow: hidden; }
+    .gallery-main {
+      width: 100%; aspect-ratio: 1 / 1;
+      background-color: var(--bg-surface);
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden; position: relative;
+    }
+    .gallery-main img {
+      width: 100%; height: 100%; object-fit: contain; padding: 16px;
+      transition: opacity 0.22s ease; color: transparent;
+    }
+    .gallery-arrows {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      width: 100%; display: flex; justify-content: space-between;
+      padding: 0 12px; pointer-events: none;
+    }
+    .arrow {
+      background-color: rgba(255,255,255,0.75); border: 1px solid var(--grey-300);
+      border-radius: 50%; width: 36px; height: 36px;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; pointer-events: all; font-size: 18px; color: var(--text-primary);
+      transition: background var(--t-fast);
+    }
+    .arrow:hover { background-color: rgba(255,255,255,0.95); }
+    .thumbnail-strip { display: flex; gap: 6px; margin-top: 7px; flex-wrap: nowrap; width: 0; min-width: 100%; overflow-x: auto; scroll-behavior: smooth; scrollbar-width: none; -ms-overflow-style: none; }
+    .thumbnail-strip::-webkit-scrollbar { display: none; }
+    .thumbnail {
+      width: 72px; min-width: 72px; height: 72px; padding: 4px; border: 1px solid var(--grey-300);
+      cursor: pointer; object-fit: cover; background-color: var(--bg-surface); overflow: hidden; border-radius: 4px;
+    }
+    .thumbnail.active { border: 2px solid var(--text-primary); }
+    .shop-info { display: flex; flex-direction: column; gap: 0; }
+    .shop-brand { font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 2px; }
+    .shop-title { font-family: var(--font-display); font-size: clamp(22px, 2.5vw, 30px); font-weight: 700; color: var(--text-primary); line-height: 1.2; margin-bottom: var(--space-2xs); }
+    .shop-rating { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--text-primary); margin-bottom: var(--space-xs); }
+    .shop-rating .stars { color: var(--star); letter-spacing: 2px; }
+    .shop-rating .rating-count { font-size: 13px; color: var(--text-muted); }
+    .shop-price { font-size: 28px; font-weight: 400; color: var(--text-primary); }
+    .shop-price-old { font-size: 14px; color: var(--text-muted); text-decoration: line-through; }
+    .price-row { display: flex; align-items: center; gap: var(--space-xs); flex-wrap: wrap; margin-top: var(--space-md); margin-bottom: var(--space-xs); }
+    .sale-badge {
+      display: inline-flex; align-items: center; justify-content: center;
+      background: var(--cta-campaign); color: #fff;
+      font-family: var(--font-ui); font-size: 11px; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      padding: 3px 8px; line-height: 1.4;
+    }
+    .shop-shipping {
+      background-color: var(--grey-100); border-radius: 4px;
+      padding: 10px 14px; font-size: 13px; color: var(--text-body);
+      display: flex; align-items: center; gap: 8px; margin-bottom: var(--space-xs);
+    }
+    .size-label { font-size: 14px; font-weight: 500; color: var(--text-primary); margin-bottom: 3px; }
+    .size__blocks-container { display: flex; flex-wrap: wrap; gap: var(--space-xs); margin-bottom: var(--space-xs); align-items: flex-end; }
+    .size__block {
+      display: block; width: 72px; height: 36px;
+      border-radius: 6px; border: 1px solid var(--grey-300);
+      background-color: transparent; cursor: pointer; position: relative;
+      transition: border-color var(--t-fast), transform var(--t-fast);
+    }
+    .size__block a,
+    .size__block > span:not(.size-unavailable-label):not(.unavail-label):not(.size-label-text) {
+      display: flex; align-items: center; justify-content: center;
+      width: 100%; height: 100%; font-size: 14px; font-weight: 400; color: var(--text-primary);
+    }
+    .size__block.selected { border: 2px solid var(--text-primary); }
+    .size__block.available-size:hover { border-color: var(--text-muted); transform: translateY(-1px); }
+    .size__block.notexisting, .size__block.unavailable {
+      background-color: var(--bg-surface); cursor: pointer;
+    }
+    .shop-add-btn:disabled {
+      background: var(--grey-500); opacity: 0.5; cursor: not-allowed; pointer-events: none;
+    }
+    .size__block.notexisting::after, .size__block.unavailable::after { content: none; }
+    .size__block-wrapper {
+      display: inline-flex; flex-direction: column; align-items: center; gap: 3px;
+    }
+    .availability-section { display: flex; align-items: center; gap: var(--space-xs); margin-bottom: var(--space-xs); font-size: 14px; }
+    .in-stock { color: #2a7a2a; display: flex; align-items: center; gap: var(--space-2xs); }
+    .in-stock::before { content: '●'; font-size: 10px; }
+    .urgency-bar { margin-bottom: var(--space-sm); }
+    .urgency-bar__label {
+      font-family: var(--font-ui); font-size: 12px; font-weight: 500;
+      color: var(--text-muted); margin-bottom: var(--space-2xs);
+    }
+    .urgency-bar__label strong { color: var(--cta-campaign); font-weight: 700; }
+    .urgency-bar__track {
+      width: 100%; height: 5px; background: var(--grey-100); border-radius: 2px; overflow: hidden;
+    }
+    .urgency-bar__fill {
+      height: 100%; background: var(--cta-campaign); border-radius: 2px;
+      transition: width 0.6s ease;
+    }
+    .purchase-area { display: flex; align-items: center; gap: var(--space-sm); margin-top: var(--space-2xs); margin-bottom: 0; }
+    .quantity-selector {
+      background-color: var(--bg-primary); border: 1px solid var(--grey-300);
+      border-radius: 3px; height: 48px; width: 72px; padding: 0 10px;
+      font-size: 16px; color: var(--text-primary); font-family: var(--font-ui);
+    }
+    .shop-add-btn {
+      flex: 1; height: 48px; background: #D61012; color: #fff;
+      border: none; font-family: var(--font-ui); font-size: 13px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.06em; cursor: pointer;
+      border-radius: 3px; display: flex; align-items: center; justify-content: center; gap: 8px;
+      transition: opacity var(--t-fast);
+    }
+    .shop-add-btn:hover { opacity: 0.88; }
+    @keyframes gallery-thumb-in {
+      from { opacity: 0; transform: scale(0.86); }
+      to   { opacity: 1; transform: scale(1); }
+    }
+    .thumbnail-anim { animation: gallery-thumb-in 0.22s ease both; }
+    @keyframes price-pop {
+      0%   { opacity: 0.3; transform: translateY(4px); }
+      100% { opacity: 1;   transform: translateY(0); }
+    }
+    .price-pop { animation: price-pop 0.2s ease both; }
+    .reviews-section {
+      margin-top: var(--space-md);
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.10), 0 1px 6px rgba(0,0,0,0.06);
+      padding: 10px;
+    }
+    .reviews-section__title { font-family: var(--font-ui); font-size: 18px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-primary); margin-bottom: var(--space-lg); text-align: center; }
+    .reviews-summary { display: flex; flex-direction: column; align-items: center; text-align: center; padding: var(--space-xl) 0; margin-bottom: var(--space-lg); border-bottom: 1px solid var(--grey-100); }
+    .reviews-summary__cols { display: flex; flex-direction: row; align-items: center; justify-content: center; gap: var(--space-3xl); margin-bottom: var(--space-lg); }
+    .reviews-summary__score { display: flex; flex-direction: column; align-items: center; text-align: center; }
+    .reviews-summary__bars { display: flex; flex-direction: column; gap: var(--space-xs); }
+    .reviews-bar-row { display: flex; align-items: center; gap: 12px; }
+    .reviews-bar-label { width: 50px; font-size: 12px; color: var(--text-primary); font-family: var(--font-ui); }
+    .reviews-bar-track { width: 200px; height: 6px; background: #e0e0e0; border-radius: 3px; overflow: hidden; flex-shrink: 0; }
+    .reviews-bar-fill { height: 100%; background: #c9a84c; }
+    .reviews-bar-pct { width: 40px; text-align: right; font-size: 12px; color: var(--text-muted); font-family: var(--font-ui); }
+    .review-score-big { font-size: 72px; font-weight: 300; color: var(--text-primary); line-height: 1; }
+    .review-stars-big { color: var(--star); font-size: 20px; letter-spacing: 3px; margin-top: 8px; }
+    .review-count-text { font-size: 13px; color: var(--text-muted); margin-top: 6px; }
+    .write-review-btn {
+      background-color: transparent; color: var(--text-primary); border: 1px solid var(--text-primary);
+      border-radius: 0; padding: 10px 32px; font-size: 12px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.06em; cursor: pointer;
+      font-family: var(--font-ui); transition: background var(--t-fast);
+    }
+    .write-review-btn:hover { background-color: var(--grey-100); }
+    .review-avatar {
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--bg-dark); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-ui); font-size: 13px; font-weight: 600;
+      flex-shrink: 0; letter-spacing: 0;
+    }
+    .review-item { border-bottom: 1px solid var(--grey-100); padding: 18px 0; display: flex; gap: 12px; }
+    .review-item__content { flex: 1; min-width: 0; }
+    .review-item__header { display: flex; align-items: center; gap: 12px; margin-bottom: 5px; flex-wrap: wrap; }
+    .review-item__stars { color: var(--star); font-size: 13px; letter-spacing: 2px; }
+    .review-item__title { font-size: 15px; font-weight: 600; color: var(--text-primary); }
+    .review-item__meta { font-size: 12px; color: var(--text-muted); }
+    .review-item__body { font-size: 14px; color: var(--text-body); line-height: 1.6; }
+    .review-item__photos { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 7px; }
+    .review-photo-thumb {
+      width: 72px; height: 72px; object-fit: cover; border: 1px solid var(--grey-100);
+      border-radius: 2px; cursor: zoom-in; transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+    .review-photo-thumb:hover { transform: scale(1.07); opacity: 0.88; }
+    .reviews-media-carousel { margin: var(--space-xs) 0; padding-bottom: var(--space-sm); border-bottom: 1px solid var(--grey-100); }
+    .reviews-media-carousel__header { display: flex; align-items: baseline; gap: var(--space-xs); margin-bottom: var(--space-xs); }
+    .reviews-media-carousel__title { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-primary); }
+    .reviews-media-carousel__count { font-size: 12px; color: var(--text-muted); }
+    .reviews-media-carousel__track-wrap { position: relative; }
+    .reviews-media-carousel__track {
+      display: flex; gap: 8px; overflow-x: auto; scroll-behavior: smooth;
+      scrollbar-width: none; -ms-overflow-style: none; padding: 4px 0 6px;
+    }
+    .reviews-media-carousel__track::-webkit-scrollbar { display: none; }
+    .reviews-media-carousel__item {
+      flex: 0 0 auto; width: 200px; height: 200px; border-radius: 4px;
+      overflow: hidden; cursor: zoom-in;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .reviews-media-carousel__item:hover { transform: scale(1.04); box-shadow: 0 6px 20px rgba(0,0,0,0.18); }
+    .reviews-media-carousel__item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .reviews-media-carousel__arrow {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      width: 32px; height: 32px; border-radius: 50%;
+      border: 1px solid var(--grey-300); background: #fff; font-size: 20px;
+      cursor: pointer; display: flex; align-items: center; justify-content: center;
+      color: var(--text-primary); text-shadow: none; line-height: 1;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.15);
+      line-height: 1; padding: 0; z-index: 2;
+      transition: opacity var(--t-fast);
+    }
+    .reviews-media-carousel__arrow:hover { opacity: 0.75; transform: translateY(-50%); }
+    .reviews-media-carousel__arrow:disabled { opacity: 0.2; cursor: default; }
+    #media-carousel-prev { left: 4px; }
+    #media-carousel-next { right: 4px; }
+    .review-verified { display: inline-flex; align-items: center; gap: var(--space-2xs); font-size: 11px; color: #2a7a2a; margin-left: var(--space-xs); font-weight: 400; }
+    .reviews-load-more-wrap { margin-top: var(--space-xl); text-align: center; padding-bottom: 8px; }
+    .reviews-load-more-btn {
+      background-color: transparent; color: var(--text-primary); border: 1px solid var(--text-primary);
+      border-radius: 0; padding: 12px 32px; font-size: 12px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.06em; cursor: pointer;
+      font-family: var(--font-ui); transition: background var(--t-fast);
+    }
+    .reviews-load-more-btn:hover { background-color: var(--grey-100); }
+
+    /* Film grain — overlay global fixo, SVG feTurbulence, sem imagens externas */
+    /* Uses ::before + transform so animation is GPU-composited (no repaint) */
+    .page-grain {
+      position: fixed; inset: 0; z-index: 9998; pointer-events: none;
+      opacity: 0.038;
+      mix-blend-mode: soft-light;
+      overflow: hidden;
+    }
+    .page-grain::before {
+      content: '';
+      position: absolute;
+      inset: -200px; /* extra room so translate never exposes edge */
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256'%3E%3Cfilter id='pg'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.68' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='256' height='256' filter='url(%23pg)'/%3E%3C/svg%3E");
+      background-size: 200px 200px;
+      will-change: transform;
+      animation: grainShift 0.2s steps(1) infinite;
+    }
+
+    /* Color tint — mix-blend-mode fotográfico */
+    .cs-tint {
+      position: absolute; inset: 0; z-index: 3;
+      pointer-events: none; opacity: 0;
+      mix-blend-mode: soft-light;
+      transition: opacity 1.8s cubic-bezier(0.16, 1, 0.3, 1);
+      will-change: opacity;
+    }
+    .cs-tint.cs-on {
+      opacity: 1;
+      animation: tintBreathe 7s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate;
+    }
+
+    @keyframes tintBreathe {
+      from { opacity: 0.76; }
+      to   { opacity: 1;    }
+    }
+    @keyframes grainShift {
+      0%   { transform: translate(  0px,   0px); }
+      25%  { transform: translate(-90px, -45px); }
+      50%  { transform: translate( 45px, -90px); }
+      75%  { transform: translate(-65px,  45px); }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      .cs-tint.cs-on, .page-grain::before { animation: none; }
+    }
+
+    @keyframes review-fadein {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .review-item-anim { animation: review-fadein 0.3s ease both; }
+
+    /* ── SVG organic wave dividers ─────────────────────────── */
+    #review-lightbox {
+      position: fixed; inset: 0; background: rgba(0,0,0,0.88); z-index: 9999;
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; pointer-events: none; transition: opacity 0.22s ease; cursor: zoom-out;
+    }
+    #review-lightbox.active { opacity: 1; pointer-events: all; }
+    #review-lightbox img {
+      max-width: 90vw; max-height: 90vh; object-fit: contain;
+      border-radius: 2px; box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+    }
+    #review-lightbox-close {
+      position: absolute; top: 20px; right: 24px; color: #fff;
+      font-size: 28px; line-height: 1; cursor: pointer; opacity: 0.8;
+      transition: opacity 0.15s; user-select: none;
+    }
+    #review-lightbox-close:hover { opacity: 1; }
+
+    /* Reviews popup carousel */
+    #reviews-popup {
+      position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 9998;
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; pointer-events: none; transition: opacity 0.25s ease;
+    }
+    #reviews-popup.active { opacity: 1; pointer-events: all; }
+    .reviews-popup__box {
+      background: #fff; border-radius: 12px; width: 92vw; max-width: 520px;
+      max-height: 85vh; display: flex; flex-direction: column; position: relative;
+      box-shadow: 0 12px 48px rgba(0,0,0,0.3);
+    }
+    .reviews-popup__header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 20px; border-bottom: 1px solid #eee; flex-shrink: 0;
+    }
+    .reviews-popup__title { font-weight: 700; font-size: 16px; color: #222; }
+    .reviews-popup__counter { font-size: 13px; color: #888; }
+    .reviews-popup__close {
+      background: none; border: none; font-size: 22px; cursor: pointer;
+      color: #666; line-height: 1; padding: 4px;
+    }
+    .reviews-popup__close:hover { color: #000; }
+    .reviews-popup__body {
+      flex: 1; overflow: hidden; position: relative; min-height: 200px;
+    }
+    .reviews-popup__card {
+      padding: 20px; display: none; flex-direction: column; gap: 10px;
+      max-height: calc(85vh - 130px); overflow-y: auto;
+    }
+    .reviews-popup__card.active { display: flex; }
+    .reviews-popup__card-stars { font-size: 18px; color: #d4a017; }
+    .reviews-popup__card-title { font-weight: 700; font-size: 15px; color: #222; }
+    .reviews-popup__card-meta { font-size: 12px; color: #888; }
+    .reviews-popup__card-body { font-size: 14px; line-height: 1.6; color: #444; }
+    .reviews-popup__card-photos { display: flex; gap: 6px; flex-wrap: wrap; }
+    .reviews-popup__card-photos img { width: 64px; height: 64px; object-fit: cover; border-radius: 6px; cursor: pointer; }
+    .reviews-popup__nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 12px 20px; border-top: 1px solid #eee; flex-shrink: 0;
+    }
+    .reviews-popup__arrow {
+      background: none; border: 1px solid #ddd; border-radius: 50%;
+      width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;
+      cursor: pointer; font-size: 16px; color: #444; transition: background 0.15s;
+    }
+    .reviews-popup__arrow:hover { background: #f5f5f5; }
+    .reviews-popup__arrow:disabled { opacity: 0.3; cursor: default; }
+    @media (max-width: 767px) {
+      #shop .shop-grid { grid-template-columns: 1fr; gap: var(--space-xl); }
+      .reviews-summary__cols { flex-direction: column; gap: 32px; }
+      .reviews-bar-track { width: 160px; }
+      .review-item__header { flex-direction: column; align-items: flex-start; gap: var(--space-2xs); }
+      .review-item__meta { margin-left: 0; }
+    }
+
+
+    /* ─── FEATURES GRID ─────────────────────────────────── */
+
+
+    /* ═══════════════════════════════════════════════════════════
+       MOBILE OPTIMIZATIONS — max-width: 767px
+    ═══════════════════════════════════════════════════════════ */
+
+
+
+    @media (max-width: 767px) {
+
+      /* ── Sections: reduce vertical padding ───────────── */
+      .section { padding: 48px 0; }
+      #shop   { padding: var(--space-xl) 0; }
+
+      /* ── Typography ───────────────────────────────────── */
+      .label { font-size: 10px; letter-spacing: 0.1em; margin-bottom: 10px; }
+      h1.section-title  { margin-bottom: 16px; }
+      h2.section-subtitle { margin-bottom: 16px; }
+      .body-lg { font-size: 15px; line-height: 1.55; margin-bottom: 16px; }
+
+      /* ── Hero ─────────────────────────────────────────── */
+      .badge { font-size: 10px; padding: 4px 10px; }
+
+      /* ── Problem section ──────────────────────────────── */
+      .pain-card { padding: 16px; }
+      .pain-card__icon { width: 32px; height: 32px; margin-bottom: 10px; }
+      .pain-card__title { font-size: 11px; }
+      .pain-card__body  { font-size: 12px; line-height: 1.55; }
+
+      /* ── Cocotte / Lid section ────────────────────────── */
+      .comp-card { padding: 20px; }
+      .comp-card h3 { font-size: 14px; }
+      .comp-card p  { font-size: 13px; }
+
+      /* ── Performance section ──────────────────────────── */
+      .fp { padding: 14px 16px; }
+      .fp__icon  { font-size: 20px; }
+      .fp__title { font-size: 11px; }
+      .fp__body  { font-size: 13px; line-height: 1.5; }
+
+      /* ── Design section ───────────────────────────────── */
+      .dark-sub  { font-size: 14px; }
+
+
+      /* ── Shop: gallery ────────────────────────────────── */
+      .gallery-main { border-radius: 4px; }
+      .thumbnail { width: 60px; min-width: 60px; height: 60px; }
+
+      /* ── Shop: variant selector ───────────────────────── */
+      .shop-brand { font-size: 11px; }
+      .shop-title { font-size: 22px; }
+      .shop-price { font-size: 24px; }
+      .shop-shipping { font-size: 12px; padding: 8px 12px; }
+      .size-label { font-size: 13px; }
+      .size__block { width: 64px; height: 34px; }
+      .size__block a,
+      .size__block > span:not(.size-unavailable-label):not(.unavail-label):not(.size-label-text) { font-size: 13px; }
+      .purchase-area { gap: 8px; }
+      .shop-add-btn { font-size: 12px; height: 44px; }
+      .quantity-selector { height: 44px; width: 64px; font-size: 16px; } /* 16px min prevents iOS auto-zoom on select */
+
+      /* ── Reviews: media carousel ──────────────────────── */
+      .reviews-media-carousel__item { width: 120px; height: 120px; }
+      .reviews-media-carousel__arrow { width: 28px; height: 28px; font-size: 22px; }
+
+      /* ── Reviews: summary ─────────────────────────────── */
+      .review-score-big { font-size: 40px; }
+      .review-stars-big { font-size: 16px; letter-spacing: 2px; }
+      .review-count-text { font-size: 12px; }
+
+      /* ── Reviews: items ───────────────────────────────── */
+      .review-item { padding: 16px 0; }
+      .review-item__title { font-size: 14px; }
+      .review-item__body  { font-size: 13px; line-height: 1.55; }
+      .review-photo-thumb { width: 60px; height: 60px; }
+
+      /* ── Shop reviews card ────────────────────────────── */
+      .reviews-section { margin-top: 0; }
+
+      /* ── Social Proof section ─────────────────────────── */
+      .chef-quote { padding: 20px 0; margin-bottom: 24px; }
+      .chef-quote__text { font-size: 16px; line-height: 1.5; }
+      .chef-quote__attr { font-size: 12px; margin-top: 10px; }
+
+      /* ── FAQ ──────────────────────────────────────────── */
+      .faq__q { font-size: 14px; padding: 16px 0; }
+      .faq__q span:first-child { max-width: 88%; }
+      .faq__a p { font-size: 13px; line-height: 1.6; }
+      .closing { padding: 28px 0; }
+      .closing__headline { font-size: clamp(22px, 6vw, 32px); margin-bottom: 20px; }
+      .closing__sub { font-size: 12px; margin-top: 14px; }
+
+      /* ── Footer ───────────────────────────────────────── */
+      .footer { padding: 24px 0; }
+      .footer__inner { flex-direction: column; gap: 12px; text-align: center; }
+      .footer__since { display: block; margin-top: 2px; }
+    }
+
+    /* ── Promo deadline strip ── */
+    .promo-deadline {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-xs);
+      background: var(--bg-surface);
+      border: 1px solid var(--grey-100);
+      padding: var(--space-sm) var(--space-md);
+      margin-top: -1px;
+      font-family: var(--font-ui);
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+      text-align: center;
+    }
+    .promo-deadline__icon { display: none; }
+    .promo-deadline__date {
+      font-weight: 600;
+      color: var(--text-primary);
+      letter-spacing: 0;
+    }
+
+    /* ── Trust badges ── */
+    .trust-badges {
+      display: flex;
+      flex-wrap: nowrap; overflow-x: auto; white-space: nowrap;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-xs) var(--space-md);
+      margin-top: var(--space-md);
+      padding-top: var(--space-sm);
+      border-top: 1px solid var(--grey-100);
+    }
+    .trust-badge-item {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2xs);
+      font-family: var(--font-ui);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    .trust-badge-item::before {
+      content: '';
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: var(--grey-300);
+      flex-shrink: 0;
+    }
+
+    /* ── Accordion ── */
+    .description-accordion {
+      border-top: 1px solid var(--grey-100);
+      margin-top: 24px;
+    }
+    .zwg-accordion__item {
+      border-bottom: 1px solid var(--grey-100);
+    }
+    .zwg-accordion__header {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-primary);
+      text-transform: uppercase;
+      background: transparent;
+      border: none;
+      padding: 16px 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      letter-spacing: 0.08em;
+      font-family: var(--font-ui);
+    }
+    .zwg-accordion__header .acc-icon {
+      font-size: 18px;
+      color: var(--text-muted);
+      transition: transform 0.25s ease;
+      flex-shrink: 0;
+    }
+    .zwg-accordion__item.open .zwg-accordion__header .acc-icon {
+      transform: rotate(180deg);
+    }
+    .zwg-accordion__content {
+      font-size: 14px;
+      color: var(--text-body);
+      line-height: 1.6;
+      padding: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    }
+    .zwg-accordion__item.open .zwg-accordion__content {
+      max-height: 2500px;
+      padding: 0 0 16px;
+    }
+    .zwg-accordion__content p { margin-bottom: 10px; }
+    .zwg-accordion__content ul { padding-left: 18px; list-style: disc; }
+    .zwg-accordion__content ul li { margin-bottom: 4px; }
+
+    /* ── Cart confirmation popup ── */
+    #cart-popup-overlay {
+      display: none; position: fixed; inset: 0; z-index: 9999;
+      background: rgba(39,34,29,0.55); backdrop-filter: blur(2px);
+      align-items: center; justify-content: center;
+    }
+    #cart-popup-overlay.open { display: flex; }
+    #cart-popup {
+      background: var(--bg-primary); border-radius: 8px;
+      box-shadow: 0 4px 48px rgba(0,0,0,0.22), 0 1px 8px rgba(0,0,0,0.10);
+      padding: var(--space-2xl); max-width: 480px; width: 90%; text-align: center;
+      position: relative;
+    }
+    #cart-popup__close {
+      position: absolute; top: 16px; right: 20px; font-size: 18px;
+      color: var(--text-muted); cursor: pointer; background: none; border: none;
+      line-height: 1; transition: color var(--t-fast); font-family: var(--font-ui);
+    }
+    #cart-popup__close:hover { color: var(--text-primary); }
+    #cart-popup__icon { font-size: 30px; margin-bottom: 16px; line-height: 1; }
+    #cart-popup__title {
+      font-family: var(--font-ui); font-size: 13px; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 0.10em;
+      color: var(--text-primary); margin-bottom: 16px;
+    }
+    #cart-popup__divider {
+      width: 40px; height: 2px; background: var(--grey-300);
+      margin: 0 auto var(--space-lg);
+    }
+    #cart-popup__msg {
+      font-family: var(--font-ui); font-size: 15px; color: var(--text-body);
+      line-height: 1.65; margin-bottom: 32px;
+    }
+    #cart-popup__msg strong { color: var(--text-primary); font-weight: 600; }
+    #cart-popup__cta {
+      display: flex; align-items: center; justify-content: center; gap: 8px;
+      width: 100%; background: var(--cta-campaign); color: #fff;
+      border: none; padding: var(--space-md) var(--space-xl);
+      font-family: var(--font-ui); font-size: 12px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.08em; cursor: pointer;
+      transition: background var(--t-fast);
+    }
+    #cart-popup__cta:hover { background: var(--cta-campaign-hover); }
+    #cart-popup__variant {
+      margin-top: var(--space-sm); font-size: 12px; color: var(--text-muted);
+      font-family: var(--font-ui); letter-spacing: 0.04em;
+    }
+    @media (max-width: 767px) {
+      #cart-popup { padding: var(--space-xl) var(--space-lg); }
+    }
+
+    /* ── Mobile fixes: background-image sections (excluding #performance) ── */
+    @media (max-width: 768px) {
+      /* FIX diagonal: reduce clip-path offset from 40px to 20px on narrow screens
+         so the angled cut doesn't extend too far and cause layout gaps */
+      .section--dark + .section::before,
+      .section--dark + .section--alt::before {
+        clip-path: polygon(0 0, 100% 20px, 100% 100%, 0 100%);
+        height: 40px;
+        margin-top: -40px;
+      }
+    }
+
+  
+    
+    
+  
+    /* GERMAN LONG WORD FIX */
+    * {
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+      -webkit-hyphens: auto;
+      hyphens: auto;
+    }
+    .usecase-card, .feature-card, .shop-gallery-col, .shop-info, .review-item {
+      min-width: 0;
+    }
+    
+  </style>
+
+
+    <style>
+      .zwg-accordion__content p { margin-bottom: 12px; }
+      .zwg-accordion__content ul { padding-left: 20px; list-style-type: disc; margin-bottom: 12px; }
+      .zwg-accordion__content li { margin-bottom: 6px; }
+      .zwg-accordion__content strong { font-weight: 700; color: #000; }
+      .in-the-box-item { list-style: none !important; padding-left: 0 !important; }
+      .in-the-box-item__list { padding-bottom: 8px; border-bottom: 1px solid #eee; margin-bottom: 8px !important; }
+      .in-the-box-item__list:last-child { border-bottom: none; }
+      /* Specifications formatting */
+      .item-row { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #eee; }
+      .pd-attribute-label { font-weight: 600; color: #000; }
+      .pd-attribute-value { color: #444; text-align: right; }
+    </style>
+    
+
+    <style>
+@media (max-width: 480px) {
+      .trust-badges {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        gap: 8px 12px !important;
+      }
+      .trust-badge-item {
+        font-size: 11px !important;
+        letter-spacing: 0 !important;
+        white-space: normal;
+        text-align: center;
+        flex: 1 1 40%;
+        justify-content: center;
+      }
+    }
+</style>
+    
+</head>
+<body>
+
+<style>
+.marquee-container {
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #d9381e;
+  color: #fff;
+  padding: 10px 0;
+  font-size: 13px;
+  font-weight: 600;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  letter-spacing: 0.5px;
+  display: flex;
+  width: 100%;
+}
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee-scroll 15s linear infinite;
+}
+.marquee-content span {
+  padding-right: 50px;
+}
+@keyframes marquee-scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+</style>
+<div class="marquee-container">
+  <div class="marquee-content">
+    <span>Achtung: Aufgrund hoher Nachfrage nur noch wenige Geräte auf Lager!</span>
+    <span>Achtung: Aufgrund hoher Nachfrage nur noch wenige Geräte auf Lager!</span>
+    <span>Achtung: Aufgrund hoher Nachfrage nur noch wenige Geräte auf Lager!</span>
+    <span>Achtung: Aufgrund hoher Nachfrage nur noch wenige Geräte auf Lager!</span>
+  </div>
+</div>
+
+<div id="site-wrapper" style="overflow-x: hidden; position: relative; width: 100%; max-width: 100vw; min-height: 100vh;">
+
+  <!-- Grain overlay — SVG feTurbulence, sem imagens externas -->
+  <div class="page-grain" aria-hidden="true"></div>
+
+
+  <!-- SECTION 1 — SHOP (gallery + variants + cart) -->
+  <section class="section section--alt" id="shop">
+    <div class="container">
+
+      <div class="shop-grid">
+
+        <!-- Product info + variant selector -->
+        <div class="shop-info">
+          <p class="shop-brand">Alvora Home &</p>
+          <h2 class="shop-title">Ninja SLUSHi FS301EU</h2>
+
+          <a class="shop-rating" href="#reviews-anchor" style="text-decoration:none;color:inherit;cursor:pointer;">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="rating-count">4.9 (1,935 Bewertungen)</span>
+          </a>
+
+          <!-- Gallery (below ratings, above price) -->
+          <div class="shop-gallery-col">
+            <div class="gallery-main" id="gallery-main">
+              <img id="gallery-main-img" src="assets/img_6_FS301EU_01.jpg" alt="Ninja SLUSHi FS301EU" loading="eager" fetchpriority="high" width="800" height="800" style="width:100%;height:100%;object-fit:contain;padding:18px;box-sizing:border-box;" />
+              <div class="gallery-arrows">
+                <button class="arrow" aria-label="Previous image" onclick="galleryPrev()">&#8249;</button>
+                <button class="arrow" aria-label="Next image" onclick="galleryNext()">&#8250;</button>
+              </div>
+            </div>
+            <div class="thumbnail-strip" id="thumbnail-strip"></div>
+          </div>
+
+          <div class="price-row">
+            <div class="shop-price" id="product-price-sale">99.00 €</div>
+            <div class="shop-price-old" id="product-price-compare">249.99 €</div>
+            <div class="sale-badge" id="product-sale-badge">-70%</div>
+          </div>
+
+
+          <div class="availability-section">
+            <span id="stock-indicator" class="in-stock">Auf Lager</span>
+          </div>
+
+          <div class="size-label">Modell: <span id="selected-size-name">1 Gerät</span></div>
+          <div class="size__blocks-container" id="size-blocks-container"></div>
+
+          <div class="urgency-bar" role="status" aria-live="polite">
+            <div class="urgency-bar__label">
+              Nur noch <strong><span id="urgency-count">—</span> auf Lager</strong>.
+            </div>
+            <div class="urgency-bar__track">
+              <div class="urgency-bar__fill" id="urgency-fill"></div>
+            </div>
+          </div>
+
+          <div class="purchase-area">
+            <select class="quantity-selector" aria-label="Quantity">
+              <option>1</option><option>2</option><option>3</option>
+              <option>4</option><option>5</option>
+            </select>
+            <button class="shop-add-btn" onclick="goToCheckout()">
+              <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1H3L4 10H14L16 4H5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="6" cy="13.5" r="1.2" fill="white"/>
+                <circle cx="12" cy="13.5" r="1.2" fill="white"/>
+              </svg>
+              Jetzt kaufen
+            </button>
+          </div>
+
+          <!-- Promo deadline -->
+          <div class="promo-deadline">
+            <span class="promo-deadline__icon">🕐</span>
+            <span>Befristetes Angebot! Gültig bis <span class="promo-deadline__date" id="promo-deadline-date"></span></span>
+          </div>
+
+          <!-- Trust badges -->
+          <div class="trust-badges">
+            <span class="trust-badge-item">Kostenloser Versand</span>
+            <span class="trust-badge-item">100% Sichere Zahlung</span>
+            <span class="trust-badge-item">3 Jahre Garantie</span>
+          </div>
+
+          <!-- How it works — carousel -->
+          <!-- Accordion -->
+          <div class="description-accordion">
+
+            <div class="zwg-accordion__item">
+              <button class="zwg-accordion__header" onclick="toggleAccordion(this)">
+                Produktdetails
+                <div class="acc-icon" style="display:inline-block;">&#8964;</div>
+              </button>
+              <div class="zwg-accordion__content" id="acc-desc-content">
+                <div style="padding-bottom: 24px;">
+                <p>Tschüss Mixer, hallo zu kinderleichter Zubereitung von Eisgetränken mit dem <strong>Ninja SLUSHi</strong>. Kein Eis, keine scharfen Klingen, kein Mixen – einfach eingießen, zum Slush verarbeiten und genießen.</p>
+<p>Lust auf Frozen Saft, Frappés wie im Café, kreative alkoholische oder alkoholfreie Cocktails? Kein Problem! Mit <strong>Ninja SLUSHi</strong> lassen sich alle beliebten Erfrischungsgetränke in einen Slush verwandeln. Der <strong>SLUSHi</strong> ist super einfach zu bedienen und leicht zu reinigen … Cool, oder?</p>
+<p><strong>Voller Geschmack</strong></p>
+<p>Flüssigkeit wird zu Slush, voller Geschmack bleibt – mit <strong>Ninja SLUSHi</strong>. Kein zusätzliches Eis – also keine Verwässerung, sondern Eisgetränke mit vollem Geschmack.</p>
+<p><strong>Blitzschnell gefroren und lange kalt</strong></p>
+<p>Mit der Rapid Chill-Technologie lässt sich Flüssigkeit in nur 30 Minuten* in einen erfrischenden Slush verwandeln. Einmal eingefroren, bleibt es bis zu 12 Stunden** gefroren. Den ganzen Tag, die ganze Nacht – mit <strong>SLUSHi </strong>fließen die Eisgetränke immer weiter.</p>
+<p><strong>Fünf Voreinstellungen für die beliebtesten Eisgetränke</strong></p>
+<p>Die Zubereitung der verschiedenen Eisgetränke verläuft unterschiedlich. Ob cremiger Milchshake oder eine klassische Frozen Margarita – beides braucht die perfekte Konsistenz und Temperatur. <strong>Ninja SLUSHi</strong> kreiert auf Knopfdruck perfekte Eisgetränke für jeden Anlass – mit den fünf Voreinstellungen:</p>
+<ul>
+<li><strong>Slush (Slush)</strong>: verwandelt alle Lieblingsgetränke in fantastischen gefrorenen Slush</li>
+<li><strong>Frozen Cocktail (Frozen Cocktail)</strong>: speziell für alkoholhaltige Getränke, zur Herstellung von Frozen Cocktails wie Margaritas und Erdbeer-Daiquiris</li>
+<li><strong>Frappé (Frappé)</strong>: für die Zubereitung von Frozen Frappés wie im Café</li>
+<li><strong>Milkshake (Milchshake)</strong>: für Drinks auf Milchbasis oder mit pflanzlichen Alternativen, um cremige Getränke und köstliche Milchshakes zu kreieren</li>
+<li><strong>Frozen Juice (Frozen Saft)</strong>: für natürlich gesüßte Fruchtsäfte und zur Zubereitung von Super-Smoothies</li>
+</ul>
+<p><strong>Eiskaltes Vergnügen mit der ganzen Familie oder Freunden</strong></p>
+<p>Das Easy-Fill-Gefäß mit 2,5 Litern*** Fassungsvermögen sorgt für Nachschub ohne Ende und reicht für mindestens 7 Portionen**** pro Durchgang.</p>
+<p><strong>Flüsterleise Kühlung</strong></p>
+<p>Der WhisperChill-Kompressor von <strong>Ninja SLUSHi</strong> hält Getränke leise auf der perfekten Temperatur – so bleibt der Spaß ungestört und die Entspannung garantiert!</p>
+<p><strong>Lieferumfang:</strong></p>
+<ul>
+<li>Motorbasis mit WhisperChill-Kompressor</li>
+<li>Gefäß mit Ausgießer-Griff (1,9 l max. Fassungsvermögen)</li>
+<li>5 Voreinstellungen</li>
+<li>Einstellung der Temperaturregelung</li>
+<li>Schneckensystem</li>
+<li>Kondensatauffangbehälter</li>
+<li>2-teilige Tropfschale</li>
+<li>Rezeptbuch mit 10 Rezepten</li>
+</ul>
+<small>*Die Getränkezubereitung kann je nach Zutaten, Menge und Ausgangstemperatur zwischen 15 und 60 Minuten dauern. Verwendung von Zucker erforderlich.</small>
+<br>
+<small>**Für Rezepte ohne Milchprodukte</small>
+<br>
+<small>***1,9 l max. Füllmenge für Flüssigkeiten</small>
+<br>
+<small>****Die Anzahl der Portionen kann je nach Portionsgröße und Zutaten variieren.</small><br /><small><em>*Die Getränkezubereitung kann je nach Zutaten, Menge und Ausgangstemperatur zwischen 15 und 60 Minuten dauern. Muss Zucker oder Zuckeralternative enthalten. **Für Rezepte ohne Milchprodukte ***1,9 l max. Fassungsvermögen ****Die Anzahl der Portionen kann je nach Portionsgröße und Zutaten variieren.<br /></em></small>
+                
+                    
+                        
+                            
+
+                                Modell:
+                                
+                                    
+                                        
+                                            FS301EU
+                                        
+                                        
+                                    
+                                
+                            
+                        
+                            
+
+                                Farbe:
+                                
+                                    
+                                        
+                                            Blaugrau
+                                        
+                                        
+                                    
+                                
+                            
+                        
+                            
+
+                                Gewicht (kg):
+                                
+                                    
+                                        
+                                            13,63 kg
+                                        
+                                        
+                                    
+                                
+                            
+                        
+                            
+
+                                Garantie (Jahre):
+                                
+                                    
+                                        
+                                            2
+                                        
+                                        
+                                    
+                                
+                            
+                        
+                            
+
+                                Produktabmessungen (cm):
+                                
+                                    
+                                        
+                                            52,4 cm L x 27,41 cm B x 53,29 cm H
+                                        
+                                        
+                                    
+                                
+                            
+                        
+                            
+
+                                BPA-frei:
+                                
+                                    
+                                        
+                                            Ja
+                                        
+                                        
+                                    
+                                
+                            
+                        
+                            
+
+                                Sp&uuml;lmaschinengeeignet:
+                                
+                                    
+                                        
+                                            Ja
+                                        
+                                        
+                                    
+                                
+                            
+                        
+                            
+
+                                Automatische Programme:
+                                
+                                    
+                                        
+                                            5
+                                        
+                                        
+                                    
+                                
+                            
+                        
+                            
+
+                                Netzspannung:
+                                
+                                    
+                                        
+                                            240 V
+                                        
+                                        
+                                    
+                                
+                            
+                        
+                            
+
+                                Wattleistung (W):
+                                
+                                    
+                                        
+                                            200 W
+                                        
+                                        
+                                    
+                                
+                            
+                        
+                            
+
+                                Stromst&auml;rke (A):
+                                
+                                    
+                                        
+                                            3,5 A
+                                        
+                                        
+                                    
+                                
+                            
+                        
+                    
+                
+            
+        
+    
+
+
+
+     
+        
+                </div>
+              </div>
+            </div>
+
+            <div class="zwg-accordion__item">
+              <button class="zwg-accordion__header" onclick="toggleAccordion(this)">
+                Lieferumfang
+                <div class="acc-icon" style="display:inline-block;">&#8964;</div>
+              </button>
+              <div class="zwg-accordion__content">
+                <div style="padding-bottom: 24px;">
+                <ul class="in-the-box-item">
+                        
+                            <li class="in-the-box-item__list">
+                                1 x Motorbasis mit WhisperChill-Kompressor
+                            </li>
+                        
+                            <li class="in-the-box-item__list">
+                                1 x Gefäß mit Ausgießer-Griff (1,9 l max. Fassungsvermögen)
+                            </li>
+                        
+                            <li class="in-the-box-item__list">
+                                1 x Kondensatauffangbehälter
+                            </li>
+                        
+                            <li class="in-the-box-item__list">
+                                1 x 2-teilige Tropfschale
+                            </li>
+                        
+                            <li class="in-the-box-item__list">
+                                1 x Rezeptbuch mit 10 Rezepten
+                            </li>
+                        
+                    </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="zwg-accordion__item">
+              <button class="zwg-accordion__header" onclick="toggleAccordion(this)">
+                Versand und Rücksendungen
+                <div class="acc-icon" style="display:inline-block;">&#8964;</div>
+              </button>
+              <div class="zwg-accordion__content">
+                <div style="padding-bottom: 24px;">
+                <!-- dwMarker="content" dwContentID="315283b9badde1eee670b16bdd" -->
+        
+
+  
+    <p class="shipping-info__title"><b>Kostenlose Lieferung</b></p>
+    <ul class="shipping-info__list">
+      <li>Wir liefern kostenlos an alle Adressen in Deutschland und Österreich</li>
+      <li>Ihr Paket kommt per DHL oder GLS zu Ihnen</li>
+      <li>In der Regel in <strong>2–4 Werktagen</strong> (Deutschland) oder <strong>5–6 Werktagen</strong> (Österreich)</li>
+    </ul>
+    <a href="/order-status" class="shipping-info__link" style="text-decoration: underline; font-weight: bold;">Bestellstatus überprüfen →</a>
+  
+
+  
+    <p class="shipping-info__title"><b>Kostenlose Rücksendung</b></p>
+    <p>Nicht das Richtige? Kein Problem – du hast <strong>30 Tage</strong> Zeit, deinen Kauf zurückzugeben. Rücksendungen sind <strong>kostenlos</strong>. Du hast zwei Möglichkeiten:</p>
+    <ul class="shipping-info__list">
+      <li><a href="https://returns.narvar.com/sharkninja/returns?locale=de_DE" class="shipping-info__link" style="text-decoration: underline; font-weight: bold;">Rücksendung im Rücksendeportal registrieren →</a></li>
+      <li>Kundenservice Deutschland kontaktieren: <a href="tel:08000009063" class="shipping-info__link">0800 000 9063</a> <br>
+Kundenservice Österreich kontaktieren: <a href="tel:08000021050" class="shipping-info__link">0800 002 105</a></li>
+    </ul>
+                </div>
+              </div>
+            </div>
+
+            
+
+          </div>
+          <!-- / Accordion -->
+
+          <!-- VIDEO BLOCK -->
+          <style>
+            .full-bleed-video {
+              background-color: var(--bg-secondary);
+              text-align: center;
+              margin-top: 0;
+              padding-top: 16px;
+              margin-bottom: 0;
+            }
+            .full-bleed-video h2 {
+              font-size: 32px;
+              font-weight: 800;
+              margin-bottom: 16px;
+              color: #000;
+              letter-spacing: -0.5px;
+              padding: 0 24px;
+            }
+            .full-bleed-video p {
+              color: #4a4a4a;
+              font-size: 16px;
+              line-height: 1.6;
+              margin-bottom: 32px;
+              padding: 0 24px;
+            }
+            .full-bleed-video .video-wrapper {
+              position: relative;
+              cursor: pointer;
+              line-height: 0;
+            }
+            
+            @media(max-width: 900px) {
+              .full-bleed-video {
+                margin-left: -16px;
+                margin-right: -16px;
+              }
+            }
+            @media(min-width: 901px) {
+              .full-bleed-video {
+                border-radius: 12px;
+                overflow: hidden;
+              }
+            }
+          </style>
+
+          
+          
+          
+          <div class="full-bleed-video">
+            <h2>Dein Sommer. Jetzt<br>auch mit Slush.</h2>
+            <p>Kein Eis, keine verwässerten Getränke, kein Mixen – einfach einschenken, Programm wählen und genießen. Der Ninja SLUSHi macht aus jedem Moment einen perfekten Sommerdrink.</p>
+            
+            <div class="video-wrapper" >
+              <video id="promo-video" playsinline autoplay muted loop style="width: 100%; display: block;">
+                <source src="assets/video.webm" type="video/webm">
+                Dein Browser unterstützt kein Video.
+              </video>
+              <div id="unmute-btn" style="position: absolute; bottom: 16px; right: 16px; background: rgba(0,0,0,0.5); color: white; padding: 6px 12px; border-radius: 20px; font-size: 13px; font-weight: 600; display: flex; align-items: center; gap: 6px;">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                Stummschaltung aufheben
+              </div>
+              <script>
+                document.getElementById('unmute-btn').parentElement.onclick = function() {
+                  var v = document.getElementById('promo-video');
+                  v.muted = !v.muted;
+                  var btn = document.getElementById('unmute-btn');
+                  if (v.muted) {
+                    btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg> Stummschaltung aufheben';
+                  } else {
+                    btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02zM14 3.23v2.06c2.89.86 5 3.54 5 6.71s-2.11 5.85-5 6.71v2.06c4.01-.91 7-4.49 7-8.77s-2.99-7.86-7-8.77z"/></svg> Stummschalten';
+                  }
+                };
+              </script>
+            </div>
+          </div>
+          <!-- / VIDEO BLOCK -->
+
+          <!-- TECH BLOCK -->
+          <style>
+            .tech-block {
+              text-align: center;
+              background-color: var(--bg-secondary);
+              padding: 32px 16px;
+              margin-top: 0;
+            }
+            .tech-block h2 {
+              font-size: 28px;
+              font-weight: 800;
+              color: #000;
+              margin-bottom: 12px;
+              line-height: 1.1;
+              letter-spacing: -0.5px;
+            }
+            .tech-block .tech-subtitle {
+              font-size: 15px;
+              color: #4a4a4a;
+              line-height: 1.5;
+              margin-bottom: 24px;
+            }
+            .tech-block img {
+              width: 100%;
+              border-radius: 12px;
+              margin-bottom: 24px;
+            }
+            .tech-block h3 {
+              font-size: 22px;
+              font-weight: 800;
+              color: #000;
+              margin-bottom: 8px;
+              text-align: left;
+            }
+            .tech-block p.tech-desc {
+              font-size: 15px;
+              color: #4a4a4a;
+              line-height: 1.5;
+              text-align: left;
+              margin-bottom: 0;
+            }
+          </style>
+
+          <div class="tech-block">
+            <h2>Das steckt im Ninja SLUSHi</h2>
+            <p class="tech-subtitle">Dank unserer innovativen Technologien wird das Slush-Eis-Herstellen so einfach wie nie.</p>
+            <img src="assets/img_5_1400x1400px-FS301EU_Annotated_Images_3600x3600px_241023_V2_NL-NL8.jpg" alt="Rapid-Chill Technologie">
+            <h3>Rapid-Chill Technologie</h3>
+            <p class="tech-desc">Flüssigkeit wird um 360° um einen Kühlzylinder gedreht, um die ideale Temperatur und Textur zu erhalten. Mit der Rapid Chill-Technologie lässt sich Flüssigkeit in nur 30 Minuten* in einen Slush verwandeln.</p>
+          </div>
+          <!-- / TECH BLOCK -->
+          
+
+<!-- GIF BLOCK -->
+          <style>
+            .gif-block {
+              text-align: center;
+              background-color: var(--bg-secondary);
+              margin-top: 0;
+              padding-top: 48px;
+              margin-bottom: 0;
+              padding-bottom: 32px;
+            }
+            .gif-block h2 {
+              font-size: 28px;
+              font-weight: 800;
+              color: #000;
+              margin-bottom: 12px;
+              line-height: 1.1;
+              letter-spacing: -0.5px;
+            }
+            .gif-block p {
+              font-size: 16px;
+              color: #4a4a4a;
+              line-height: 1.5;
+              margin-bottom: 24px;
+            }
+            .gif-block img {
+              width: 100%;
+              border-radius: 12px;
+              margin-bottom: 24px;
+            }
+            .gif-block h3 {
+              font-size: 22px;
+              font-weight: 800;
+              color: #000;
+              margin-bottom: 8px;
+              line-height: 1.2;
+            }
+          </style>
+
+          <div class="gif-block">
+            <h2>Kein Eis. Kein Aufwand.<br>Nur purer Genuss.</h2>
+            <p>Eisgetränke auf Knopfdruck, ohne Eis, ohne Mixen, ohne Chaos – der Ninja SLUSHi macht es möglich.</p>
+            <img src="assets/img_3_R_Sequence_01.00_00_02_05.Still001.jpg" alt="Ninja Slushi in action">
+            <h3>Eisgetränke ganz einfach zubereiten</h3>
+            <p>Kein lästiges Mixen oder Verwässern – einfach per Knopfdruck zu Hause die beliebtesten Eisgetränke genießen.</p>
+          </div>
+          <!-- / GIF BLOCK -->
+
+
+          
+
+
+        </div>
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section section--alt" id="reviews" style="padding-top:0;padding-bottom:calc(var(--space-4xl) / 2);">
+    <div class="container">
+      <div class="reviews-section" id="reviews-anchor">
+        <div class="reviews-summary">
+          <h2 class="reviews-section__title">Kundenbewertungen</h2>
+          <div class="reviews-summary__cols">
+            <div class="reviews-summary__score">
+              <div class="review-score-big">4.9</div>
+              <div class="review-stars-big">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+              <div class="review-count-text">1,935 Bewertungen</div>
+            </div>
+            <div class="reviews-summary__bars">
+              <div class="reviews-bar-row">
+                <span class="reviews-bar-label">5 &#9733;</span>
+                <div class="reviews-bar-track"><div class="reviews-bar-fill" style="width:68%;"></div></div>
+                <span class="reviews-bar-pct">68%</span>
+              </div>
+              <div class="reviews-bar-row">
+                <span class="reviews-bar-label">4 &#9733;</span>
+                <div class="reviews-bar-track"><div class="reviews-bar-fill" style="width:15%;"></div></div>
+                <span class="reviews-bar-pct">15%</span>
+              </div>
+              <div class="reviews-bar-row">
+                <span class="reviews-bar-label">3 &#9733;</span>
+                <div class="reviews-bar-track"><div class="reviews-bar-fill" style="width:8%;"></div></div>
+                <span class="reviews-bar-pct">8%</span>
+              </div>
+              <div class="reviews-bar-row">
+                <span class="reviews-bar-label">2 &#9733;</span>
+                <div class="reviews-bar-track"><div class="reviews-bar-fill" style="width:5%;"></div></div>
+                <span class="reviews-bar-pct">5%</span>
+              </div>
+              <div class="reviews-bar-row">
+                <span class="reviews-bar-label">1 &#9733;</span>
+                <div class="reviews-bar-track"><div class="reviews-bar-fill" style="width:4%;"></div></div>
+                <span class="reviews-bar-pct">4%</span>
+              </div>
+            </div>
+          </div>
+          <button class="write-review-btn">Bewertung schreiben</button>
+        </div>
+
+        <div style="margin:16px 0;text-align:center;">
+          <button onclick="window.openReviewsPopup()" style="background:none;border:none;padding:0;font-size:14px;color:var(--text-muted);text-decoration:underline;cursor:pointer;">Foto-Bewertungen ansehen</button>
+        </div>
+
+        <div id="reviews-list"></div>
+        <div class="reviews-load-more-wrap" id="reviews-load-more-wrap">
+          <button class="reviews-load-more-btn" id="reviews-load-more-btn">Mehr Bewertungen laden</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--alt" id="faq" style="padding-top:0;">
+    <div class="container faq-wrap">
+      <h2 class="section-subtitle text-center sr">HÄUFIG GESTELLTE FRAGEN</h2>
+
+      <div class="faq sr">
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>Warum ist sie reduziert?</span><span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a"><p>Dies ist eine besondere Aktion. Der Vorrat ist stark limitiert und kann jederzeit ausverkauft sein.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>Kann ich es zurückgeben?</span><span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a"><p>Ja, Sie haben 30 Tage Rückgaberecht. Außerdem gibt es 3 Jahre Herstellergarantie.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>Wie lange dauert die Lieferung?</span><span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a"><p>Die Lieferung ist kostenlos und dauert 7-15 Werktage.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>Wie benutzt man die Ninja SLUSHi?</span><span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a"><p>Sie füllen Ihre Lieblingszutaten ein, wählen eines der 5 Programme und nach 30 Minuten haben Sie perfekten Slush.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>Wie unterscheidet sie sich von anderen Geräten?</span><span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a"><p>Mit dem WhisperChill-Kompressor kühlt sie leise und effizient. Ihr Getränk bleibt bis zu 12 Stunden kalt.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>Welche 5 Programme gibt es?</span><span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a"><p>Slush, Frozen Cocktail, Frappé, Milkshake, und Frozen Juice.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>Wie viel Slush kann ich zubereiten?</span><span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a"><p>Der Behälter fasst 2,5 l, was für mindestens 7 Portionen pro Durchgang reicht.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>Kann ich milchfreie oder vegane Getränke zubereiten?</span><span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a"><p>Ja, Sie können beliebige Zutaten wie Säfte, Sirup oder Pflanzenmilch verwenden.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>Ist sie sehr groß?</span><span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a"><p>Die SLUSHi misst 41,35 x 42,98 x 16,56 cm (HxBxT) und wiegt 11 kg.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>Wie reinige ich die Maschine?</span><span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a"><p>Alle abnehmbaren Teile sind leicht zu reinigen. Die Basis kann mit einem feuchten Tuch abgewischt werden.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.querySelectorAll('.faq__q').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = btn.closest('.faq__item');
+        var isOpen = item.classList.contains('faq__item--open');
+        document.querySelectorAll('.faq__item').forEach(function(i) {
+          i.classList.remove('faq__item--open');
+          i.querySelector('.faq__q').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('faq__item--open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+
+  <section class="section section--alt" style="padding-top:var(--space-xl);padding-bottom:0;">
+    <div class="container" style="text-align:center;">
+      <button class="btn btn--campaign" style="padding:9px 29px;" onclick="goToShop()">RABATT SICHERN</button>
+    </div>
+  </section>
+
+  <!-- FEATURES — Ninja CREAMi Deluxe -->
+  <section class="section section--alt" id="features">
+    <div class="container">
+      <h2 class="section-title text-center sr" style="font-family:var(--font-display);text-transform:none;font-size:clamp(24px,3vw,36px);letter-spacing:0;margin-bottom:var(--space-xl);">
+        Professionelle Ergebnisse, ohne Aufwand.
+      </h2>
+      <div class="feature-cards">
+        <div class="feature-card sr">
+          <div class="feature-card__img">
+            <img src="assets/img_1_Ninja-FS301UKSeries_InUse_OnIsland_ThisToThat_LemonsOnPlate_PinkLemonade_Step2.jpg" alt="Langanhaltende Kühlung" loading="lazy">
+          </div>
+          <div class="feature-card__title">Langanhaltende Kühlung</div>
+          <div class="feature-card__body">Mit der WhisperChill-Technologie bleiben Ihre Getränke bis zu 12 Stunden gefroren.</div>
+        </div>
+        <div class="feature-card sr">
+          <div class="feature-card__img">
+            <img src="assets/img_0_FS301_Gallery_InUse_08.jpg" alt="Einfache Bedienung" loading="lazy">
+          </div>
+          <div class="feature-card__title">Einfache Bedienung</div>
+          <div class="feature-card__body">Wählen Sie aus 5 verschiedenen Programmen für Slush, Frappé, Frozen Cocktails und mehr.</div>
+        </div>
+        <div class="feature-card sr">
+          <div class="feature-card__img">
+            <img src="assets/img_6_FS301EU_01.jpg" alt="Einfache Reinigung" loading="lazy">
+          </div>
+          <div class="feature-card__title">Einfache Reinigung</div>
+          <div class="feature-card__body">Die spülmaschinenfesten Teile machen die anschließende Reinigung zum Kinderspiel.</div>
+        </div>
+      </div>
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <span class="footer__logo">ALVORA HOME</span>
+      </div>
+      <div class="footer__legal">
+        © 2026 Alvora Home. All rights reserved.<br>
+        The 3-year warranty covers manufacturing defects under normal use.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+    // Smooth scroll to top
+    function goToShop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+  </script>
+  <script>
+
+    /* ---- SHOP: Pack Variant + Gallery ---- */
+    /* ---- VARIANT DATA ---- */
+    var _IMGS = [
+      'assets/img_6_FS301EU_01.jpg',
+      'assets/two_products_v2.png',
+      'assets/img_1_Ninja-FS301UKSeries_InUse_OnIsland_ThisToThat_LemonsOnPlate_PinkLemonade_Step2.jpg',
+      'assets/img_4_1400x1400px-FS301EU_Annotated_Images_3600x3600px_241023_V2_FR-FR6.jpg',
+      'assets/img_5_1400x1400px-FS301EU_Annotated_Images_3600x3600px_241023_V2_NL-NL8.jpg'
+    ];
+    /* Index of the hero image for each pack variant */
+    var PACK_HERO_IDX = { '1 Gerät': 0, '2 Geräte': 1 };
+
+    var PACKS = [
+      { name: '1 Gerät', price: '99.00', comparePrice: '249.99', available: true },
+      { name: '2 Geräte', price: '129.00', comparePrice: '499.98', available: true }
+    ];
+
+    var PACK_DESC = {
+      '1 Gerät': [
+        'Die Ninja SLUSHi bietet 5 Programme für die perfekte Getränke-Kreation zu Hause.',
+        '<strong>5 Auto-iQ® Programme</strong>: Slush, Frozen Cocktail, Frappé, Milkshake und Gefrorener Saft.',
+        '<strong>WhisperChill-Kompressor</strong>: leise Kühlung, die den Geschmack nicht verwässert.',
+        '<strong>2,5 l Fassungsvermögen</strong>: für mindestens 7 Portionen pro Durchgang.',
+        'Getränke bleiben bis zu 12 Stunden lang auf perfekter Temperatur.',
+        '<strong>Abmessungen</strong>: 41,35 x 42,98 x 16,56 cm.'
+      ],
+      '2 Geräte': [
+        'Die Ninja SLUSHi bietet 5 Programme für die perfekte Getränke-Kreation zu Hause.',
+        '<strong>5 Auto-iQ® Programme</strong>: Slush, Frozen Cocktail, Frappé, Milkshake und Gefrorener Saft.',
+        '<strong>WhisperChill-Kompressor</strong>: leise Kühlung, die den Geschmack nicht verwässert.',
+        '<strong>2,5 l Fassungsvermögen</strong>: für mindestens 7 Portionen pro Durchgang.',
+        'Getränke bleiben bis zu 12 Stunden lang auf perfekter Temperatur.',
+        '<strong>Abmessungen</strong>: 41,35 x 42,98 x 16,56 cm.'
+      ]
+    };
+
+    var PACK_SPECS = [
+      ['EAN / Barcode', '622356350907'],
+      ['RPM', '1800'],
+      ['Colour', 'Silver'],
+      ['Warranty', '3 Years'],
+      ['Capacity', '706 ml per pint'],
+      ['Power', '800 W'],
+      ['Weight', '6.54 kg'],
+      ['Cable length', '88 cm'],
+      ['Non-slip base', 'Yes'],
+      ['Cleaning / Dishwasher', 'Removable parts dishwasher-safe (top rack); main unit — NOT dishwasher-safe'],
+      ['Dimensions', '42.4 × 30.5 × 21.4 cm (H × W × D)'],
+      ['Programmes', 'Slush, Frozen Cocktail, Light Slush, Frappé, Milkshake, Mix-In, Frappé, Frozen Juice, Frozen Yoghourt, Frozen Drink']
+    ];
+
+    let currentImages = _IMGS;
+    let currentGalleryIdx = 0;
+    let activePack = '1 Gerät';
+
+    function preloadImages(images) {
+      images.forEach(function(src) { var i = new Image(); i.src = src; });
+    }
+
+    function buildPackBlocks() {
+      var container = document.getElementById('size-blocks-container');
+      container.innerHTML = '';
+      PACKS.forEach(function(p) {
+        var wrapper = document.createElement('div');
+        wrapper.className = 'size__block-wrapper';
+
+        var div = document.createElement('div');
+        div.className = 'size__block available-size';
+        div.dataset.size = p.name;
+        div.onclick = function() { selectPack(p.name); };
+        div.innerHTML = '<span>' + p.name + '</span>';
+
+
+        wrapper.appendChild(div);
+        container.appendChild(wrapper);
+      });
+    }
+
+    function selectPack(packName) {
+      activePack = packName;
+      var pack = PACKS.find(function(p) { return p.name === packName; });
+      if (!pack) return;
+
+      document.querySelectorAll('.size__block').forEach(function(s) {
+        s.classList.toggle('selected', s.dataset.size === packName);
+      });
+      document.getElementById('selected-size-name').textContent = packName;
+
+      /* Navigate to the hero image for this pack */
+      var idx = PACK_HERO_IDX[packName] || 0;
+      var thumbs = document.querySelectorAll('.thumbnail');
+      if (thumbs[idx]) {
+        thumbs.forEach(function(t, i) { t.classList.toggle('active', i === idx); });
+        currentGalleryIdx = idx;
+        fadeGalleryTo(currentImages[idx]);
+      }
+
+      updatePriceDisplay(pack.price, pack.comparePrice);
+      updateDescriptionForPack(packName);
+    }
+
+    function updatePriceDisplay(price, comparePrice) {
+      var el = document.getElementById('product-price-sale');
+      if (!el) return;
+      el.classList.remove('price-pop');
+      void el.offsetWidth;
+      el.textContent = price + ' €';
+      el.classList.add('price-pop');
+
+      var compareEl = document.getElementById('product-price-compare');
+      var badgeEl = document.getElementById('product-sale-badge');
+      if (compareEl && badgeEl && comparePrice) {
+        compareEl.textContent = comparePrice + ' €';
+        var saleNum = parseFloat(price);
+        var compareNum = parseFloat(comparePrice);
+        var pct = Math.round((1 - saleNum / compareNum) * 100);
+        badgeEl.textContent = '-' + pct + '%';
+      }
+    }
+
+    function updateDescriptionForPack(packName) {
+      /* Description is now static HTML with "Ver más" modal — don't overwrite */
+      var detEl = document.getElementById('acc-details-content');
+      if (detEl) {
+        detEl.innerHTML = '<ul>' + PACK_SPECS.map(function(r) {
+          return '<li><strong>' + r[0] + ':</strong> ' + r[1] + '</li>';
+        }).join('') + '</ul>';
+      }
+    }
+
+    /* Cross-fade the main gallery image to a new src */
+    var _fadeTimer = null;
+    function fadeGalleryTo(src) {
+      var mainImg = document.getElementById('gallery-main-img');
+      if (!mainImg || !src) return;
+      if (mainImg.getAttribute('src') === src) return;
+      if (_fadeTimer) { clearTimeout(_fadeTimer); _fadeTimer = null; }
+      mainImg.style.opacity = '0';
+      _fadeTimer = setTimeout(function() {
+        _fadeTimer = null;
+        var probe = new Image();
+        probe.onload = function() {
+          mainImg.src = src;
+          requestAnimationFrame(function() { mainImg.style.opacity = '1'; });
+        };
+        probe.onerror = function() {
+          mainImg.src = src;
+          requestAnimationFrame(function() { mainImg.style.opacity = '1'; });
+        };
+        probe.src = src;
+      }, 180);
+    }
+
+    function updateGalleryFromImages(images) {
+      currentImages = images;
+      currentGalleryIdx = 0;
+      fadeGalleryTo(images[0]);
+      var strip = document.querySelector('.thumbnail-strip');
+      if (!strip) return;
+      strip.innerHTML = '';
+      images.forEach(function(src, i) {
+        var div = document.createElement('div');
+        div.className = 'thumbnail thumbnail-anim' + (i === 0 ? ' active' : '');
+        div.style.animationDelay = (i * 30) + 'ms';
+        div.onclick = (function(idx, el) { return function() { selectThumb(el, idx); }; })(i, div);
+        var img = document.createElement('img');
+        img.src = src;
+        img.alt = 'View ' + (i + 1);
+        img.style.cssText = 'width:100%;height:100%;object-fit:contain;';
+        div.appendChild(img);
+        strip.appendChild(div);
+      });
+    }
+
+    function initVariants() {
+      buildPackBlocks();
+      updateGalleryFromImages(_IMGS);
+      preloadImages(_IMGS);
+      selectPack('1 Gerät');
+    }
+
+    /* ---- Gallery thumbnails ---- */
+    function selectThumb(el, idx) {
+      document.querySelectorAll('.thumbnail').forEach(t => t.classList.remove('active'));
+      el.classList.add('active');
+      currentGalleryIdx = idx;
+      fadeGalleryTo(currentImages[idx] || currentImages[0] || '');
+    }
+
+    function galleryNext() {
+      const thumbs = document.querySelectorAll('.thumbnail');
+      currentGalleryIdx = (currentGalleryIdx + 1) % thumbs.length;
+      thumbs.forEach((t, i) => t.classList.toggle('active', i === currentGalleryIdx));
+      fadeGalleryTo(currentImages[currentGalleryIdx] || currentImages[0] || '');
+    }
+
+    function galleryPrev() {
+      const thumbs = document.querySelectorAll('.thumbnail');
+      currentGalleryIdx = (currentGalleryIdx - 1 + thumbs.length) % thumbs.length;
+      thumbs.forEach((t, i) => t.classList.toggle('active', i === currentGalleryIdx));
+      fadeGalleryTo(currentImages[currentGalleryIdx] || currentImages[0] || '');
+    }
+
+    function updateMainGallery() {
+      fadeGalleryTo(currentImages[currentGalleryIdx] || currentImages[0] || '');
+    }
+
+    document.addEventListener('DOMContentLoaded', initVariants);
+
+    /* ---- Reviews data ---- */
+  var REVIEWS_DATA = [
+  {
+    "id": 800001,
+    "score": 5,
+    "title": "Unglaubliche Maschine",
+    "content": "The texture is absolutely incredible and it\u2019s so easy to make whatever you fancy. Best purchase I\u2019ve made in years.",
+    "date": "2026-03-16T12:00:00.000Z",
+    "verified": true,
+    "author": "Sarah Mitchell",
+    "photos": []
+  },
+  {
+    "id": 800002,
+    "score": 5,
+    "title": "Toller Kauf",
+    "content": "Love it. I\u2019ve made a couple of ice creams and they\u2019re brilliant. Highly recommend.",
+    "date": "2026-02-25T10:00:00.000Z",
+    "verified": true,
+    "author": "Emma Thompson",
+    "photos": []
+  },
+  {
+    "id": 800004,
+    "score": 5,
+    "title": "Die Beste",
+    "content": "Brillant! Eine hervorragende Investition. Jeder im Haus liebt sie.",
+    "date": "2025-09-25T09:00:00.000Z",
+    "verified": true,
+    "author": "Kate Morrison",
+    "photos": []
+  },
+  {
+    "id": 800005,
+    "score": 5,
+    "title": "Meine Ninja SLUSHi",
+    "content": "We\u2019re a family that loves ice cream and saw it on TikTok \u2014 we were sold. Couldn\u2019t be happier at home, 100% Empfehlung.",
+    "date": "2025-06-25T11:00:00.000Z",
+    "verified": true,
+    "author": "James Whitfield",
+    "photos": []
+  },
+  {
+    "id": 800006,
+    "score": 5,
+    "title": "Fantastischer Kauf",
+    "content": "I\u2019d heard about it from friends who already have one. Was so excited to receive it and get stuck in. An absolute winner!!",
+    "date": "2025-06-25T08:00:00.000Z",
+    "verified": true,
+    "author": "Claire Henderson",
+    "photos": []
+  },
+  {
+    "id": 800007,
+    "score": 5,
+    "title": "Fabelhaft",
+    "content": "This ice cream maker is fantastic \u2014 creamy results in just minutes. I\u2019ve made ice cream and sorbet and both are brilliant. Thrilled with it. Would strongly recommend if you love ice cream.",
+    "date": "2025-03-25T15:00:00.000Z",
+    "verified": true,
+    "author": "Susan Clarke",
+    "photos": []
+  },
+  {
+    "id": 800008,
+    "score": 5,
+    "title": "K\u00f6stliche Aromen",
+    "content": "Rich, creamy ice cream with practically any ingredient. I\u2019ve tried several recipes and they\u2019re all lovely, but I prefer making low-calorie, high-protein versions. Absolutely delicious and so flavourful. On a hot day, a low-calorie protein ice cream is pure bliss.",
+    "date": "2025-03-25T10:00:00.000Z",
+    "verified": true,
+    "author": "Michael Roberts",
+    "photos": []
+  },
+  {
+    "id": 800009,
+    "score": 5,
+    "title": "Das Beste \u00fcberhaupt",
+    "content": "Macht unglaublich leckeren Slush in kurzer Zeit.",
+    "date": "2025-03-25T08:00:00.000Z",
+    "verified": true,
+    "author": "Lucy Patel",
+    "photos": []
+  },
+  {
+    "id": 800010,
+    "score": 5,
+    "title": "100% Empfehlung",
+    "content": "Best purchase we\u2019ve made since getting together as a couple.",
+    "date": "2025-03-25T06:00:00.000Z",
+    "verified": true,
+    "author": "David and Sophie Baker",
+    "photos": []
+  },
+  {
+    "id": 800011,
+    "score": 5,
+    "title": "So much more than an ice cream maker",
+    "content": "I had to get a friend to sort out the shipping initially, but the wait was absolutely worth it. Barely weighs a thing, takes up very little space and looks great. Super easy to use and comes with an incredible selection of recipes. I\u2019ll definitely be buying more Ninja kit \u2014 I\u2019m in love with the quality of this brand.",
+    "date": "2025-03-20T12:00:00.000Z",
+    "verified": true,
+    "author": "Rachel Griffiths",
+    "photos": []
+  },
+  {
+    "id": 800012,
+    "score": 5,
+    "title": "Die Beste ice cream machine",
+    "content": "Simply impressive. I\u2019d wanted one for so long. Does exactly what it promises.",
+    "date": "2025-03-15T10:00:00.000Z",
+    "verified": true,
+    "author": "Thomas Edwards",
+    "photos": []
+  },
+  {
+    "id": 800013,
+    "score": 5,
+    "title": "Best ice cream maker!",
+    "content": "Brilliant results and so easy to use! Absolutely delighted \u2014 as an ice cream lover, it\u2019s the best purchase I\u2019ve made.",
+    "date": "2025-03-10T14:00:00.000Z",
+    "verified": true,
+    "author": "Amy Collins",
+    "photos": []
+  },
+  {
+    "id": 800014,
+    "score": 4,
+    "title": "Really useful for healthy ice cream",
+    "content": "I\u2019ve been delighted to discover this machine for making healthy ice cream as I\u2019m diabetic. I can now enjoy a huge variety of sugar-free ice creams.",
+    "date": "2025-03-05T09:00:00.000Z",
+    "verified": true,
+    "author": "Patricia Hughes",
+    "photos": []
+  },
+  {
+    "id": 900001,
+    "score": 5,
+    "title": "Best ice cream maker I\u2019ve owned",
+    "content": "I\u2019ve had the CREAMi Deluxe for two weeks and I\u2019m absolutely over the moon. I\u2019ve already made vanilla ice cream, mango sorbet and strawberry frozen yogurt. The results are incredible \u2014 the texture comes out beautifully creamy. My kids won\u2019t stop asking for homemade ice cream.",
+    "date": "2026-03-10T14:22:00.000Z",
+    "verified": true,
+    "author": "Laura Williams",
+    "photos": []
+  },
+  {
+    "id": 900002,
+    "score": 5,
+    "title": "Professional-level homemade ice cream",
+    "content": "I didn\u2019t expect this level of quality. The Slush programme gives a perfect, creamy texture with no ice crystals. I\u2019ve made Belgian chocolate ice cream and pistachio gelato. My family is delighted and we\u2019ve completely stopped buying shop-bought ice cream.",
+    "date": "2026-03-05T09:15:00.000Z",
+    "verified": true,
+    "author": "Christopher Evans",
+    "photos": []
+  },
+  {
+    "id": 900003,
+    "score": 4,
+    "title": "Very good but you need to plan ahead",
+    "content": "The only downside is needing to freeze the mixture 24 hours in advance. Once you get into the habit of planning ahead, the results are spectacular. The lemon sorbet came out perfectly and the light ice cream with oat milk was great too.",
+    "date": "2026-02-28T16:40:00.000Z",
+    "verified": true,
+    "author": "Anna Pemberton",
+    "photos": []
+  },
+  {
+    "id": 900004,
+    "score": 5,
+    "title": "10 programmes you\u2019ll actually use",
+    "content": "I thought I\u2019d only use 2 or 3 programmes but I\u2019ve already tried 7 of the 10. The Frozen Juice granitas are perfect for summer, and the Frapp\u00e9 with coffee comes out better than any coffee shop. Highly recommended.",
+    "date": "2026-02-20T11:30:00.000Z",
+    "verified": true,
+    "author": "Mark Harrison",
+    "photos": []
+  },
+  {
+    "id": 900005,
+    "score": 5,
+    "title": "Perfect for the whole family",
+    "content": "We got the 2-pint version and it was the right call. We can make two flavours at once \u2014 one for the kids (strawberry) and one for the grown-ups (coffee). The function to split the pint in two halves is brilliant.",
+    "date": "2026-02-15T08:45:00.000Z",
+    "verified": true,
+    "author": "Patricia Green",
+    "photos": []
+  },
+  {
+    "id": 900007,
+    "score": 5,
+    "title": "Perfect for vegan ice creams",
+    "content": "I\u2019m vegan and was looking for an ice cream maker that works well with plant-based milks. The CREAMi Deluxe with oat milk and coconut cream gives incredible results. The Light Slush programme is brilliant for dairy-free recipes.",
+    "date": "2026-02-05T13:10:00.000Z",
+    "verified": true,
+    "author": "Eleanor Brooks",
+    "photos": []
+  },
+  {
+    "id": 900008,
+    "score": 5,
+    "title": "Perfect gift",
+    "content": "I bought it for my wife for her birthday and it was a massive hit. We\u2019ve been making ice cream almost every day for a month. Blueberry frozen yogurt is our favourite. Easy to use and easy to clean.",
+    "date": "2026-01-30T10:55:00.000Z",
+    "verified": true,
+    "author": "Daniel Fleming",
+    "photos": []
+  },
+  {
+    "id": 900009,
+    "score": 4,
+    "title": "Works brilliantly, noise is fine",
+    "content": "I was initially worried it would be very noisy, but processing only takes 1\u20132 minutes and the noise is perfectly tolerable. The ice creams come out fantastic. I\u2019m only giving 4 stars because the manual could be clearer with the recipes.",
+    "date": "2026-01-25T15:30:00.000Z",
+    "verified": true,
+    "author": "Sophie Richardson",
+    "photos": []
+  },
+  {
+    "id": 900010,
+    "score": 5,
+    "title": "Goodbye supermarket ice cream",
+    "content": "Since getting the CREAMi I haven\u2019t bought ice cream from the supermarket once. I control the ingredients, make combinations you\u2019d never find in a shop, and the kids love choosing their flavours. One of the best purchases I\u2019ve ever made.",
+    "date": "2026-01-20T09:00:00.000Z",
+    "verified": true,
+    "author": "Caroline Bennett",
+    "photos": []
+  },
+  {
+    "id": 900011,
+    "score": 5,
+    "title": "CREAMify technology genuinely works",
+    "content": "I\u2019ve had other ice cream makers and none come close. The CREAMify technology grinds the ice so finely that the texture is genuinely creamy, with no lumps or ice crystals. The Italian gelato came out identical to a proper artisan gelateria.",
+    "date": "2026-01-15T12:20:00.000Z",
+    "verified": true,
+    "author": "George Thornton",
+    "photos": []
+  },
+  {
+    "id": 900013,
+    "score": 5,
+    "title": "Better than going to a gelateria",
+    "content": "My husband and I are huge ice cream fans and used to go to artisan gelaterias all the time. Now we make our own flavours at home and some of them are even better. The Frapp\u00e9 programme is wonderful.",
+    "date": "2026-01-05T11:15:00.000Z",
+    "verified": true,
+    "author": "Isabel Hart",
+    "photos": []
+  },
+  {
+    "id": 900014,
+    "score": 5,
+    "title": "Easy to clean",
+    "content": "I was worried it would be fiddly to clean but the parts go in the dishwasher and everything\u2019s sorted in 5 minutes. The ice creams come out perfectly and the machine is very intuitive. Absolutely recommended.",
+    "date": "2025-12-28T08:30:00.000Z",
+    "verified": true,
+    "author": "Fiona Stewart",
+    "photos": []
+  },
+  {
+    "id": 900015,
+    "score": 4,
+    "title": "Excellent value for money",
+    "content": "I compared several ice cream makers before deciding, and the CREAMi Deluxe offers more programmes and better results than others costing far more. The only slight downside is that extra pints cost around \u00a330, but it\u2019s well worth it.",
+    "date": "2025-12-20T14:50:00.000Z",
+    "verified": true,
+    "author": "Andrew Marsh",
+    "photos": []
+  },
+  {
+    "id": 900016,
+    "score": 5,
+    "title": "The milkshakes are incredible",
+    "content": "It\u2019s not just ice cream \u2014 the milkshakes and frapp\u00e9s are something else. My teenage daughter has become the family barista. We use the Milkshake programme almost every day.",
+    "date": "2025-12-15T16:00:00.000Z",
+    "verified": true,
+    "author": "Christine Douglas",
+    "photos": []
+  },
+  {
+    "id": 900017,
+    "score": 5,
+    "title": "Perfect for summer",
+    "content": "I bought it thinking it would be a summer thing but we use it all year round. In winter we make frozen yogurt and milkshakes. In summer, sorbets and granitas non-stop.",
+    "date": "2025-12-10T10:25:00.000Z",
+    "verified": true,
+    "author": "Frederick Baines",
+    "photos": []
+  },
+  {
+    "id": 900018,
+    "score": 5,
+    "title": "Sugar-free ice cream for diabetics",
+    "content": "My father is diabetic and has always felt sad about not being able to eat ice cream. With the CREAMi I make ice cream with agave syrup using the Light Slush programme. The texture is brilliant and he can enjoy it without any worries.",
+    "date": "2025-12-05T09:40:00.000Z",
+    "verified": true,
+    "author": "Beatrice Conway",
+    "photos": []
+  },
+  {
+    "id": 900020,
+    "score": 5,
+    "title": "Two pints is the ideal setup",
+    "content": "With two pints you always have one freezing while you use the other. It\u2019s a perfect system so you never run out of homemade ice cream. The build quality is excellent.",
+    "date": "2025-11-20T12:00:00.000Z",
+    "verified": true,
+    "author": "Martha Sinclair",
+    "photos": []
+  },
+  {
+    "id": 900021,
+    "score": 5,
+    "title": "My kids adore it",
+    "content": "Since the CREAMi arrived, my children want to make ice cream every weekend. It\u2019s a brilliant family activity: they choose the ingredients, we mix together and process the next day. Their favourite flavours: cookies and cream, and banana with Nutella.",
+    "date": "2025-11-15T09:30:00.000Z",
+    "verified": true,
+    "author": "Sandra Phillips",
+    "photos": []
+  },
+  {
+    "id": 900022,
+    "score": 4,
+    "title": "Great machine, instructions could be better",
+    "content": "The machine works wonderfully but I\u2019d love more recipes included. The ones provided are quite few. I\u2019ve had to look up recipes on YouTube and experiment. The results, however, are very good.",
+    "date": "2025-11-10T14:20:00.000Z",
+    "verified": true,
+    "author": "Albert Morgan",
+    "photos": []
+  },
+  {
+    "id": 900023,
+    "score": 5,
+    "title": "Natural sorbets with no additives",
+    "content": "At last I can make sorbets with real fruit, no colourings or preservatives. Mango with a squeeze of lime is spectacular. And the process is so simple: mix, freeze for 24h, process. Done.",
+    "date": "2025-11-05T11:45:00.000Z",
+    "verified": true,
+    "author": "Lucy Rivers",
+    "photos": []
+  },
+  {
+    "id": 900024,
+    "score": 5,
+    "title": "Recommended without hesitation",
+    "content": "I\u2019ve had it for 3 months and made over 30 different recipes. Ice creams, sorbets, granitas, milkshakes \u2014 everything comes out perfectly. It\u2019s an investment that\u2019s 100% worth it.",
+    "date": "2025-10-30T08:10:00.000Z",
+    "verified": true,
+    "author": "Paul Vincent",
+    "photos": []
+  },
+  {
+    "id": 900025,
+    "score": 5,
+    "title": "Ninja quality as always",
+    "content": "I already had a Ninja air fryer and went for the CREAMi. Same build quality, same reliability. All 10 programmes work brilliantly. Particularly happy with the Frozen Drink programme for making frozen mojitos.",
+    "date": "2025-10-25T15:55:00.000Z",
+    "verified": true,
+    "author": "Alex Bennett",
+    "photos": []
+  }
+];
+  (function(){
+    var _sorted = REVIEWS_DATA.slice().sort(function(a,b){
+      var ap = a.photos.length > 0 ? 1 : 0, bp = b.photos.length > 0 ? 1 : 0;
+      if (bp !== ap) return bp - ap;
+      return new Date(b.date) - new Date(a.date);
+    });
+    var _rendered = 0, BATCH = 6;
+
+    function _esc(s) {
+      return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+    function _stars(n) {
+      var s = ''; for (var i=0;i<5;i++) s += i<n?'★':'☆'; return s;
+    }
+    function _date(iso) {
+      var d = new Date(iso);
+      var mo = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+      return d.getDate()+' '+mo[d.getMonth()]+' '+d.getFullYear();
+    }
+
+    function renderBatch() {
+      var list = document.getElementById('reviews-list');
+      var end = Math.min(_rendered + BATCH, _sorted.length);
+      var frag = document.createDocumentFragment();
+      for (var i = _rendered; i < end; i++) {
+        var r = _sorted[i];
+        var div = document.createElement('div');
+        div.className = 'review-item review-item-anim';
+        div.style.animationDelay = ((i - _rendered) * 45) + 'ms';
+        var photosHtml = '';
+        if (r.photos.length > 0) {
+          photosHtml = '<div class="review-item__photos">';
+          r.photos.forEach(function(url){
+            photosHtml += '<img class="review-photo-thumb" src="'+url+'" alt="Review photo" loading="lazy" onclick="openReviewLightbox(\''+url+'\')">';
+          });
+          photosHtml += '</div>';
+        }
+        var verifiedHtml = r.verified ? '<span class="review-verified">✓ Verified</span>' : '';
+        var initial = r.author.charAt(0).toUpperCase();
+        div.innerHTML =
+          '<div class="review-avatar">'+initial+'</div>'+
+          '<div class="review-item__content">'+
+            '<div class="review-item__header">'+
+              '<span class="review-item__meta">'+_esc(r.author)+' · '+_date(r.date)+verifiedHtml+'</span>'+
+            '</div>'+
+            '<div style="display:flex;align-items:center;gap:12px;margin-bottom:4px;">'+
+              '<span class="review-item__stars">'+_stars(r.score)+'</span>'+
+              '<span class="review-item__title">'+_esc(r.title)+'</span>'+
+            '</div>'+
+            '<p class="review-item__body">'+_esc(r.content).replace(/\n/g,'<br>')+'</p>'+
+            photosHtml+
+          '</div>';
+        frag.appendChild(div);
+      }
+      list.appendChild(frag);
+      _rendered = end;
+      var btn = document.getElementById('reviews-load-more-btn');
+      btn.textContent = 'View all reviews (' + _sorted.length + ')';
+    }
+
+    document.addEventListener('DOMContentLoaded', function(){
+      renderBatch();
+      document.getElementById('reviews-load-more-btn').onclick = function(){ window.openReviewsPopup(); };
+
+      // Build media carousel
+      (function(){
+        var allPhotos = [];
+        REVIEWS_DATA.forEach(function(r){ (r.photos||[]).forEach(function(u){ allPhotos.push(u); }); });
+        var track = document.getElementById('media-carousel-track');
+        var countEl = document.getElementById('media-carousel-count');
+        if (!track || !allPhotos.length) return;
+        countEl.textContent = '(' + allPhotos.length + ' photos)';
+        allPhotos.forEach(function(url){
+          var item = document.createElement('div');
+          item.className = 'reviews-media-carousel__item';
+          item.onclick = function(){ openReviewLightbox(url); };
+          var img = document.createElement('img');
+          img.src = url; img.alt = 'Review photo'; img.loading = 'lazy';
+          item.appendChild(img);
+          track.appendChild(item);
+        });
+        var prev = document.getElementById('media-carousel-prev');
+        var next = document.getElementById('media-carousel-next');
+        var scrollAmt = 340;
+        function updateArrows(){
+          prev.disabled = track.scrollLeft <= 0;
+          next.disabled = track.scrollLeft >= track.scrollWidth - track.clientWidth - 1;
+        }
+        prev.onclick = function(){ track.scrollBy({left:-scrollAmt,behavior:'smooth'}); };
+        next.onclick = function(){ track.scrollBy({left:scrollAmt,behavior:'smooth'}); };
+        track.addEventListener('scroll', updateArrows);
+        updateArrows();
+      })();
+
+      /* ── Reviews popup carousel ── */
+      var _popupIdx = 0;
+      var _popupBuilt = false;
+
+      function _buildPopupCards() {
+        if (_popupBuilt) return;
+        var body = document.getElementById('reviews-popup-body');
+        _sorted.forEach(function(r, i) {
+          var card = document.createElement('div');
+          card.className = 'reviews-popup__card' + (i === 0 ? ' active' : '');
+          card.setAttribute('data-idx', i);
+          var photosHtml = '';
+          if (r.photos && r.photos.length > 0) {
+            photosHtml = '<div class="reviews-popup__card-photos" style="display:none;">';
+            r.photos.forEach(function(url) {
+              photosHtml += '<img src="'+url+'" alt="Review photo" loading="lazy" onclick="openReviewLightbox(\''+url+'\')">';
+            });
+            photosHtml += '</div>';
+          }
+          var verifiedHtml = r.verified ? ' · <span style="color:#2a7d2a">✓ Verified</span>' : '';
+          var popupInitial = r.author.charAt(0).toUpperCase();
+          card.innerHTML =
+            '<div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;"><div class="review-avatar">'+popupInitial+'</div><div><div class="reviews-popup__card-stars">'+_stars(r.score)+'</div>'+
+            '<div class="reviews-popup__card-meta">'+_esc(r.author)+' · '+_date(r.date)+verifiedHtml+'</div></div></div>'+
+            '<div class="reviews-popup__card-title">'+_esc(r.title)+'</div>'+
+            '<div class="reviews-popup__card-body">'+_esc(r.content).replace(/\n/g,'<br>')+'</div>'+
+            photosHtml;
+          body.appendChild(card);
+        });
+        _popupBuilt = true;
+      }
+
+      function _updatePopupCounter() {
+        var txt = (_popupIdx + 1) + ' / ' + _sorted.length;
+        document.getElementById('reviews-popup-counter').textContent = txt;
+        document.getElementById('reviews-popup-nav-counter').textContent = txt;
+        document.getElementById('reviews-popup-prev').disabled = _popupIdx === 0;
+        document.getElementById('reviews-popup-next').disabled = _popupIdx === _sorted.length - 1;
+      }
+
+      window.openReviewsPopup = function() {
+        _buildPopupCards();
+        _popupIdx = 0;
+        var cards = document.querySelectorAll('.reviews-popup__card');
+        cards.forEach(function(c) { c.classList.remove('active'); });
+        if (cards[0]) cards[0].classList.add('active');
+        _updatePopupCounter();
+        document.getElementById('reviews-popup').classList.add('active');
+        document.body.style.overflow = 'hidden';
+        document.addEventListener('keydown', _popupKey);
+      };
+
+      window.closeReviewsPopup = function() {
+        document.getElementById('reviews-popup').classList.remove('active');
+        document.body.style.overflow = '';
+        document.removeEventListener('keydown', _popupKey);
+      };
+
+      window.reviewsPopupNav = function(dir) {
+        var cards = document.querySelectorAll('.reviews-popup__card');
+        var next = _popupIdx + dir;
+        if (next < 0 || next >= cards.length) return;
+        cards[_popupIdx].classList.remove('active');
+        _popupIdx = next;
+        cards[_popupIdx].classList.add('active');
+        _updatePopupCounter();
+      };
+
+      function _popupKey(e) {
+        if (e.key === 'Escape') closeReviewsPopup();
+        if (e.key === 'ArrowLeft') reviewsPopupNav(-1);
+        if (e.key === 'ArrowRight') reviewsPopupNav(1);
+      }
+    });
+  })();
+
+  function openReviewLightbox(url) {
+    var lb = document.getElementById('review-lightbox');
+    var img = document.getElementById('review-lightbox-img');
+    img.src = url;
+    lb.classList.add('active');
+    document.addEventListener('keydown', _lbKeyClose);
+  }
+  function closeReviewLightbox() {
+    document.getElementById('review-lightbox').classList.remove('active');
+    document.removeEventListener('keydown', _lbKeyClose);
+  }
+  function _lbKeyClose(e) { if (e.key === 'Escape') closeReviewLightbox(); }
+
+  </script>
+
+  <!-- Reviews popup carousel -->
+  <div id="reviews-popup" onclick="if(event.target===this)closeReviewsPopup()">
+    <div class="reviews-popup__box">
+      <div class="reviews-popup__header">
+        <span class="reviews-popup__title">All Reviews</span>
+        <span class="reviews-popup__counter" id="reviews-popup-counter"></span>
+        <button class="reviews-popup__close" onclick="closeReviewsPopup()">&#x2715;</button>
+      </div>
+      <div class="reviews-popup__body" id="reviews-popup-body"></div>
+      <div class="reviews-popup__nav">
+        <button class="reviews-popup__arrow" id="reviews-popup-prev" onclick="reviewsPopupNav(-1)">&#8249;</button>
+        <span class="reviews-popup__counter" id="reviews-popup-nav-counter"></span>
+        <button class="reviews-popup__arrow" id="reviews-popup-next" onclick="reviewsPopupNav(1)">&#8250;</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="review-lightbox" onclick="closeReviewLightbox()">
+    <span id="review-lightbox-close">&#x2715;</span>
+    <img id="review-lightbox-img" src="" alt="Customer review photo">
+  </div>
+
+  <!-- ── Cart confirmation popup ── -->
+  <div id="cart-popup-overlay" onclick="handlePopupOverlayClick(event)">
+    <div id="cart-popup">
+      <button id="cart-popup__close" onclick="closeCartPopup()" aria-label="Close">&#x2715;</button>
+      <div id="cart-popup__icon">&#9888;&#xFE0F;</div>
+      <div id="cart-popup__title">Please note</div>
+      <div id="cart-popup__divider"></div>
+      <p id="cart-popup__msg">
+        Free UK delivery within <strong>7&nbsp;&ndash;&nbsp;15&nbsp;working&nbsp;days</strong>.<br>
+        Would you like to proceed to checkout?
+      </p>
+      <button id="cart-popup__cta" onclick="goToCheckout()">
+        Proceed to checkout &nbsp;&#8594;
+      </button>
+      <div id="cart-popup__variant"></div>
+    </div>
+  </div>
+
+  <script>
+    /* ── Cart popup ── */
+
+    // Mapa de URLs por pack — chave = nome do pack
+    var VARIANT_CHECKOUT_URLS = {
+      '1 Gerät': 'https://www.alvorahome.de/cart/59867860828494:1?locale=de&checkout[shipping_address][country_code]=DE',
+      '2 Geräte': 'https://www.alvorahome.de/cart/59867860828494:2?locale=de&checkout[shipping_address][country_code]=DE',
+      '_default': 'https://www.alvorahome.de/cart/59867860828494:1?locale=de&checkout[shipping_address][country_code]=DE'
+    };
+
+    function openCartPopup() {
+      var variantEl = document.getElementById('cart-popup__variant');
+      if (variantEl) {
+        variantEl.textContent = activePack || '';
+      }
+      document.getElementById('cart-popup-overlay').classList.add('open');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeCartPopup() {
+      document.getElementById('cart-popup-overlay').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+
+    function handlePopupOverlayClick(e) {
+      if (e.target === document.getElementById('cart-popup-overlay')) {
+        closeCartPopup();
+      }
+    }
+
+    function goToCheckout() {
+      var url = VARIANT_CHECKOUT_URLS[activePack] || VARIANT_CHECKOUT_URLS['_default'] || '#';
+      // Só repassa parâmetros de atribuição conhecidos
+      var allowed = ['fbclid', 'ttclid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
+      var search = new URLSearchParams(window.location.search);
+      var filtered = new URLSearchParams();
+      allowed.forEach(function(k) {
+        if (search.has(k)) filtered.set(k, search.get(k));
+      });
+      var qs = filtered.toString();
+      if (qs) url += (url.indexOf('?') !== -1 ? '&' : '?') + qs;
+      var a = document.createElement('a'); a.href = url; a.rel = 'noreferrer'; a.click();
+    }
+
+    // Fechar com ESC
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape') closeCartPopup();
+    });
+  </script>
+
+  <script>
+  (function(){
+    var el = document.getElementById('promo-deadline-date');
+    if(!el) return;
+    // Get today's date in Spain's timezone, then add 4 days
+    el.textContent = new Date().toLocaleDateString('de-DE', {timeZone: 'Europe/Berlin', day:'numeric', month:'long', year:'numeric'});
+  })();
+
+  function toggleAccordion(btn) {
+    var item = btn.closest('.zwg-accordion__item');
+    var isOpen = item.classList.contains('open');
+    document.querySelectorAll('.zwg-accordion__item.open').forEach(function(el){ el.classList.remove('open'); });
+    if (!isOpen) item.classList.add('open');
+  }
+  </script>
+
+
+
+  <script>
+/* Scroll reveal via IntersectionObserver — zero getBoundingClientRect on scroll */
+/* Urgency bar: random stock count 5–20 */
+(function() {
+  var units = Math.floor(Math.random() * 16) + 5;
+  document.getElementById('urgency-count').textContent = units;
+  document.getElementById('urgency-fill').style.width = Math.round((units / 20) * 50) + '%';
+})();
+
+document.addEventListener('DOMContentLoaded', function() {
+  var io = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -60px 0px', threshold: 0 });
+  document.querySelectorAll('.sr').forEach(function(el) { io.observe(el); });
+});
+  </script>
+
+  <script>
+  /* ── Bloquear zoom no mobile (pinch + double-tap) ── */
+  document.addEventListener('touchstart', function(e) {
+    if (e.touches.length > 1) e.preventDefault();
+  }, { passive: false });
+
+  var lastTouchEnd = 0;
+  document.addEventListener('touchend', function(e) {
+    var now = Date.now();
+    if (now - lastTouchEnd <= 300) e.preventDefault();
+    lastTouchEnd = now;
+  }, { passive: false });
+
+  document.addEventListener('gesturestart', function(e) {
+    e.preventDefault();
+  }, { passive: false });
+  </script>
+
+  <script>
+  /* ── Sticky color-shift: inject .cs-tint + IntersectionObserver ── */
+  (function() {
+    var ids = ['cocotte', 'performance', 'design', 'editorial'];
+    var io = new IntersectionObserver(function(entries) {
+      entries.forEach(function(e) {
+        var t = e.target.querySelector('.cs-tint');
+        if (t) t.classList.toggle('cs-on', e.isIntersecting);
+      });
+    }, { threshold: 0.15 });
+    ids.forEach(function(id) {
+      var s = document.getElementById(id);
+      if (!s) return;
+      var t = document.createElement('div');
+      t.className = 'cs-tint';
+      t.setAttribute('aria-hidden', 'true');
+      s.insertBefore(t, s.firstChild);
+      io.observe(s);
+    });
+  })();
+  </script>
+
+  <!-- BACK-BUTTON EXIT REDIRECT → shop section -->
+  <script>
+    (function() {
+      var redirected = false;
+      history.pushState({ exitGuard: true }, '', window.location.href);
+
+      window.addEventListener('popstate', function() {
+        if (redirected) return;
+        redirected = true;
+        var shop = document.getElementById('shop');
+        if (shop) {
+          shop.scrollIntoView({ behavior: 'smooth' });
+        }
+        history.pushState({ exitGuard: true }, '', window.location.href);
+      });
+    })();
+  </script>
+
+  <!-- Description full modal -->
+  <div class="desc-modal-overlay" id="desc-modal-overlay" onclick="if(event.target===this){this.classList.remove('open');document.body.style.overflow=''}">
+    <div class="desc-modal">
+      <button class="desc-modal__close" onclick="document.getElementById('desc-modal-overlay').classList.remove('open');document.body.style.overflow=''">&times;</button>
+
+      <h4>Ninja SLUSHi FS301EU</h4>
+      <p>With the Ninja CREAMi Deluxe Multi-Function Slush Maker, you can turn almost anything into ice cream and so much more. Make all your classic CREAMi recipes — ice cream, sorbet, gelato — plus special recipes with mix-in extras. And now you can also make slushies, frappés, frappelattes, frozen yoghurt, and frozen drinks right at home.</p>
+      <p>Take full control of your tastiest recipes thanks to advanced CREAMify technology. Two powerful motors drive the paddle of your Ninja CREAMi Deluxe, so you can chop through ice and frozen ingredients in minutes. With your own ice cream and frozen drinks maker, you can create low-sugar, keto, dairy-free, and vegan versions of all your favourite recipes.</p>
+
+      <h4>4 exciting new functions</h4>
+      <p>Create brilliant new drinkable and spoonable treats with the addition of Frozen Juice, Frozen Drink, Frappé, and Kaltgetränk programmes.</p>
+
+      <h4>50% more capacity</h4>
+      <p>Make even more for the whole family. The new large CREAMi Deluxe pints hold more ice cream than the original Ninja CREAMi. That means with 2 pints of 706 ml and a bit of prep, you could have over a litre of ice cream! You can also create 3 different flavours to suit everyone's tastes or dietary needs in your household.</p>
+
+      <h4>Desserts and drinks, your way</h4>
+      <p>Turn your frozen base into two ready-to-enjoy flavours — one in the top half of the Deluxe pint and another in the bottom half. You can even process just the top half to enjoy ice cream straight away and save the rest for later using the Re-Spin function.</p>
+      <p>Want your ice cream even creamier? Choose your preferred texture with the Re-Spin function, which makes your frozen treat even smoother and creamier after the first round of processing.</p>
+      <p>Creating your own personalised treats is simple. Find your perfect flavour and texture combination using the Mix-In function to add fruit, nuts, sweets, and whatever you fancy. Or unleash your creativity by recreating recipes from your favourite bakeries and coffee shops — like a caramel frappé.</p>
+      <p>CREAMi Deluxe is also perfect for creating treats that suit your lifestyle. From protein shakes to vegan chocolate ice cream, the recipe guide included in the box is packed with inspiration.</p>
+
+      <h4>Easy to use and clean</h4>
+      <p>Make a CREAMi treat in four simple steps: prepare your base, freeze for 24 hours, process, and enjoy! The handy countdown timer shows you how many minutes are left and lights up when your creation is ready. Want an instant treat? Make milkshakes to enjoy straight away without having to freeze the mixture overnight.</p>
+      <p>Need to wash up? You can pop the pints, lids, and blade in the top rack of your dishwasher. Or simply wash them by hand with warm soapy water.</p>
+
+      <h4>Advanced CREAMify technology</h4>
+      <p>The dual-drive motors apply downward pressure and spin the professional blade, which finely chops and transforms frozen particles into delicious treats such as slushies, frozen drinks, frappés, and more.</p>
+
+      <h4>10 programmes in one machine</h4>
+      <p>Genießen all the classic CREAMi settings, plus four additional programmes: Frozen Juice, Frappé, Kaltgetränk, and Frozen Drink.</p>
+      <p><span class="program-name">Slush:</span> create your own thick and creamy ice cream by blending milk or plant-based alternatives with fruit, extracts, or mix-in extras.</p>
+      <p><span class="program-name">Frappé:</span> bring back your favourite holiday memories by making your own gelato at home, with flavours ranging from coffee to lemon.</p>
+      <p><span class="program-name">Frozen Cocktail:</span> quickly and easily turn fresh or tinned fruit into a refreshing fruit sorbet.</p>
+      <p><span class="program-name">Light Slush:</span> give your ice cream a healthier twist by combining low-sugar and dairy-free alternatives with your favourite flavours.</p>
+      <p><span class="program-name">Kaltgetränk:</span> add figs, honey, and other ingredients and enjoy a delicious frozen yoghurt.</p>
+      <p><span class="program-name">Milkshake:</span> make thicker, more indulgent milkshakes using milk, ice cream, or plant-based milk — no overnight freezing required.</p>
+      <p><span class="program-name">Frozen Juice:</span> make slushies using water and your favourite fruit mixes or syrups. Try the refreshing cherry and lime combination.</p>
+      <p><span class="program-name">Frappé:</span> recreate recipes from your favourite coffee shop by making refreshing versions of coffee, tea, and even hot chocolate.</p>
+      <p><span class="program-name">Frozen Drink:</span> make frozen drinks with or without alcohol, combining your favourite fruit juices and drinks.</p>
+      <p><span class="program-name">Leise Kühlung:</span> take your creation to the next level by adding nuts, chocolate, and more to your ice creams, milkshakes, and other treats.</p>
+    </div>
+  </div>
+  <!-- Tracking pixels (deferred to end of body) -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1303617068338229');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1303617068338229&ev=PageView&noscript=1" /></noscript>
+  <script>
+    !function(w,d,t){w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=
+    ["page","track","identify","instances","debug","on","off","once","ready","alias",
+    "group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"];
+    ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};
+    for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);
+    ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)
+    ttq.setAndDefer(e,ttq.methods[n]);return e};ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js";
+    ttq._i=ttq._i||{};ttq._i[e]=[];ttq._i[e]._u=r;ttq._t=ttq._t||{};ttq._t[e]=+new Date;
+    ttq._o=ttq._o||{};ttq._o[e]=n||{};var o=document.createElement("script");
+    o.type="text/javascript";o.async=!0;o.src=r+"?sdkid="+e+"&lib="+t;
+    var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
+    ttq.load('D6OA39BC77U6I6LBF7P0');
+    ttq.page();
+  }(window, document, 'ttq');
+  </script>
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js/v833ccba57c9e4d2798f2e76cebdd09a11778172276447" integrity="sha512-57MDmcccJXYtNnH+ZiBwzC4jb2rvgVCEokYN+L/nLlmO8rfYT/gIpW2A569iJ/3b+0UEasghjuZH/ma3wIs/EQ==" data-cf-beacon='{"version":"2024.11.0","token":"f303173093ff46ff97a3ec7dcdba2978","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
+</div>
+</body>
+</html>
+
