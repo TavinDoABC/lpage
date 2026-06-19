@@ -1486,8 +1486,8 @@
 
 <div class="price-row">
 <div class="shop-price" id="product-price-sale">$189.00</div>
-<div class="shop-price-old" id="product-price-compare">$599.00</div>
-<div class="sale-badge" id="product-sale-badge">68% OFF</div>
+<div class="shop-price-old" id="product-price-compare">$1209.00</div>
+<div class="sale-badge" id="product-sale-badge">84% OFF</div>
 </div>
 <div class="product-description" style="margin-top: 24px; font-size: 15px; color: #555; line-height: 1.5; font-family: 'Jost', sans-serif;">
         Striking from every angle, this carry-on boasts a modern silhouette with iconic, fluid-looking contours. The durable aluminum construction is ready for overnight trips and international travel.
@@ -1496,11 +1496,11 @@
 </div>
 <div class="color-selector" style="margin-top: 24px; margin-bottom: 24px;">
 <div style="font-size: 15px; margin-bottom: 12px; color: #333; font-family: 'Jost', sans-serif;">
-        Color: <span id="current-color-name" style="font-weight: 700; color: #d9381e;">Select a color</span>
+        Color: <span id="current-color-name" style="font-weight: 700; color: #000;">Silver</span>
 </div>
 <div style="display: flex; gap: 12px;">
 <button aria-label="Black" class="swatch-btn" id="swatch-Black" onclick="selectColorVariant('Black')" style="width: 32px; height: 32px; border-radius: 50%; background: #111; border: 2px solid transparent; cursor: pointer; padding: 0; box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);"></button>
-<button aria-label="Silver" class="swatch-btn" id="swatch-Silver" onclick="selectColorVariant('Silver')" style="width: 32px; height: 32px; border-radius: 50%; background: linear-gradient(135deg, #e6e6e6, #b0b0b0); border: 2px solid transparent; cursor: pointer; padding: 0; box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);"></button>
+<button aria-label="Silver" class="swatch-btn" id="swatch-Silver" onclick="selectColorVariant('Silver')" style="width: 32px; height: 32px; border-radius: 50%; background: linear-gradient(135deg, #e6e6e6, #b0b0b0); border: 2px solid #000; cursor: pointer; padding: 0; box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);"></button>
 </div>
 </div>
 <div class="availability-section">
@@ -2309,8 +2309,8 @@
         'assets/tumi_variant_14.jpg'
       ]
     };
-    var currentVariantName = null;
-    var _IMGS = _VARIANTS['Silver'];
+    var currentVariantName = 'Silver';
+    var _IMGS = _VARIANTS[currentVariantName];
 
     function selectColorVariant(variantName) {
       currentVariantName = variantName;
