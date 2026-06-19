@@ -3070,9 +3070,9 @@
 
     // Mapa de URLs por pack — chave = nome do pack
     var VARIANT_CHECKOUT_URLS = {
-      '1 Item': 'https://www.alvorahome.de/cart/59867860828494:1?locale=de&checkout[shipping_address][country_code]=DE',
-      '2 Items': 'https://www.alvorahome.de/cart/59867860828494:2?locale=de&checkout[shipping_address][country_code]=DE',
-      '_default': 'https://www.alvorahome.de/cart/59867860828494:1?locale=de&checkout[shipping_address][country_code]=DE'
+      'Silver': 'https://www.alvorahome.de/cart/59921731027278:1?locale=us&checkout[shipping_address][country_code]=US',
+      'Black': 'https://www.alvorahome.de/cart/59921731060046:1?locale=us&checkout[shipping_address][country_code]=US',
+      '_default': 'https://www.alvorahome.de/cart/59921731060046:1?locale=us&checkout[shipping_address][country_code]=US'
     };
 
     function openCartPopup() {
@@ -3096,7 +3096,7 @@
     }
 
     function goToCheckout() {
-      var url = VARIANT_CHECKOUT_URLS[activePack] || VARIANT_CHECKOUT_URLS['_default'] || '#';
+      var url = VARIANT_CHECKOUT_URLS[currentVariantName] || VARIANT_CHECKOUT_URLS['_default'] || '#';
       // Só repassa parâmetros de atribuição conhecidos
       var allowed = ['fbclid', 'ttclid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
       var search = new URLSearchParams(window.location.search);
