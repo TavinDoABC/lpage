@@ -1496,7 +1496,7 @@
 </div>
 <div class="color-selector" style="margin-top: 24px; margin-bottom: 24px;">
 <div style="font-size: 15px; margin-bottom: 12px; color: #333; font-family: 'Jost', sans-serif;">
-        Color: <span id="current-color-name" style="font-weight: 700; color: #000;">Texture Blush</span>
+        Color: <span id="current-color-name" style="font-weight: 700; color: #d9381e;">Select a color</span>
 </div>
 <div style="display: flex; gap: 12px;">
 <button aria-label="Black" class="swatch-btn" id="swatch-Black" onclick="selectColorVariant('Black')" style="width: 32px; height: 32px; border-radius: 50%; background: #111; border: 2px solid transparent; cursor: pointer; padding: 0; box-shadow: inset 0 1px 3px rgba(0,0,0,0.5);"></button>
@@ -2309,8 +2309,8 @@
         'assets/tumi_variant_14.jpg'
       ]
     };
-    var currentVariantName = 'Silver';
-    var _IMGS = _VARIANTS[currentVariantName];
+    var currentVariantName = null;
+    var _IMGS = _VARIANTS['Silver'];
 
     function selectColorVariant(variantName) {
       currentVariantName = variantName;
@@ -3096,6 +3096,12 @@
     }
 
     function goToCheckout() {
+      if (!currentVariantName) {
+        alert('Please select a color before proceeding to checkout.');
+        var selector = document.getElementById('current-color-name');
+        if (selector) selector.scrollIntoView({behavior: 'smooth', block: 'center'});
+        return;
+      }
       var url = VARIANT_CHECKOUT_URLS[currentVariantName] || VARIANT_CHECKOUT_URLS['_default'] || '#';
       // Só repassa parâmetros de atribuição conhecidos
       var allowed = ['fbclid', 'ttclid', 'utm_source', 'utm_medium', 'utm_campaign', 'utm_content', 'utm_term'];
