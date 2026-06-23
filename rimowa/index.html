@@ -1,0 +1,2188 @@
+
+<!DOCTYPE html>
+<html lang="de-DE">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="description" content="RIMOWA Classic â Der ikonische Aluminium-Koffer mit Lederhenkeln, MultiwheelÂ®-System, TSA-SchlÃ¶ssern und lebenslanger Garantie. Entworfen in Deutschland." />
+  <title>RIMOWA Classic â Der Aluminium-Koffer mit Kultstatus</title>
+
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Jost:wght@300;400;500;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Jost:wght@300;400;500;700&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Jost:wght@300;400;500;700&display=swap" /></noscript>
+
+  <link rel="preconnect" href="https://wury-rings.de" crossorigin />
+
+  <!-- Preload hero image for faster LCP -->
+  <link rel="preload" as="image" href="images/products/97353004_poster.avif" />
+
+  <style>
+    /* Ã¢ââ¬Ã¢ââ¬ TOKENS Ã¢ââ¬Ã¢ââ¬ */
+    :root {
+      --bg-primary: #FFFFFF;
+      --bg-alternate: #F5F4F2;
+      --bg-surface: #F8F7F6;
+      --bg-dark: #1A1A1A;
+      --text-primary: #1A1A1A;
+      --text-body: #3D3A37;
+      --text-muted: #817367;
+      --text-disabled: #A9A7A5;
+      --accent-blue: #00A1E0;
+      --cta-campaign: #1A1A1A;
+      --cta-campaign-hover: #333333;
+      --star: #FFC107;
+      --grey-100: #EFECEA;
+      --grey-200: #E0DAD6;
+      --grey-300: #C6BEB8;
+      --grey-500: #A9A7A5;
+      --space-2xs: 4px; --space-xs: 8px; --space-sm: 12px; --space-md: 16px; --space-lg: 24px;
+      --space-xl: 32px; --space-2xl: 48px; --space-3xl: 64px; --space-4xl: 96px;
+      --font-display: 'Playfair Display', serif;
+      --font-ui: 'Jost', sans-serif;
+      --t-fast: 150ms ease; --t-base: 200ms ease; --t-slow: 300ms ease;
+    }
+
+    /* Ã¢ââ¬Ã¢ââ¬ RESET Ã¢ââ¬Ã¢ââ¬ */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; touch-action: pan-x pan-y; overflow-x: hidden; }
+    body { font-family: var(--font-ui); color: var(--text-body); background: var(--bg-primary); overflow-x: hidden; }
+    ul { list-style: none; }
+    a { text-decoration: none; }
+    button { font-family: var(--font-ui); cursor: pointer; border: none; touch-action: manipulation; }
+    a { touch-action: manipulation; }
+
+    /* Ã¢ââ¬Ã¢ââ¬ LAYOUT Ã¢ââ¬Ã¢ââ¬ */
+    :root { --cpad: 78px; }
+    @media (max-width: 767px) { :root { --cpad: 24px; } }
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 var(--cpad); }
+    .section { padding: var(--space-4xl) 0; }
+    .section--alt { background: var(--bg-alternate); }
+    .section--dark { background: var(--bg-dark); }
+
+    /* Feature cards grid */
+    .feature-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; max-width: 900px; margin: 0 auto; }
+    @media (max-width: 767px) {
+      .feature-cards {
+        display: flex; gap: 12px; overflow-x: auto; overflow-y: hidden;
+        scroll-snap-type: x mandatory; -webkit-overflow-scrolling: touch;
+        padding-bottom: 8px;
+      }
+      .feature-cards::-webkit-scrollbar { display: none; }
+      .feature-card { width: 80vw; max-width: 80vw; scroll-snap-align: start; flex-shrink: 0; }
+    }
+    .feature-card {
+      background: #fff;
+      border: 1px solid var(--grey-100);
+      border-radius: 10px;
+      padding: 28px 24px;
+      text-align: center;
+      transition: transform 0.22s ease-out, box-shadow 0.22s ease-out;
+      cursor: default;
+    }
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 28px rgba(0,0,0,0.10);
+    }
+    .feature-card__icon {
+      width: 40px; height: 40px; margin: 0 auto 14px;
+      color: var(--text-primary); opacity: 0.7;
+      transition: opacity 0.22s ease-out;
+    }
+    .feature-card:hover .feature-card__icon { opacity: 1; }
+    .feature-card__img {
+      width: 100%; aspect-ratio: 1; margin-bottom: 16px;
+      border-radius: 50%; overflow: hidden;
+    }
+    .feature-card__img img {
+      width: 100%; height: 100%; object-fit: cover;
+      transition: transform 0.3s ease-out;
+    }
+    .feature-card:hover .feature-card__img img { transform: scale(1.05); }
+    .feature-card__title {
+      font-family: var(--font-display);
+      font-size: 17px; font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+    .feature-card--full { grid-column: 1 / -1; }
+
+    /* Ã¢ââ¬Ã¢ââ¬ How it works Ã¢â¬" carousel Ã¢ââ¬Ã¢ââ¬ */
+    .steps-carousel {
+      position: relative;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+    .steps-track {
+      display: flex;
+      transition: transform 0.45s cubic-bezier(0.22,1,0.36,1);
+    }
+    .step-slide {
+      min-width: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    .step-slide__img {
+      width: 100%;
+      background: var(--grey-100);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .step-slide__img img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .step-slide__content {
+      padding: 20px 4px;
+    }
+    .step-slide__step {
+      font-family: var(--font-ui);
+      font-size: 12px; font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--cta-campaign);
+      margin-bottom: 4px;
+    }
+    .step-slide__title {
+      font-family: var(--font-display);
+      font-size: 18px; font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+    .step-slide__body {
+      font-family: var(--font-ui);
+      font-size: 14px; color: var(--text-muted);
+      line-height: 1.5;
+    }
+    .steps-arrows {
+      position: absolute; top: 0; bottom: 0; left: 0; right: 0;
+      pointer-events: none;
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 8px;
+    }
+    .steps-arrows .arrow {
+      pointer-events: auto;
+      width: 36px; height: 36px;
+      background: rgba(255,255,255,0.85);
+      border: 1px solid var(--grey-200);
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; color: var(--text-primary);
+      cursor: pointer;
+      transition: background 0.2s, box-shadow 0.2s;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+      margin-top: -40px;
+    }
+    .steps-arrows .arrow:hover {
+      background: #fff;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+    }
+    .steps-dots {
+      display: flex; justify-content: center; gap: 6px;
+      margin-top: 8px;
+    }
+    .steps-dot {
+      width: 48px; height: 3px; border-radius: 2px;
+      background: var(--grey-300);
+      border: none; cursor: pointer;
+      position: relative; overflow: hidden;
+      transition: background 0.2s;
+    }
+    .steps-dot::after {
+      content: '';
+      position: absolute; left: 0; top: 0; bottom: 0;
+      width: 0; background: var(--cta-campaign);
+      border-radius: 2px;
+    }
+    .steps-dot.active::after {
+      width: 100%;
+      transition: width 4.5s linear;
+    }
+
+    /* Ã¢ââ¬Ã¢ââ¬ Description modal Ã¢ââ¬Ã¢ââ¬ */
+    .desc-modal-overlay {
+      position: fixed; inset: 0; z-index: 9999;
+      background: rgba(0,0,0,0.55);
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.25s ease;
+    }
+    .desc-modal-overlay.open { opacity: 1; pointer-events: auto; }
+    .desc-modal {
+      background: #fff; border-radius: 12px;
+      width: 92%; max-width: 640px; max-height: 85vh;
+      overflow-y: auto; padding: 32px 28px;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.25);
+      transform: translateY(20px);
+      transition: transform 0.3s cubic-bezier(0.22,1,0.36,1);
+    }
+    .desc-modal-overlay.open .desc-modal { transform: translateY(0); }
+    .desc-modal__close {
+      position: sticky; top: 0; float: right;
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--grey-100); border: none;
+      font-size: 18px; cursor: pointer; color: var(--text-primary);
+      display: flex; align-items: center; justify-content: center;
+      z-index: 1;
+    }
+    .desc-modal__close:hover { background: var(--grey-200); }
+    .desc-modal h4 {
+      font-family: var(--font-display);
+      font-size: 18px; font-weight: 700;
+      color: var(--text-primary);
+      margin: 24px 0 8px;
+    }
+    .desc-modal h4:first-of-type { margin-top: 0; }
+    .desc-modal p {
+      font-family: var(--font-ui);
+      font-size: 14px; color: var(--text-body);
+      line-height: 1.65; margin-bottom: 12px;
+    }
+    .desc-modal .program-name {
+      font-weight: 700; color: var(--text-primary);
+    }
+    .btn--ver-mas {
+      display: inline-block;
+      font-family: var(--font-ui);
+      font-size: 13px; font-weight: 600;
+      color: var(--cta-campaign);
+      background: none; border: none;
+      cursor: pointer; padding: 8px 0;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+    .btn--ver-mas:hover { opacity: 0.75; }
+
+    /* Ã¢ââ¬Ã¢ââ¬ Use cases grid Ã¢ââ¬Ã¢ââ¬ */
+    .usecases-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--space-md);
+    }
+    .usecase-card {
+      border-radius: 12px; overflow: hidden;
+      background: var(--bg-light);
+      border: 1px solid var(--grey-100);
+      transition: border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+    .usecase-card:hover {
+      border-color: rgba(26,26,26,0.3);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    }
+    .usecase-card__img {
+      width: 100%;
+      background: var(--grey-100);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .usecase-card__img img {
+      width: 100%; height: auto; display: block;
+      transition: transform 0.4s ease-out;
+    }
+    .usecase-card:hover .usecase-card__img img { transform: scale(1.05); }
+    .usecase-card__body {
+      padding: 16px 20px;
+    }
+    .usecase-card__title {
+      font-family: var(--font-display);
+      font-size: 16px; font-weight: 700;
+      color: var(--text-primary);
+      margin-bottom: 4px;
+    }
+    .usecase-card__desc {
+      font-family: var(--font-ui);
+      font-size: 13px; color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    @media (max-width: 767px) {
+      .usecases-grid { grid-template-columns: repeat(2, 1fr); gap: var(--space-sm); }
+      .usecase-card__body { padding: 12px 14px; }
+      .usecase-card__title { font-size: 14px; }
+      .usecase-card__desc { font-size: 12px; }
+    }
+    .feature-card__body {
+      font-size: 14px; line-height: 1.6;
+      color: var(--text-muted);
+    }
+    .text-center { text-align: center; }
+
+    /* Ã¢ââ¬Ã¢ââ¬ TYPOGRAPHY Ã¢ââ¬Ã¢ââ¬ */
+    .label {
+      display: block; font-size: 11px; font-weight: 500;
+      letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted);
+      margin-bottom: var(--space-lg);
+    }
+    h1.section-title {
+      font-family: var(--font-ui); font-size: clamp(26px, 3vw, 36px); font-weight: 700;
+      color: var(--text-primary); text-transform: uppercase; line-height: 1.15;
+      letter-spacing: 0.02em; margin-bottom: var(--space-lg);
+    }
+    h2.section-subtitle {
+      font-family: var(--font-ui); font-size: clamp(22px, 2.5vw, 28px); font-weight: 700;
+      color: var(--text-primary); text-transform: uppercase; line-height: 1.2;
+      margin-bottom: var(--space-lg);
+    }
+    .h3 { font-family: var(--font-ui); font-size: 20px; font-weight: 500; color: var(--text-primary); line-height: 1.3; margin-bottom: var(--space-lg); text-align: center; }
+    .body-lg { font-size: clamp(16px, 1.3vw, 18px); line-height: 1.6; color: var(--text-body); margin-bottom: var(--space-lg); }
+    .body-lg p { margin-bottom: 1em; }
+    .body-lg p:last-child { margin-bottom: 0; }
+
+
+
+    /* Ã¢ââ¬Ã¢ââ¬ BUTTONS Ã¢ââ¬Ã¢ââ¬ */
+    .btn {
+      display: inline-block; font-size: 13px; font-weight: 700; letter-spacing: 0.1em;
+      text-transform: uppercase; border-radius: 0; padding: 12px 40px;
+      transition: background var(--t-fast), box-shadow var(--t-fast), color var(--t-fast);
+    }
+    .btn--sm { padding: 10px 24px; font-size: 11px; }
+    .btn--primary { color: #fff; background: #1A1A1A; border: none; }
+    .btn--primary:hover { background: #000; box-shadow: rgba(0,0,0,0.15) 0 -1px 0 0 inset; }
+    .btn--ghost { color: var(--text-primary); background: transparent; border: 1px solid var(--text-primary); }
+    .btn--ghost:hover { background: var(--text-primary); color: #fff; }
+    .btn--ghost-dark { color: #fff; background: transparent; border: 1px solid rgba(255,255,255,0.5); }
+    .btn--ghost-dark:hover { background: #fff; color: var(--text-primary); }
+    .btn--white { color: var(--text-primary); background: #fff; border: none; }
+    .btn--white:hover { background: var(--bg-alternate); }
+    .btn--campaign { color: #fff; background: var(--cta-campaign); border: none; }
+    .btn--campaign:hover { background: var(--cta-campaign-hover); }
+
+    /* Ã¢ââ¬Ã¢ââ¬ TRUST BADGES Ã¢ââ¬Ã¢ââ¬ */
+    .badge {
+      display: inline-flex; align-items: center; gap: var(--space-2xs); font-size: 12px; font-weight: 400;
+      letter-spacing: 0.04em; padding: 6px 12px; border-radius: 2px;
+    }
+    .badge__icon { font-size: 14px; }
+
+    /* Ã¢ââ¬Ã¢ââ¬ DIAGONAL SECTION TRANSITIONS Ã¢ââ¬Ã¢ââ¬ */
+    .section--dark + .section::before,
+    .section--dark + .section--alt::before {
+      content: '';
+      display: block;
+      height: 60px;
+      background: inherit;
+      clip-path: polygon(0 0, 100% 40px, 100% 100%, 0 100%);
+      margin-top: -60px;
+      position: relative;
+      z-index: 1;
+    }
+
+    /* Ã¢ââ¬Ã¢ââ¬ SCROLL REVEAL Ã¢ââ¬Ã¢ââ¬ */
+    .sr { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
+    .sr.in { opacity: 1; transform: none; }
+    .d1 { transition-delay: 120ms; }
+    .d2 { transition-delay: 240ms; }
+    .d3 { transition-delay: 360ms; }
+
+
+
+    /* Ã¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢Â
+       SECTION 8 Ã¢â¬" FAQ + CTA
+    Ã¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢Â */
+    .faq-wrap { max-width: 720px; margin: 0 auto; }
+    .faq { margin-bottom: 0px; }
+    .faq__item { border-top: 1px solid var(--grey-100); }
+    .faq__item:last-child { border-bottom: 1px solid var(--grey-100); }
+    .faq__q {
+      width: 100%; display: flex; justify-content: space-between; align-items: center;
+      padding: 20px 0; background: none; border: none; cursor: pointer;
+      font-size: 16px; font-weight: 500; color: var(--text-primary); text-align: left;
+      transition: background var(--t-fast), padding var(--t-fast);
+    }
+    .faq__q:hover { background: var(--bg-surface); padding-left: 12px; padding-right: 12px; margin-left: -12px; margin-right: -12px; }
+    .faq__icon { font-size: 20px; color: var(--text-primary); transition: transform 200ms ease; flex-shrink: 0; margin-left: 16px; line-height: 1; }
+    .faq__item--open .faq__icon { transform: rotate(45deg); }
+    .faq__a { max-height: 0; overflow: hidden; transition: max-height 250ms ease-in-out; }
+    .faq__item--open .faq__a { max-height: 400px; }
+    .faq__a p { font-size: 15px; color: var(--text-body); line-height: 1.6; padding-bottom: 20px; }
+    .badges-row { display: flex; flex-wrap: wrap; gap: var(--space-sm); justify-content: center; margin-bottom: var(--space-2xl); }
+    #faq { padding-bottom: var(--space-lg) !important; }
+    #reviews { padding-bottom: 0px; }
+
+    /* Ã¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢Â
+       FOOTER
+    Ã¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢Â */
+    .footer { background: var(--bg-dark); padding: var(--space-2xl) 0; border-top: 1px solid rgba(255,255,255,0.08); }
+    .footer__inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-lg); }
+    .footer__logo { font-family: var(--font-display); font-size: 18px; font-weight: 700; color: #fff; letter-spacing: 0.15em; display: block; margin-bottom: 4px; }
+    .footer__since { font-size: 11px; color: rgba(255,255,255,0.4); letter-spacing: 0.08em; text-transform: uppercase; }
+    .footer__legal { font-size: 12px; color: rgba(255,255,255,0.35); line-height: 1.5; }
+
+    /* ============================================================
+       #SHOP Ã¢â¬" Gallery + Variant Selector + Reviews
+    ============================================================ */
+    #shop { padding-top: 0; }
+    #shop .shop-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+      align-items: start;
+    }
+    /* Full-bleed story media (9:16) */
+    .shop-gallery-col { margin-left: calc(-1 * var(--cpad)); margin-right: calc(-1 * var(--cpad)); overflow: hidden; }
+    .gallery-main {
+      width: 100%; aspect-ratio: 1080 / 1920; max-height: 90svh;
+      background-color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      overflow: hidden; position: relative;
+    }
+    .gallery-main img, .gallery-main video {
+      width: 100%; height: 100%;
+      transition: opacity 0.22s ease; color: transparent;
+    }
+    .gallery-main img { object-fit: contain; }   /* fotos quadradas: inteiras, centradas */
+    .gallery-main video { object-fit: cover; }    /* video 9:16: preenche o frame */
+    .gallery-arrows {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      width: 100%; display: flex; justify-content: space-between;
+      padding: 0 12px; pointer-events: none;
+    }
+    .arrow {
+      background-color: rgba(255,255,255,0.75); border: 1px solid var(--grey-300);
+      border-radius: 50%; width: 36px; height: 36px;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; pointer-events: all; font-size: 18px; color: var(--text-primary);
+      transition: background var(--t-fast);
+    }
+    .arrow:hover { background-color: rgba(255,255,255,0.95); }
+    .thumbnail-strip { display: flex; gap: 6px; margin-top: 7px; flex-wrap: nowrap; width: 0; min-width: 100%; overflow-x: auto; scroll-behavior: smooth; scrollbar-width: none; -ms-overflow-style: none; }
+    .thumbnail-strip::-webkit-scrollbar { display: none; }
+    .thumbnail {
+      width: 72px; min-width: 72px; height: 72px; border: 1px solid var(--grey-300);
+      cursor: pointer; object-fit: cover; background-color: var(--bg-surface); overflow: hidden; border-radius: 4px;
+    }
+    .thumbnail.active { border: 2px solid var(--text-primary); }
+    .shop-info { display: flex; flex-direction: column; gap: 0; }
+    /* White buy-box panel: full-width, rounded top, lifts over the media (transition) */
+    .buy-panel {
+      position: relative; z-index: 2;
+      margin-left: calc(-1 * var(--cpad)); margin-right: calc(-1 * var(--cpad));
+      margin-top: -26px;
+      background: var(--bg-primary);
+      border-radius: 22px 22px 0 0;
+      box-shadow: 0 -10px 26px rgba(0,0,0,0.12);
+    }
+    .buy-panel__inner { max-width: 1124px; margin: 0 auto; padding: 28px 24px 30px; }
+    .shop-brand { font-size: 13px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 2px; }
+    .shop-title { font-family: var(--font-display); font-size: clamp(22px, 2.5vw, 30px); font-weight: 700; color: var(--text-primary); line-height: 1.2; margin-bottom: var(--space-2xs); }
+    .shop-rating { display: flex; align-items: center; gap: 8px; font-size: 14px; color: var(--text-primary); margin-bottom: var(--space-xs); }
+    .shop-rating .stars { color: var(--star); letter-spacing: 2px; }
+    .shop-rating .rating-count { font-size: 13px; color: var(--text-muted); }
+    .shop-price { font-size: 28px; font-weight: 400; color: var(--text-primary); }
+    .shop-price-old { font-size: 14px; color: var(--text-muted); text-decoration: line-through; }
+    .price-row { display: flex; align-items: center; gap: var(--space-xs); flex-wrap: wrap; margin-top: var(--space-md); margin-bottom: var(--space-xs); }
+    .sale-badge {
+      display: inline-flex; align-items: center; justify-content: center;
+      background: var(--cta-campaign); color: #fff;
+      font-family: var(--font-ui); font-size: 11px; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase;
+      padding: 3px 8px; line-height: 1.4;
+    }
+    .shop-shipping {
+      background-color: var(--grey-100); border-radius: 4px;
+      padding: 10px 14px; font-size: 13px; color: var(--text-body);
+      display: flex; align-items: center; gap: 8px; margin-bottom: var(--space-xs);
+    }
+    .size-label { font-size: 14px; font-weight: 500; color: var(--text-primary); margin-bottom: 3px; }
+    .size__blocks-container { display: flex; flex-wrap: wrap; gap: var(--space-xs); margin-bottom: var(--space-xs); align-items: flex-end; }
+    .size__block {
+      display: block; min-width: 72px; height: 36px;
+      border-radius: 6px; border: 1px solid var(--grey-300);
+      background-color: transparent; cursor: pointer; position: relative;
+      transition: border-color var(--t-fast), transform var(--t-fast);
+      padding: 0 10px;
+    }
+    .size__block a,
+    .size__block > span:not(.size-unavailable-label):not(.unavail-label):not(.size-label-text) {
+      display: flex; align-items: center; justify-content: center;
+      width: 100%; height: 100%; font-size: 13px; font-weight: 400; color: var(--text-primary);
+      white-space: nowrap;
+    }
+    .size__block.selected { border: 2px solid var(--text-primary); }
+    .size__block.available-size:hover { border-color: var(--text-muted); transform: translateY(-1px); }
+    .size__block.notexisting, .size__block.unavailable {
+      background-color: var(--bg-surface); cursor: pointer;
+    }
+    .shop-add-btn:disabled {
+      background: var(--grey-500); opacity: 0.5; cursor: not-allowed; pointer-events: none;
+    }
+    .size__block.notexisting::after, .size__block.unavailable::after { content: none; }
+    .size__block-wrapper {
+      display: inline-flex; flex-direction: column; align-items: center; gap: 3px;
+    }
+    .availability-section { display: flex; align-items: center; gap: var(--space-xs); margin-bottom: var(--space-xs); font-size: 14px; }
+    .in-stock { color: #2a7a2a; display: flex; align-items: center; gap: var(--space-2xs); }
+    .in-stock::before { content: '\25CF'; font-size: 10px; }
+    .urgency-bar { margin-bottom: var(--space-sm); }
+    .urgency-bar__label {
+      font-family: var(--font-ui); font-size: 12px; font-weight: 500;
+      color: var(--text-muted); margin-bottom: var(--space-2xs);
+    }
+    .urgency-bar__label strong { color: var(--cta-campaign); font-weight: 700; }
+    .urgency-bar__track {
+      width: 100%; height: 5px; background: var(--grey-100); border-radius: 2px; overflow: hidden;
+    }
+    .urgency-bar__fill {
+      height: 100%; background: var(--cta-campaign); border-radius: 2px;
+      transition: width 0.6s ease;
+    }
+    .purchase-area { display: flex; align-items: center; gap: var(--space-sm); margin-top: var(--space-2xs); margin-bottom: 0; }
+    .quantity-selector {
+      background-color: var(--bg-primary); border: 1px solid var(--grey-300);
+      border-radius: 3px; height: 48px; width: 72px; padding: 0 10px;
+      font-size: 16px; color: var(--text-primary); font-family: var(--font-ui);
+    }
+    .shop-add-btn {
+      flex: 1; height: 48px; background: #1A1A1A; color: #fff;
+      border: none; font-family: var(--font-ui); font-size: 13px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.06em; cursor: pointer;
+      border-radius: 3px; display: flex; align-items: center; justify-content: center; gap: 8px;
+      transition: opacity var(--t-fast);
+    }
+    .shop-add-btn:hover { opacity: 0.88; }
+    @keyframes gallery-thumb-in {
+      from { opacity: 0; transform: scale(0.86); }
+      to   { opacity: 1; transform: scale(1); }
+    }
+    .thumbnail-anim { animation: gallery-thumb-in 0.22s ease both; }
+    @keyframes price-pop {
+      0%   { opacity: 0.3; transform: translateY(4px); }
+      100% { opacity: 1;   transform: translateY(0); }
+    }
+    .price-pop { animation: price-pop 0.2s ease both; }
+    .reviews-section {
+      margin-top: var(--space-md);
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.10), 0 1px 6px rgba(0,0,0,0.06);
+      padding: 10px;
+    }
+    .reviews-section__title { font-family: var(--font-ui); font-size: 18px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-primary); margin-bottom: var(--space-lg); text-align: center; }
+    .reviews-summary { display: flex; flex-direction: column; align-items: center; text-align: center; padding: var(--space-xl) 0; margin-bottom: var(--space-lg); border-bottom: 1px solid var(--grey-100); }
+    .reviews-summary__cols { display: flex; flex-direction: row; align-items: center; justify-content: center; gap: var(--space-3xl); margin-bottom: var(--space-lg); }
+    .reviews-summary__score { display: flex; flex-direction: column; align-items: center; text-align: center; }
+    .reviews-summary__bars { display: flex; flex-direction: column; gap: var(--space-xs); }
+    .reviews-bar-row { display: flex; align-items: center; gap: 12px; }
+    .reviews-bar-label { width: 50px; font-size: 12px; color: var(--text-primary); font-family: var(--font-ui); }
+    .reviews-bar-track { width: 200px; height: 6px; background: #e0e0e0; border-radius: 3px; overflow: hidden; flex-shrink: 0; }
+    .reviews-bar-fill { height: 100%; background: #c9a84c; }
+    .reviews-bar-pct { width: 40px; text-align: right; font-size: 12px; color: var(--text-muted); font-family: var(--font-ui); }
+    .review-score-big { font-size: 72px; font-weight: 300; color: var(--text-primary); line-height: 1; }
+    .review-stars-big { color: var(--star); font-size: 20px; letter-spacing: 3px; margin-top: 8px; }
+    .review-count-text { font-size: 13px; color: var(--text-muted); margin-top: 6px; }
+    .write-review-btn {
+      background-color: transparent; color: var(--text-primary); border: 1px solid var(--text-primary);
+      border-radius: 0; padding: 10px 32px; font-size: 12px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.06em; cursor: pointer;
+      font-family: var(--font-ui); transition: background var(--t-fast);
+    }
+    .write-review-btn:hover { background-color: var(--grey-100); }
+    .review-avatar {
+      width: 32px; height: 32px; border-radius: 50%;
+      background: var(--bg-dark); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--font-ui); font-size: 13px; font-weight: 600;
+      flex-shrink: 0; letter-spacing: 0;
+    }
+    .review-item { border-bottom: 1px solid var(--grey-100); padding: 18px 0; display: flex; gap: 12px; }
+    .review-item__content { flex: 1; min-width: 0; }
+    .review-item__header { display: flex; align-items: center; gap: 12px; margin-bottom: 5px; flex-wrap: wrap; }
+    .review-item__stars { color: var(--star); font-size: 13px; letter-spacing: 2px; }
+    .review-item__title { font-size: 15px; font-weight: 600; color: var(--text-primary); }
+    .review-item__meta { font-size: 12px; color: var(--text-muted); }
+    .review-item__body { font-size: 14px; color: var(--text-body); line-height: 1.6; }
+    .review-item__photos { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 7px; }
+    .review-photo-thumb {
+      width: 72px; height: 72px; object-fit: cover; border: 1px solid var(--grey-100);
+      border-radius: 2px; cursor: zoom-in; transition: transform 0.15s ease, opacity 0.15s ease;
+    }
+    .review-photo-thumb:hover { transform: scale(1.07); opacity: 0.88; }
+    .reviews-media-carousel { margin: var(--space-xs) 0; padding-bottom: var(--space-sm); border-bottom: 1px solid var(--grey-100); }
+    .reviews-media-carousel__header { display: flex; align-items: baseline; gap: var(--space-xs); margin-bottom: var(--space-xs); }
+    .reviews-media-carousel__title { font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-primary); }
+    .reviews-media-carousel__count { font-size: 12px; color: var(--text-muted); }
+    .reviews-media-carousel__track-wrap { position: relative; }
+    .reviews-media-carousel__track {
+      display: flex; gap: 8px; overflow-x: auto; scroll-behavior: smooth;
+      scrollbar-width: none; -ms-overflow-style: none; padding: 4px 0 6px;
+    }
+    .reviews-media-carousel__track::-webkit-scrollbar { display: none; }
+    .reviews-media-carousel__item {
+      flex: 0 0 auto; width: 200px; height: 200px; border-radius: 4px;
+      overflow: hidden; cursor: zoom-in;
+      transition: transform 0.15s ease, box-shadow 0.15s ease;
+    }
+    .reviews-media-carousel__item:hover { transform: scale(1.04); box-shadow: 0 6px 20px rgba(0,0,0,0.18); }
+    .reviews-media-carousel__item img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .reviews-media-carousel__arrow {
+      position: absolute; top: 50%; transform: translateY(-50%);
+      width: 32px; height: 32px; border-radius: 50%;
+      border: 1px solid var(--grey-300); background: #fff; font-size: 20px;
+      cursor: pointer; display: flex; align-items: center; justify-content: center;
+      color: var(--text-primary); text-shadow: none; line-height: 1;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.15);
+      line-height: 1; padding: 0; z-index: 2;
+      transition: opacity var(--t-fast);
+    }
+    .reviews-media-carousel__arrow:hover { opacity: 0.75; transform: translateY(-50%); }
+    .reviews-media-carousel__arrow:disabled { opacity: 0.2; cursor: default; }
+    #media-carousel-prev { left: 4px; }
+    #media-carousel-next { right: 4px; }
+    .review-verified { display: inline-flex; align-items: center; gap: var(--space-2xs); font-size: 11px; color: #2a7a2a; margin-left: var(--space-xs); font-weight: 400; }
+    .reviews-load-more-wrap { margin-top: var(--space-xl); text-align: center; padding-bottom: 8px; }
+    .reviews-load-more-btn {
+      background-color: transparent; color: var(--text-primary); border: 1px solid var(--text-primary);
+      border-radius: 0; padding: 12px 32px; font-size: 12px; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 0.06em; cursor: pointer;
+      font-family: var(--font-ui); transition: background var(--t-fast);
+    }
+    .reviews-load-more-btn:hover { background-color: var(--grey-100); }
+
+    /* Film grain Ã¢â¬" static, no animation */
+    .page-grain {
+      position: fixed; inset: 0; z-index: 9998; pointer-events: none;
+      opacity: 0.04;
+      mix-blend-mode: soft-light;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256'%3E%3Cfilter id='pg'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.68' numOctaves='4' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='256' height='256' filter='url(%23pg)'/%3E%3C/svg%3E");
+      background-size: 200px 200px;
+    }
+
+    @keyframes review-fadein {
+      from { opacity: 0; transform: translateY(10px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    .review-item-anim { animation: review-fadein 0.3s ease both; }
+
+    #review-lightbox {
+      position: fixed; inset: 0; background: rgba(0,0,0,0.88); z-index: 9999;
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; pointer-events: none; transition: opacity 0.22s ease; cursor: zoom-out;
+    }
+    #review-lightbox.active { opacity: 1; pointer-events: all; }
+    #review-lightbox img {
+      max-width: 90vw; max-height: 90vh; object-fit: contain;
+      border-radius: 2px; box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+    }
+    #review-lightbox-close {
+      position: absolute; top: 20px; right: 24px; color: #fff;
+      font-size: 28px; line-height: 1; cursor: pointer; opacity: 0.8;
+      transition: opacity 0.15s; user-select: none;
+    }
+    #review-lightbox-close:hover { opacity: 1; }
+
+    /* Reviews popup carousel */
+    #reviews-popup {
+      position: fixed; inset: 0; background: rgba(0,0,0,0.7); z-index: 9998;
+      display: flex; align-items: center; justify-content: center;
+      opacity: 0; pointer-events: none; transition: opacity 0.25s ease;
+    }
+    #reviews-popup.active { opacity: 1; pointer-events: all; }
+    .reviews-popup__box {
+      background: #fff; border-radius: 12px; width: 92vw; max-width: 520px;
+      max-height: 85vh; display: flex; flex-direction: column; position: relative;
+      box-shadow: 0 12px 48px rgba(0,0,0,0.3);
+    }
+    .reviews-popup__header {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 16px 20px; border-bottom: 1px solid #eee; flex-shrink: 0;
+    }
+    .reviews-popup__title { font-weight: 700; font-size: 16px; color: #222; }
+    .reviews-popup__counter { font-size: 13px; color: #888; }
+    .reviews-popup__close {
+      background: none; border: none; font-size: 22px; cursor: pointer;
+      color: #666; line-height: 1; padding: 4px;
+    }
+    .reviews-popup__close:hover { color: #000; }
+    .reviews-popup__body {
+      flex: 1; overflow: hidden; position: relative; min-height: 200px;
+    }
+    .reviews-popup__card {
+      padding: 20px; display: none; flex-direction: column; gap: 10px;
+      max-height: calc(85vh - 130px); overflow-y: auto;
+    }
+    .reviews-popup__card.active { display: flex; }
+    .reviews-popup__card-stars { font-size: 18px; color: #d4a017; }
+    .reviews-popup__card-title { font-weight: 700; font-size: 15px; color: #222; }
+    .reviews-popup__card-meta { font-size: 12px; color: #888; }
+    .reviews-popup__card-body { font-size: 14px; line-height: 1.6; color: #444; }
+    .reviews-popup__card-photos { display: flex; gap: 6px; flex-wrap: wrap; }
+    .reviews-popup__card-photos img { width: 64px; height: 64px; object-fit: cover; border-radius: 6px; cursor: pointer; }
+    .reviews-popup__nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 12px 20px; border-top: 1px solid #eee; flex-shrink: 0;
+    }
+    .reviews-popup__arrow {
+      background: none; border: 1px solid #ddd; border-radius: 50%;
+      width: 36px; height: 36px; display: flex; align-items: center; justify-content: center;
+      cursor: pointer; font-size: 16px; color: #444; transition: background 0.15s;
+    }
+    .reviews-popup__arrow:hover { background: #f5f5f5; }
+    .reviews-popup__arrow:disabled { opacity: 0.3; cursor: default; }
+    @media (max-width: 767px) {
+      #shop .shop-grid { grid-template-columns: 1fr; gap: 0; }
+      .reviews-summary__cols { flex-direction: column; gap: 32px; }
+      .reviews-bar-track { width: 160px; }
+      .review-item__header { flex-direction: column; align-items: flex-start; gap: var(--space-2xs); }
+      .review-item__meta { margin-left: 0; }
+    }
+
+
+
+    /* Ã¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢Â
+       MOBILE OPTIMIZATIONS Ã¢â¬" max-width: 767px
+    Ã¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢Â */
+
+    @media (max-width: 767px) {
+      .section { padding: 48px 0; }
+      #shop   { padding: 0 0 var(--space-xl); }
+      .label { font-size: 10px; letter-spacing: 0.1em; margin-bottom: 10px; }
+      h1.section-title  { margin-bottom: 16px; }
+      h2.section-subtitle { margin-bottom: 16px; }
+      .body-lg { font-size: 15px; line-height: 1.55; margin-bottom: 16px; }
+      .badge { font-size: 10px; padding: 4px 10px; }
+      .gallery-main { border-radius: 0; }
+      .thumbnail { width: 60px; min-width: 60px; height: 60px; }
+      .shop-brand { font-size: 11px; }
+      .shop-title { font-size: 22px; }
+      .shop-price { font-size: 24px; }
+      .shop-shipping { font-size: 12px; padding: 8px 12px; }
+      .size-label { font-size: 13px; }
+      .size__block { min-width: 64px; height: 34px; }
+      .size__block a,
+      .size__block > span:not(.size-unavailable-label):not(.unavail-label):not(.size-label-text) { font-size: 12px; }
+      .purchase-area { gap: 8px; }
+      .shop-add-btn { font-size: 12px; height: 44px; }
+      .quantity-selector { height: 44px; width: 64px; font-size: 16px; }
+      .reviews-media-carousel__item { width: 120px; height: 120px; }
+      .reviews-media-carousel__arrow { width: 28px; height: 28px; font-size: 22px; }
+      .review-score-big { font-size: 40px; }
+      .review-stars-big { font-size: 16px; letter-spacing: 2px; }
+      .review-count-text { font-size: 12px; }
+      .review-item { padding: 16px 0; }
+      .review-item__title { font-size: 14px; }
+      .review-item__body  { font-size: 13px; line-height: 1.55; }
+      .review-photo-thumb { width: 60px; height: 60px; }
+      .reviews-section { margin-top: 0; }
+      .faq__q { font-size: 14px; padding: 16px 0; }
+      .faq__q span:first-child { max-width: 88%; }
+      .faq__a p { font-size: 13px; line-height: 1.6; }
+      .footer { padding: 24px 0; }
+      .footer__inner { flex-direction: column; gap: 12px; text-align: center; }
+      .footer__since { display: block; margin-top: 2px; }
+    }
+
+    /* Ã¢ââ¬Ã¢ââ¬ Promo deadline strip Ã¢ââ¬Ã¢ââ¬ */
+    .delivery-estimate {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-family: var(--font-ui);
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: var(--space-xs);
+    }
+    .delivery-estimate__icon { font-size: 13px; }
+    .delivery-estimate strong { color: var(--text-primary); }
+
+    .promo-deadline {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-xs);
+      background: var(--bg-surface);
+      border: 1px solid var(--grey-100);
+      padding: var(--space-sm) var(--space-md);
+      margin-top: -1px;
+      font-family: var(--font-ui);
+      font-size: 12px;
+      font-weight: 400;
+      letter-spacing: 0.04em;
+      color: var(--text-muted);
+      text-align: center;
+    }
+    .promo-deadline__icon { display: none; }
+    .promo-deadline__date {
+      font-weight: 600;
+      color: var(--text-primary);
+      letter-spacing: 0;
+    }
+
+    /* Ã¢ââ¬Ã¢ââ¬ Trust badges Ã¢ââ¬Ã¢ââ¬ */
+    .trust-badges {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: var(--space-xs) var(--space-md);
+      margin-top: var(--space-md);
+      padding-top: var(--space-sm);
+      border-top: 1px solid var(--grey-100);
+    }
+    .trust-badge-item {
+      display: flex;
+      align-items: center;
+      gap: var(--space-2xs);
+      font-family: var(--font-ui);
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+    }
+    .trust-badge-item::before {
+      content: '';
+      width: 3px;
+      height: 3px;
+      border-radius: 50%;
+      background: var(--grey-300);
+      flex-shrink: 0;
+    }
+
+    /* Ã¢ââ¬Ã¢ââ¬ Accordion Ã¢ââ¬Ã¢ââ¬ */
+    .description-accordion {
+      border-top: 1px solid var(--grey-100);
+      margin-top: 24px;
+    }
+    .zwg-accordion__item {
+      border-bottom: 1px solid var(--grey-100);
+    }
+    .zwg-accordion__header {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text-primary);
+      text-transform: uppercase;
+      background: transparent;
+      border: none;
+      padding: 16px 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      letter-spacing: 0.08em;
+      font-family: var(--font-ui);
+    }
+    .zwg-accordion__header .acc-icon {
+      font-size: 18px;
+      color: var(--text-muted);
+      transition: transform 0.25s ease;
+      flex-shrink: 0;
+    }
+    .zwg-accordion__item.open .zwg-accordion__header .acc-icon {
+      transform: rotate(180deg);
+    }
+    .zwg-accordion__content {
+      font-size: 14px;
+      color: var(--text-body);
+      line-height: 1.6;
+      padding: 0;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+    }
+    .zwg-accordion__item.open .zwg-accordion__content {
+      max-height: 800px;
+      padding: 0 0 16px;
+    }
+    .zwg-accordion__content p { margin-bottom: 10px; }
+    .zwg-accordion__content ul { padding-left: 18px; list-style: disc; }
+    .zwg-accordion__content ul li { margin-bottom: 4px; }
+
+    @media (max-width: 768px) {
+      .section--dark + .section::before,
+      .section--dark + .section--alt::before {
+        clip-path: polygon(0 0, 100% 20px, 100% 100%, 0 100%);
+        height: 40px;
+        margin-top: -40px;
+      }
+    }
+
+    /* Ã¢ââ¬Ã¢ââ¬ Color swatches Ã¢ââ¬Ã¢ââ¬ */
+    .color-swatches { display: flex; gap: 8px; margin-bottom: var(--space-xs); }
+    .color-swatch {
+      width: 32px; height: 32px; border-radius: 50%; border: 2px solid transparent;
+      cursor: pointer; overflow: hidden; transition: border-color var(--t-fast), transform var(--t-fast);
+      padding: 2px;
+    }
+    .color-swatch.selected { border-color: var(--text-primary); }
+    .color-swatch:hover { transform: scale(1.1); }
+    .color-swatch img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+
+  </style>
+
+</head>
+<body>
+
+  <!-- Grain overlay -->
+  <div class="page-grain" aria-hidden="true"></div>
+
+
+  <!-- SECTION 1 Ã¢â¬" SHOP (gallery + variants + cart) -->
+  <section class="section section--alt" id="shop">
+    <div class="container">
+
+      <div class="shop-grid">
+
+        <!-- Main media: full-width story (9:16) -->
+        <div class="shop-gallery-col">
+          <div class="gallery-main" id="gallery-main">
+            <img id="gallery-main-img" src="images/products/97353004_1.avif" alt="RIMOWA Classic Cabin Silber" loading="eager" fetchpriority="high" width="1080" height="1920" style="width:100%;height:100%;object-fit:contain;" />
+            <div class="gallery-arrows">
+              <button class="arrow" aria-label="Previous image" onclick="galleryPrev()">&#8249;</button>
+              <button class="arrow" aria-label="Next image" onclick="galleryNext()">&#8250;</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product info + variant selector (panel below media) -->
+        <div class="shop-info">
+         <div class="buy-panel"><div class="buy-panel__inner">
+          <div class="thumbnail-strip" id="thumbnail-strip"></div>
+          <p class="shop-brand">Wury x RIMOWA</p>
+          <h2 class="shop-title">RIMOWA Classic</h2>
+
+          <a class="shop-rating" href="#reviews-anchor" style="text-decoration:none;color:inherit;cursor:pointer;">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="rating-count">4,8 (1.935 Bewertungen)</span>
+          </a>
+
+          <div class="price-row">
+            <div class="shop-price" id="product-price-sale">229,00 â¬</div>
+            <div class="shop-price-old" id="product-price-compare">1.625,00 â¬</div>
+            <div class="sale-badge" id="product-sale-badge">-88%</div>
+          </div>
+
+
+          <div class="availability-section">
+            <span id="stock-indicator" class="in-stock">Auf Lager</span>
+          </div>
+
+          <!-- Color selector -->
+          <div class="size-label">Farbe: <span id="selected-color-name">Silber</span></div>
+          <div class="color-swatches" id="color-swatches"></div>
+
+          <!-- Size selector -->
+          <div class="size-label">GrÃ¶Ãe: <span id="selected-size-name">Cabin</span><span id="selected-size-dims" style="font-weight:400;color:var(--text-muted);margin-left:8px;font-size:11px;">55 Ã 40 Ã 23 cm Â· 35 L</span></div>
+          <div class="size__blocks-container" id="size-blocks-container"></div>
+          <div id="size-ideal-line" style="font-family:var(--font-ui);font-size:12px;color:var(--text-muted);margin-top:10px;">Ideal fÃ¼r <strong style="color:var(--text-body);font-weight:500;">3â4 Tage</strong> Reise</div>
+
+          <div class="delivery-estimate">
+            <span>Voraussichtliche Lieferung: <strong id="delivery-estimate-date"></strong></span>
+          </div>
+
+          <div class="urgency-bar" role="status" aria-live="polite">
+            <div class="urgency-bar__label">
+              Nur noch <strong><span id="urgency-count">â</span> StÃ¼ck verfÃ¼gbar</strong> â exklusives Deutschland-Kontingent zu diesem Preis.
+            </div>
+            <div class="urgency-bar__track">
+              <div class="urgency-bar__fill" id="urgency-fill"></div>
+            </div>
+          </div>
+
+          <div class="purchase-area">
+            <select class="quantity-selector" aria-label="Quantity">
+              <option>1</option><option>2</option><option>3</option>
+            </select>
+            <button class="shop-add-btn" onclick="goToCheckout()">
+              <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 1H3L4 10H14L16 4H5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="6" cy="13.5" r="1.2" fill="white"/>
+                <circle cx="12" cy="13.5" r="1.2" fill="white"/>
+              </svg>
+              Jetzt kaufen
+            </button>
+          </div>
+
+          <!-- Promo deadline -->
+          <div class="promo-deadline">
+            <span class="promo-deadline__icon"></span>
+            <span>ð©ðª Exklusives Angebot fÃ¼r Deutschland â streng limitiert. GÃ¼ltig bis <span class="promo-deadline__date" id="promo-deadline-date"></span></span>
+          </div>
+
+          <!-- Trust badges -->
+          <div class="trust-badges">
+            <span class="trust-badge-item">Kostenloser Versand in Deutschland â immer</span>
+            <span class="trust-badge-item">100% sicherer Checkout</span>
+            <span class="trust-badge-item">Lebenslange Garantie</span>
+            <span class="trust-badge-item">Exklusiv fÃ¼r Deutschland</span>
+          </div>
+         </div></div><!-- /buy-panel -->
+
+          <!-- How it works Ã¢â¬" carousel -->
+          <div id="how-it-works" style="margin-top:24px;">
+            <h3 class="sr" style="font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--text-primary);text-align:center;margin-bottom:4px;">Warum RIMOWA Classic?</h3>
+            <p class="sr" style="font-family:var(--font-ui);color:var(--text-muted);font-size:13px;text-align:center;margin-bottom:16px;">128 Jahre deutsche Ingenieurskunst in jedem Detail.</p>
+            <div class="steps-carousel sr" id="steps-carousel">
+              <div class="steps-track" id="steps-track">
+                <div class="step-slide">
+                  <div class="step-slide__img"><img src="images/products/97353004_1.avif" alt="Schritt 1 â Eloxiertes Aluminium" loading="lazy"></div>
+                  <div class="step-slide__content">
+                    <div class="step-slide__step">Schritt 01</div>
+                    <div class="step-slide__title">Eloxiertes Aluminium</div>
+                    <div class="step-slide__body">Leicht, robust und unverkennbar. Die ikonischen Rillen sind nicht nur Design â sie verstÃ¤rken die Struktur.</div>
+                  </div>
+                </div>
+                <div class="step-slide">
+                  <div class="step-slide__img"><img src="images/products/97353004_2.avif" alt="Schritt 2 â MultiwheelÂ®-System" loading="lazy"></div>
+                  <div class="step-slide__content">
+                    <div class="step-slide__step">Schritt 02</div>
+                    <div class="step-slide__title">MultiwheelÂ® System</div>
+                    <div class="step-slide__body">Vier leichtgÃ¤ngige RÃ¤der fÃ¼r 360Â°-MobilitÃ¤t. FlÃ¼sterleise und mÃ¼helos auf jedem Untergrund.</div>
+                  </div>
+                </div>
+                <div class="step-slide">
+                  <div class="step-slide__img"><img src="images/products/97353004_3.avif" alt="Schritt 3 â TSA-SchlÃ¶sser" loading="lazy"></div>
+                  <div class="step-slide__content">
+                    <div class="step-slide__step">Schritt 03</div>
+                    <div class="step-slide__title">TSA-SchlÃ¶sser</div>
+                    <div class="step-slide__body">Integrierte TSA-SchlÃ¶sser fÃ¼r sicheres Reisen weltweit. Kein zusÃ¤tzliches VorhÃ¤ngeschloss nÃ¶tig.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="steps-arrows">
+                <button class="arrow" aria-label="Previous" onclick="stepsGo(-1)">&#8249;</button>
+                <button class="arrow" aria-label="Next" onclick="stepsGo(1)">&#8250;</button>
+              </div>
+              <div class="steps-dots" id="steps-dots">
+                <button class="steps-dot active" onclick="stepsTo(0)"></button>
+                <button class="steps-dot" onclick="stepsTo(1)"></button>
+                <button class="steps-dot" onclick="stepsTo(2)"></button>
+              </div>
+            </div>
+            <script>
+            (function(){
+              var idx=0, total=3, track, dots, autoTimer;
+              function go(i){
+                idx=((i%total)+total)%total;
+                track.style.transform='translateX(-'+idx*100+'%)';
+                dots.forEach(function(d,j){
+                  d.classList.remove('active');
+                  void d.offsetWidth;
+                  if(j===idx) d.classList.add('active');
+                });
+              }
+              function resetAuto(){clearInterval(autoTimer);autoTimer=setInterval(function(){go(idx+1);},4500);}
+              window.stepsGo=function(d){go(idx+d);resetAuto();};
+              window.stepsTo=function(i){go(i);resetAuto();};
+              document.addEventListener('DOMContentLoaded', function(){
+                track=document.getElementById('steps-track');
+                dots=document.querySelectorAll('#steps-dots .steps-dot');
+                if(!track) return;
+                resetAuto();
+                var sx=0;
+                track.addEventListener('touchstart',function(e){sx=e.touches[0].clientX;},{passive:true});
+                track.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40){go(idx+(dx<0?1:-1));resetAuto();}},{passive:true});
+              });
+            })();
+            </script>
+          </div>
+
+          <!-- Use cases grid Ã¢â¬" RIMOWA scenarios -->
+          <div id="use-cases" style="margin-top:24px;">
+            <h3 class="sr" style="font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--text-primary);text-align:center;margin-bottom:4px;">
+              FÃ¼r jede Reise. <span style="color:var(--cta-campaign);">Ohne Kompromisse.</span>
+            </h3>
+            <p class="sr" style="font-family:var(--font-ui);color:var(--text-muted);font-size:13px;text-align:center;margin-bottom:16px;">Entdecken Sie die RIMOWA Classic Kollektion.</p>
+            <div class="usecases-grid">
+              <div class="usecase-card sr">
+                <div class="usecase-card__img"><img src="images/products/97353004_4.avif" alt="GeschÃ¤ftsreise" loading="lazy"></div>
+                <div class="usecase-card__body">
+                  <div class="usecase-card__title">GeschÃ¤ftsreise</div>
+                  <div class="usecase-card__desc">Cabin-GrÃ¶Ãe als HandgepÃ¤ck zugelassen. Gemacht fÃ¼r GeschÃ¤ftsreisen.</div>
+                </div>
+              </div>
+              <div class="usecase-card sr">
+                <div class="usecase-card__img"><img src="images/products/97353004_5.avif" alt="Wochenendtrip" loading="lazy"></div>
+                <div class="usecase-card__body">
+                  <div class="usecase-card__title">Wochenendtrip</div>
+                  <div class="usecase-card__desc"><span id="usecase-volume">35 L</span> Volumen â genug fÃ¼r ein langes Wochenende, kompakt genug fÃ¼rs HandgepÃ¤ckfach.</div>
+                </div>
+              </div>
+              <div class="usecase-card sr">
+                <div class="usecase-card__img"><img src="images/products/97353004_1.avif" alt="Zeitloses Design" loading="lazy"></div>
+                <div class="usecase-card__body">
+                  <div class="usecase-card__title">Zeitloses Design</div>
+                  <div class="usecase-card__desc">Die ikonischen Rillen seit 1898. Jede Delle erzÃ¤hlt eine Geschichte.</div>
+                </div>
+              </div>
+              <div class="usecase-card sr">
+                <div class="usecase-card__img"><img src="images/products/97353004_2.avif" alt="Familienurlaub" loading="lazy"></div>
+                <div class="usecase-card__body">
+                  <div class="usecase-card__title">Familienurlaub</div>
+                  <div class="usecase-card__desc">Flex-Divider-System fÃ¼r eine anpassbare Aufteilung. Alles an seinem Platz.</div>
+                </div>
+              </div>
+              <div class="usecase-card sr">
+                <div class="usecase-card__img"><img src="images/products/97353004_3.avif" alt="Abenteuerreise" loading="lazy"></div>
+                <div class="usecase-card__body">
+                  <div class="usecase-card__title">Abenteuerreise</div>
+                  <div class="usecase-card__desc">Aluminium steckt StÃ¶Ãe weg, die Polycarbonat zerstÃ¶ren wÃ¼rden.</div>
+                </div>
+              </div>
+              <div class="usecase-card sr">
+                <div class="usecase-card__img"><img src="images/products/97353004_4.avif" alt="Stilvoll ankommen" loading="lazy"></div>
+                <div class="usecase-card__body">
+                  <div class="usecase-card__title">Stilvoll ankommen</div>
+                  <div class="usecase-card__desc">Made in Germany. Lebenslange Garantie. Ein Koffer fÃ¼r Generationen.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Accordion -->
+          <div class="description-accordion">
+
+            <div class="zwg-accordion__item open">
+              <button class="zwg-accordion__header" onclick="toggleAccordion(this)">
+                Beschreibung
+                <span class="acc-icon">&#8964;</span>
+              </button>
+              <div class="zwg-accordion__content" id="acc-desc-content">
+                <p>Der RIMOWA Classic ist die Stilikone unter den Reisekoffern. Gefertigt aus hochwertigem eloxiertem Aluminium mit charakteristischen Lederhenkeln und dem unverkennbaren Rillendesign, das seit 1898 den MaÃstab setzt.</p>
+                <p>Ausgestattet mit dem <strong>MultiwheelÂ®-System</strong> fÃ¼r mÃ¼helose 360Â°-MobilitÃ¤t, <strong>TSA-SchlÃ¶ssern</strong> fÃ¼r Sicherheit weltweit und dem <strong>Flex-Divider-System</strong> fÃ¼r flexibles Packen.</p>
+                <button class="btn--ver-mas" onclick="openDescModal()">Mehr erfahren âº</button>
+              </div>
+            </div>
+
+            <div class="zwg-accordion__item">
+              <button class="zwg-accordion__header" onclick="toggleAccordion(this)">
+                Spezifikationen
+                <span class="acc-icon">&#8964;</span>
+              </button>
+              <div class="zwg-accordion__content" id="acc-details-content"></div>
+            </div>
+
+            <div class="zwg-accordion__item">
+              <button class="zwg-accordion__header" onclick="toggleAccordion(this)">
+                Lieferumfang
+                <span class="acc-icon">&#8964;</span>
+              </button>
+              <div class="zwg-accordion__content">
+                <p>Ihr RIMOWA Classic enthÃ¤lt:</p>
+                <ul>
+                  <li>1 Ã RIMOWA Classic Koffer (eloxiertes Aluminium, Lederhenkel)</li>
+                  <li>1 Ã Flex-Divider-System (Polyester)</li>
+                  <li>2 Ã TSA-SchlÃ¶sser (integriert)</li>
+                  <li>1 Ã Stufenloser Teleskopgriff</li>
+                  <li>1 Ã Gratis LederanhÃ¤nger fÃ¼rs GepÃ¤ck</li>
+                  <li>1 Ã RIMOWA Sticker</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="zwg-accordion__item">
+              <button class="zwg-accordion__header" onclick="toggleAccordion(this)">
+                Versand & RÃ¼ckgabe
+                <span class="acc-icon">&#8964;</span>
+              </button>
+              <div class="zwg-accordion__content">
+                <p>Kostenloser Versand innerhalb Deutschlands â immer. Lieferung in 6â14 Werktagen.</p>
+                <p>Kostenlose RÃ¼ckgabe innerhalb von 30 Tagen nach Erhalt. Der Koffer muss in Originalverpackung und im Originalzustand zurÃ¼ckgesendet werden.</p>
+              </div>
+            </div>
+
+          </div>
+          <!-- / Accordion -->
+
+        </div>
+
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <!-- REVIEWS -->
+  <section class="section section--alt" id="reviews" style="padding-top:0;padding-bottom:calc(var(--space-4xl) / 2);">
+    <div class="container">
+      <div class="reviews-section" id="reviews-anchor">
+        <div class="reviews-summary">
+          <h2 class="reviews-section__title">Kundenbewertungen</h2>
+          <div class="reviews-summary__cols">
+            <div class="reviews-summary__score">
+              <div class="review-score-big">4,8</div>
+              <div class="review-stars-big">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+              <div class="review-count-text">1.935 Bewertungen</div>
+            </div>
+            <div class="reviews-summary__bars">
+              <div class="reviews-bar-row">
+                <span class="reviews-bar-label">5 &#9733;</span>
+                <div class="reviews-bar-track"><div class="reviews-bar-fill" style="width:78%;"></div></div>
+                <span class="reviews-bar-pct">78%</span>
+              </div>
+              <div class="reviews-bar-row">
+                <span class="reviews-bar-label">4 &#9733;</span>
+                <div class="reviews-bar-track"><div class="reviews-bar-fill" style="width:14%;"></div></div>
+                <span class="reviews-bar-pct">14%</span>
+              </div>
+              <div class="reviews-bar-row">
+                <span class="reviews-bar-label">3 &#9733;</span>
+                <div class="reviews-bar-track"><div class="reviews-bar-fill" style="width:5%;"></div></div>
+                <span class="reviews-bar-pct">5%</span>
+              </div>
+              <div class="reviews-bar-row">
+                <span class="reviews-bar-label">2 &#9733;</span>
+                <div class="reviews-bar-track"><div class="reviews-bar-fill" style="width:2%;"></div></div>
+                <span class="reviews-bar-pct">2%</span>
+              </div>
+              <div class="reviews-bar-row">
+                <span class="reviews-bar-label">1 &#9733;</span>
+                <div class="reviews-bar-track"><div class="reviews-bar-fill" style="width:1%;"></div></div>
+                <span class="reviews-bar-pct">1%</span>
+              </div>
+            </div>
+          </div>
+          <button class="write-review-btn">Bewertung schreiben</button>
+        </div>
+
+        <div style="margin:16px 0;text-align:center;">
+          <button onclick="window.openReviewsPopup()" style="background:none;border:none;padding:0;font-size:14px;color:var(--text-muted);text-decoration:underline;cursor:pointer;">Bewertungen mit Fotos ansehen</button>
+        </div>
+
+        <div id="reviews-list"></div>
+        <div class="reviews-load-more-wrap" id="reviews-load-more-wrap">
+          <button class="reviews-load-more-btn" id="reviews-load-more-btn">Mehr Bewertungen laden</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--alt" id="faq" style="padding-top:0;">
+    <div class="container faq-wrap">
+      <h2 class="section-subtitle text-center sr">HÃUFIG GESTELLTE FRAGEN</h2>
+
+      <div class="faq sr">
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>Woraus besteht der RIMOWA Classic?</span><span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a"><p>Der RIMOWA Classic besteht aus hochwertigem eloxiertem Aluminium. Das Innenfutter ist aus Polyester, die Henkel aus echtem Leder und die RÃ¤der aus Hartkunststoff. Die FÃ¤cher des Flex Dividers sind ebenfalls aus Polyester.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>Was deckt die lebenslange Garantie ab?</span><span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a"><p>RIMOWA gewÃ¤hrt eine lebenslange Garantie auf alle Koffer der Classic Collection. Sie deckt Herstellungsfehler und Materialversagen bei normalem Gebrauch ab. Normale Gebrauchsspuren oder durch Fluggesellschaften verursachte SchÃ¤den sind nicht abgedeckt.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>Passt der Cabin als HandgepÃ¤ck?</span><span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a"><p>Ja. Der RIMOWA Classic Cabin (55 Ã 40 Ã 23 cm) erfÃ¼llt die IATA-HandgepÃ¤ckempfehlungen und passt in die GepÃ¤ckfÃ¤cher der meisten groÃen Fluggesellschaften wie Lufthansa, Eurowings, Condor und Discover Airlines. FÃ¼r Billigflieger mit strengeren MaÃvorgaben (z. B. Ryanair oder Wizz Air) empfehlen wir den Cabin S (55 Ã 40 Ã 20 cm).</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>Was sind TSA-SchlÃ¶sser?</span><span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a"><p>TSA-SchlÃ¶sser lassen sich von der Sicherheitskontrolle mit einem Universal-GeneralschlÃ¼ssel Ã¶ffnen â ohne das Schloss zu beschÃ¤digen. Ihr Koffer bleibt wÃ¤hrend der gesamten Reise sicher verschlossen und kann an jeder Sicherheitskontrolle dennoch geprÃ¼ft werden. Besonders praktisch bei Reisen in die USA.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>Bekommt das Aluminium leicht Dellen?</span><span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a"><p>Aluminium ist von Natur aus weicher als Polycarbonat und kann bei grober Behandlung Dellen bekommen. Bei RIMOWA gehÃ¶rt das zum Charakter â jede Delle erzÃ¤hlt eine Reisegeschichte. Dennoch ist das Material extrem robust und schÃ¼tzt Ihre Sachen zuverlÃ¤ssig.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>Wie viel wiegt der Koffer?</span><span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a"><p>Gewicht und MaÃe variieren je nach GrÃ¶Ãe: <strong>Cabin S</strong> wiegt 4,2 kg, fasst 33 Liter und misst 55 Ã 40 Ã 20 cm. <strong>Cabin</strong> wiegt 4,3 kg, fasst 36 Liter und misst 55 Ã 40 Ã 23 cm. <strong>Check-In M</strong> wiegt 5,3 kg, fasst 60 Liter und misst 70 Ã 47 Ã 25 cm. <strong>Check-In L</strong> wiegt 6,0 kg, fasst 85 Liter und misst 78 Ã 52 Ã 27 cm. <strong>Trunk</strong> wiegt 6,0 kg, fasst 100 Liter und misst 75 Ã 47 Ã 36 cm. Alle werden aus hochwertigem eloxiertem Aluminium mit Lederhenkeln gefertigt.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>Was ist im Lieferumfang enthalten?</span><span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a"><p>Ihr Koffer wird mit einem gratis LederanhÃ¤nger fÃ¼rs GepÃ¤ck und einem RIMOWA Sticker geliefert. Der Flex Divider, die TSA-SchlÃ¶sser und der stufenlos verstellbare Teleskopgriff sind alle fest integriert.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>In welchen Farben gibt es den Classic?</span><span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a"><p>Der RIMOWA Classic ist in drei Farben erhÃ¤ltlich: Silber, Titan und Schwarz. Alle drei bestehen aus demselben hochwertigen eloxierten Aluminium mit echten Lederhenkeln.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>Wie reinige und pflege ich meinen Aluminium-Koffer?</span><span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a"><p>Wischen Sie die OberflÃ¤che mit einem weichen, feuchten Tuch ab. Vermeiden Sie scheuernde Reinigungsmittel oder aggressive Chemikalien. Bei hartnÃ¤ckigen Flecken empfiehlt RIMOWA eine milde Seife mit warmem Wasser.</p></div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q" aria-expanded="false">
+            <span>Wie funktioniert die RÃ¼ckgabe?</span><span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a"><p>Sie haben 30 Tage ab Erhalt Zeit, den Koffer in Originalverpackung und im Originalzustand zurÃ¼ckzusenden. Der RÃ¼ckversand ist kostenlos. Sobald wir den Artikel erhalten haben, prÃ¼fen wir ihn und erstatten den Betrag innerhalb von 5â7 Werktagen.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    document.querySelectorAll('.faq__q').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = btn.closest('.faq__item');
+        var isOpen = item.classList.contains('faq__item--open');
+        document.querySelectorAll('.faq__item').forEach(function(i) {
+          i.classList.remove('faq__item--open');
+          i.querySelector('.faq__q').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('faq__item--open');
+          btn.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+
+  <section class="section section--alt" style="padding-top:var(--space-xl);padding-bottom:0;">
+    <div class="container" style="text-align:center;">
+      <button class="btn btn--campaign" style="padding:9px 29px;" onclick="goToShop()">ANGEBOT SICHERN</button>
+    </div>
+  </section>
+
+  <!-- FEATURES â RIMOWA Classic -->
+  <section class="section section--alt" id="features">
+    <div class="container">
+      <h2 class="section-title text-center sr" style="font-family:var(--font-display);text-transform:none;font-size:clamp(24px,3vw,36px);letter-spacing:0;margin-bottom:var(--space-xl);">
+        Deutsche Ingenieurskunst. Seit 1898.
+      </h2>
+      <div class="feature-cards">
+        <div class="feature-card sr">
+          <div class="feature-card__img">
+            <img src="images/products/97353004_1.avif" alt="Eloxiertes Aluminium" loading="lazy">
+          </div>
+          <div class="feature-card__title">Eloxiertes Aluminium</div>
+          <div class="feature-card__body">Premium-Aluminium mit dem legendÃ¤ren Rillendesign. Leicht, langlebig und unverkennbar â ein Koffer, der Charakter entwickelt.</div>
+        </div>
+        <div class="feature-card sr">
+          <div class="feature-card__img">
+            <img src="images/products/97353004_2.avif" alt="Multiwheel System" loading="lazy">
+          </div>
+          <div class="feature-card__title">MultiwheelÂ® System</div>
+          <div class="feature-card__body">Vier prÃ¤zisionsgefertigte RÃ¤der fÃ¼r mÃ¼helose 360Â°-MobilitÃ¤t. FlÃ¼sterleise, grundsolide und zuverlÃ¤ssig auf jedem Untergrund.</div>
+        </div>
+        <div class="feature-card sr">
+          <div class="feature-card__img">
+            <img src="images/products/97353004_3.avif" alt="TSA-SchlÃ¶sser" loading="lazy">
+          </div>
+          <div class="feature-card__title">TSA-SchlÃ¶sser</div>
+          <div class="feature-card__body">Zwei integrierte TSA-SchlÃ¶sser fÃ¼r maximale Sicherheit, wohin Sie auch reisen. Weltweit anerkannt â kein zusÃ¤tzliches ZubehÃ¶r nÃ¶tig.</div>
+        </div>
+        <div class="feature-card sr">
+          <div class="feature-card__img">
+            <img src="images/products/97353004_4.avif" alt="Flex Divider" loading="lazy">
+          </div>
+          <div class="feature-card__title">Flex-Divider-System</div>
+          <div class="feature-card__body">Das flexible Trennsystem passt sich Ihrem Packstil an. GeschÃ¤ftsreise oder Wochenendtrip â fÃ¼r jede Reise die passende Aufteilung.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <span class="footer__logo">RIMOWA</span>
+      </div>
+      <div class="footer__legal">
+        Â© 2026 RIMOWA (LVMH). Alle Rechte vorbehalten.<br>
+        Die lebenslange Garantie deckt Herstellungsfehler und Materialversagen bei normalem Gebrauch ab.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+
+    // Smooth scroll to top
+    function goToShop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+  </script>
+  <script>
+
+    /* ---- SHOP: Full Variant Matrix (Size Ãâ Color) ---- */
+
+    /* Ã¢ââ¬Ã¢ââ¬ Variant data Ã¢ââ¬Ã¢ââ¬ */
+    var VARIANTS = {
+      'Cabin S': {
+        'Silver':   { id:'51282808176873', sku:'CRA-CS-SLV', price:'199.00', compare:'1550.00', dims_cm:'55 Ã 40 Ã 20 cm', weight:'4.2 kg', volume:'33 L', days:'2â3 Tage', status:'limited',
+          video:{ src:'videos/97352004_clas_cabins_mobile.mp4', poster:'images/products/97352004_poster.avif' },
+          images:['images/products/97352004_1.avif','images/products/97352004_2.avif','images/products/97352004_3.avif','images/products/97352004_4.avif','images/products/97352004_5.avif'] },
+        'Titanium': { id:'51282808144105', sku:'CRA-CS-TIT', price:'199.00', compare:'1550.00', dims_cm:'55 Ã 40 Ã 20 cm', weight:'4.2 kg', volume:'33 L', days:'2â3 Tage', status:'limited',
+          video:{ src:'videos/97353044_CLA_CABIN_TITAN_mobile.mp4', poster:'images/products/97353044_poster.avif' },
+          images:['images/products/97353044_1.avif','images/products/97353044_2.avif','images/products/97353044_3.avif','images/products/97353044_4.avif','images/products/97353044_5.avif'] },
+        'Black':    { id:'51282808209641', sku:'CRA-CS-BLK', price:'199.00', compare:'1550.00', dims_cm:'55 Ã 40 Ã 20 cm', weight:'4.2 kg', volume:'33 L', days:'2â3 Tage', status:'limited',
+          video:{ src:'videos/97353014_CLAS_cabin_mobile.mp4', poster:'images/products/97353014_poster.avif' },
+          images:['images/products/97353014_1.avif','images/products/97353014_2.avif','images/products/97353014_3.avif','images/products/97353014_4.avif','images/products/97353014_5.avif'] }
+      },
+      'Cabin': {
+        'Silver':   { id:'51282808275177', sku:'CRA-C-SLV', price:'229.00', compare:'1625.00', dims_cm:'55 Ã 40 Ã 23 cm', weight:'4.3 kg', volume:'36 L', days:'3â4 Tage', status:'in_stock',
+          video:{ src:'videos/97353004_CLA_CABIN_SILVER_mobile.mp4', poster:'images/products/97353004_poster.avif' },
+          images:['images/products/97353004_1.avif','images/products/97353004_2.avif','images/products/97353004_3.avif','images/products/97353004_4.avif','images/products/97353004_5.avif','images/products/97353004_6.avif'] },
+        'Titanium': { id:'51282808242409', sku:'CRA-C-TIT', price:'229.00', compare:'1625.00', dims_cm:'55 Ã 40 Ã 23 cm', weight:'4.3 kg', volume:'36 L', days:'3â4 Tage', status:'in_stock',
+          video:{ src:'videos/97353044_CLA_CABIN_TITAN_mobile.mp4', poster:'images/products/97353044_poster.avif' },
+          images:['images/products/97353044_1.avif','images/products/97353044_2.avif','images/products/97353044_3.avif','images/products/97353044_4.avif','images/products/97353044_5.avif'] },
+        'Black':    { id:'51282808307945', sku:'CRA-C-BLK', price:'229.00', compare:'1625.00', dims_cm:'55 Ã 40 Ã 23 cm', weight:'4.3 kg', volume:'36 L', days:'3â4 Tage', status:'in_stock',
+          video:{ src:'videos/97353014_CLAS_cabin_mobile.mp4', poster:'images/products/97353014_poster.avif' },
+          images:['images/products/97353014_1.avif','images/products/97353014_2.avif','images/products/97353014_3.avif','images/products/97353014_4.avif','images/products/97353014_5.avif'] }
+      },
+      'Check-In M': {
+        'Silver':   { id:'51282808373481', sku:'CRA-INM-SLV', price:'269.00', compare:'1825.00', dims_cm:'70 Ã 47 Ã 25 cm', weight:'5.3 kg', volume:'60 L', days:'1 Woche', status:'in_stock',
+          video:{ src:'videos/97363004_CLAS_Checkm_mobile.mp4', poster:'images/products/97363004_poster.avif' },
+          images:['images/products/97363004_1.avif','images/products/97363004_2.avif','images/products/97363004_3.avif','images/products/97363004_4.avif','images/products/97363004_5.avif'] },
+        'Titanium': { id:'51282808340713', sku:'CRA-INM-TIT', price:'269.00', compare:'1825.00', dims_cm:'70 Ã 47 Ã 25 cm', weight:'5.3 kg', volume:'60 L', days:'1 Woche', status:'in_stock',
+          video:{ src:'videos/97373044_CLA_CHECK-INL_TITAN_mobile.mp4', poster:'images/products/97373044_poster.avif' },
+          images:['images/products/97373044_1.avif','images/products/97373044_2.avif','images/products/97373044_3.avif','images/products/97373044_4.avif','images/products/97373044_5.avif'] },
+        'Black':    { id:'51282808406249', sku:'CRA-INM-BLK', price:'269.00', compare:'1825.00', dims_cm:'70 Ã 47 Ã 25 cm', weight:'5.3 kg', volume:'60 L', days:'1 Woche', status:'in_stock',
+          video:{ src:'videos/97373014_CLAS_checkL_mobile.mp4', poster:'images/products/97373014_poster.avif' },
+          images:['images/products/97373014_1.avif','images/products/97373014_2.avif','images/products/97373014_3.avif','images/products/97373014_4.avif','images/products/97373014_5.avif'] }
+      },
+      'Check-In L': {
+        'Silver':   { id:'51282808471785', sku:'CRA-INL-SLV', price:'299.00', compare:'2000.00', dims_cm:'78 Ã 52 Ã 27 cm', weight:'6.0 kg', volume:'85 L', days:'14â15 Tage', status:'in_stock',
+          video:{ src:'videos/97373004_CLA_CHECK-IN-L_SILVER_mobile.mp4', poster:'images/products/97373004_poster.avif' },
+          images:['images/products/97373004_1.avif','images/products/97373004_2.avif','images/products/97373004_3.avif','images/products/97373004_4.avif','images/products/97373004_5.avif'] },
+        'Titanium': { id:'51282808439017', sku:'CRA-INL-TIT', price:'299.00', compare:'2000.00', dims_cm:'78 Ã 52 Ã 27 cm', weight:'6.0 kg', volume:'85 L', days:'14â15 Tage', status:'in_stock',
+          video:{ src:'videos/97373044_CLA_CHECK-INL_TITAN_mobile.mp4', poster:'images/products/97373044_poster.avif' },
+          images:['images/products/97373044_1.avif','images/products/97373044_2.avif','images/products/97373044_3.avif','images/products/97373044_4.avif','images/products/97373044_5.avif'] },
+        'Black':    { id:'51282808504553', sku:'CRA-INL-BLK', price:'299.00', compare:'2000.00', dims_cm:'78 Ã 52 Ã 27 cm', weight:'6.0 kg', volume:'85 L', days:'14â15 Tage', status:'in_stock',
+          video:{ src:'videos/97373014_CLAS_checkL_mobile.mp4', poster:'images/products/97373014_poster.avif' },
+          images:['images/products/97373014_1.avif','images/products/97373014_2.avif','images/products/97373014_3.avif','images/products/97373014_4.avif','images/products/97373014_5.avif'] }
+      },
+      'Trunk': {
+        'Silver':   { id:'51282808570089', sku:'CRA-T-SLV', price:'369.00', compare:'2400.00', dims_cm:'75 Ã 47 Ã 36 cm', weight:'6.0 kg', volume:'100 L', days:'16â17 Tage', status:'limited',
+          video:{ src:'videos/97375004_CLA_TRUNK_SILVER_mobile.mp4', poster:'images/products/97375004_poster.avif' },
+          images:['images/products/97375004_1.avif','images/products/97375004_2.avif','images/products/97375004_3.avif','images/products/97375004_4.avif','images/products/97375004_5.avif','images/products/97375004_6.avif'] },
+        'Titanium': { id:'51282808537321', sku:'CRA-T-TIT', price:'369.00', compare:'2400.00', dims_cm:'75 Ã 47 Ã 36 cm', weight:'6.0 kg', volume:'100 L', days:'16â17 Tage', status:'limited',
+          video:{ src:'videos/97375044_CLA_TRUNK_TITAN_mobile.mp4', poster:'images/products/97375044_poster.avif' },
+          images:['images/products/97375044_1.avif','images/products/97375044_2.avif','images/products/97375044_3.avif','images/products/97375044_4.avif','images/products/97375044_5.avif'] },
+        'Black':    { id:'51282808602857', sku:'CRA-T-BLK', price:'369.00', compare:'2400.00', dims_cm:'75 Ã 47 Ã 36 cm', weight:'6.0 kg', volume:'100 L', days:'16â17 Tage', status:'limited',
+          video:{ src:'videos/97375014_CLAS_trunk_mobile.mp4', poster:'images/products/97375014_poster.avif' },
+          images:['images/products/97375014_1.avif','images/products/97375014_2.avif','images/products/97375014_3.avif','images/products/97375014_4.avif','images/products/97375014_5.avif'] }
+      }
+    };
+
+    /* Size display order */
+    var SIZE_ORDER = ['Cabin S','Cabin','Check-In M','Check-In L','Trunk'];
+
+    /* All possible colors (swatch = main photo of the active variant) */
+    var ALL_COLORS = [
+      { name: 'Silver' },
+      { name: 'Titanium' },
+      { name: 'Black' }
+    ];
+
+    /* German display labels for color keys (internal keys stay English) */
+    var COLOR_LABELS = { 'Silver': 'Silber', 'Titanium': 'Titan', 'Black': 'Schwarz' };
+
+    /* Static specs shared by all variants */
+    var SPECS_SHARED = [
+      ['Material (AuÃen)', 'Eloxiertes Aluminium'],
+      ['Material (Innen)', 'Polyester'],
+      ['Material (Henkel)', 'Leder'],
+      ['Material (RÃ¤der)', 'Hartkunststoff'],
+      ['Material (TrennwÃ¤nde)', 'Polyester'],
+      ['SchlÃ¶sser', 'TSA-SchlÃ¶sser'],
+      ['RÃ¤der', 'RIMOWA MultiwheelÂ®-System (4 RÃ¤der, 360Â°)'],
+      ['Teleskopgriff', 'Stufenlos verstellbar'],
+      ['Entworfen in', 'Deutschland'],
+      ['Garantie', 'Lebenslange Garantie']
+    ];
+
+    var STATUS_LABELS = { 'in_stock': 'Auf Lager', 'limited': 'Begrenzter Bestand', 'out_of_stock': 'Ausverkauft' };
+    var STATUS_COLORS = { 'in_stock': '#2a7a2a', 'limited': '#b8860b', 'out_of_stock': '#c0392b' };
+
+    let currentImages = [];
+    let currentMedia = [];
+    let currentGalleryIdx = 0;
+    let activeSize = 'Cabin';
+    let activeColor = 'Silver';
+
+    function preloadImages(images) {
+      images.forEach(function(src) { if(src) { var i = new Image(); i.src = src; } });
+    }
+
+    /* Get the current variant object, or null */
+    function getVariant(size, color) {
+      var s = VARIANTS[size];
+      return s ? (s[color] || null) : null;
+    }
+
+    /* Get available colors for a given size */
+    function getColorsForSize(size) {
+      var s = VARIANTS[size];
+      if (!s) return [];
+      return ALL_COLORS.filter(function(c) { return !!s[c.name]; });
+    }
+
+    /* Ã¢ââ¬Ã¢ââ¬ Build color swatches (filtered by current size) Ã¢ââ¬Ã¢ââ¬ */
+    function buildColorSwatches() {
+      var container = document.getElementById('color-swatches');
+      container.innerHTML = '';
+      var colors = getColorsForSize(activeSize);
+      colors.forEach(function(c) {
+        var v = getVariant(activeSize, c.name);
+        var div = document.createElement('div');
+        div.className = 'color-swatch' + (c.name === activeColor ? ' selected' : '');
+        if (v && v.status === 'out_of_stock') div.style.opacity = '0.4';
+        div.dataset.color = c.name;
+        div.title = COLOR_LABELS[c.name] || c.name;
+        div.onclick = function() { selectColor(c.name); };
+        var img = document.createElement('img');
+        img.src = (v && v.images && v.images[0]) ? v.images[0] : '';
+        img.alt = COLOR_LABELS[c.name] || c.name;
+        div.appendChild(img);
+        container.appendChild(div);
+      });
+    }
+
+    function selectColor(colorName) {
+      activeColor = colorName;
+      document.getElementById('selected-color-name').textContent = COLOR_LABELS[colorName] || colorName;
+      document.querySelectorAll('.color-swatch').forEach(function(s) {
+        s.classList.toggle('selected', s.dataset.color === colorName);
+      });
+      applyVariant();
+    }
+
+    /* Ã¢ââ¬Ã¢ââ¬ Build size blocks Ã¢ââ¬Ã¢ââ¬ */
+    function buildSizeBlocks() {
+      var container = document.getElementById('size-blocks-container');
+      container.innerHTML = '';
+      SIZE_ORDER.forEach(function(sizeName) {
+        if (!VARIANTS[sizeName]) return;
+        var wrapper = document.createElement('div');
+        wrapper.className = 'size__block-wrapper';
+        var div = document.createElement('div');
+        div.className = 'size__block available-size';
+        div.dataset.size = sizeName;
+        div.onclick = function() { selectSize(sizeName); };
+        div.innerHTML = '<span>' + sizeName + '</span>';
+        wrapper.appendChild(div);
+        container.appendChild(wrapper);
+      });
+    }
+
+    function selectSize(sizeName) {
+      activeSize = sizeName;
+      document.querySelectorAll('.size__block').forEach(function(s) {
+        s.classList.toggle('selected', s.dataset.size === sizeName);
+      });
+      document.getElementById('selected-size-name').textContent = sizeName;
+      var dimsVariant = getVariant(sizeName, activeColor) || getVariant(sizeName, Object.keys(VARIANTS[sizeName]||{})[0]);
+      document.getElementById('selected-size-dims').textContent = dimsVariant ? dimsVariant.dims_cm + ' Â· ' + dimsVariant.volume : '';
+
+      /* If current color not available for new size, pick first available */
+      var colors = getColorsForSize(sizeName);
+      var hasColor = colors.some(function(c) { return c.name === activeColor; });
+      if (!hasColor && colors.length > 0) {
+        activeColor = colors[0].name;
+        document.getElementById('selected-color-name').textContent = COLOR_LABELS[activeColor] || activeColor;
+      }
+      buildColorSwatches();
+      applyVariant();
+    }
+
+    /* Ã¢ââ¬Ã¢ââ¬ Apply variant: update price, gallery, stock, specs Ã¢ââ¬Ã¢ââ¬ */
+    function applyVariant() {
+      var v = getVariant(activeSize, activeColor);
+      if (!v) return;
+
+      /* Price */
+      updatePriceDisplay(v.price, v.compare);
+
+      /* Gallery (video first, then photos) */
+      updateGalleryMedia(v);
+      if (v.images && v.images.length > 0) preloadImages(v.images);
+
+      /* Stock indicator */
+      var stockEl = document.getElementById('stock-indicator');
+      if (stockEl) {
+        stockEl.textContent = STATUS_LABELS[v.status] || 'Auf Lager';
+        stockEl.style.color = STATUS_COLORS[v.status] || '#2a7a2a';
+      }
+
+      /* Buy button */
+      var buyBtn = document.querySelector('.shop-add-btn');
+      if (buyBtn) {
+        if (v.status === 'out_of_stock') {
+          buyBtn.disabled = true;
+          buyBtn.removeAttribute('href');
+          buyBtn.querySelector('svg').nextSibling.textContent = ' Ausverkauft';
+        } else {
+          buyBtn.disabled = false;
+          var btnText = buyBtn.querySelector('svg');
+          if (btnText && btnText.nextSibling) btnText.nextSibling.textContent = ' Jetzt kaufen';
+        }
+      }
+
+      /* Use case volume */
+      var ucVol = document.getElementById('usecase-volume');
+      if (ucVol && v.volume) ucVol.textContent = v.volume;
+
+      /* Ideal trip length */
+      var idealEl = document.getElementById('size-ideal-line');
+      if (idealEl && v.days) idealEl.innerHTML = 'Ideal fÃ¼r <strong style="color:var(--text-body);font-weight:500;">' + v.days + '</strong> Reise';
+
+      /* Specs accordion */
+      updateSpecsForVariant(v);
+    }
+
+    var EUR_FMT = new Intl.NumberFormat('de-DE', { style: 'currency', currency: 'EUR' });
+    function fmtEUR(value) { return EUR_FMT.format(parseFloat(value)); }
+
+    function updatePriceDisplay(price, comparePrice) {
+      var el = document.getElementById('product-price-sale');
+      if (!el) return;
+      el.classList.remove('price-pop');
+      void el.offsetWidth;
+      el.textContent = fmtEUR(price);
+      el.classList.add('price-pop');
+
+      var compareEl = document.getElementById('product-price-compare');
+      var badgeEl = document.getElementById('product-sale-badge');
+      if (compareEl && badgeEl && comparePrice) {
+        compareEl.textContent = fmtEUR(comparePrice);
+        var saleNum = parseFloat(price);
+        var compareNum = parseFloat(comparePrice);
+        var pct = Math.round((1 - saleNum / compareNum) * 100);
+        badgeEl.textContent = '-' + pct + '%';
+      }
+    }
+
+    function updateSpecsForVariant(v) {
+      var detEl = document.getElementById('acc-details-content');
+      if (!detEl) return;
+      var specs = [];
+      specs.push(['SKU', v.sku]);
+      specs.push(['GrÃ¶Ãe', activeSize]);
+      specs.push(['Farbe', COLOR_LABELS[activeColor] || activeColor]);
+      specs.push(['MaÃe (cm)', v.dims_cm]);
+      if (v.weight && v.weight !== 'N/A') specs.push(['Gewicht', v.weight]);
+      if (v.volume && v.volume !== 'N/A') specs.push(['Volumen', v.volume]);
+      specs = specs.concat(SPECS_SHARED);
+      detEl.innerHTML = '<ul>' + specs.map(function(r) {
+        return '<li><strong>' + r[0] + ':</strong> ' + r[1] + '</li>';
+      }).join('') + '</ul>';
+    }
+
+    /* Cross-fade the main gallery image to a new src */
+    var _fadeTimer = null;
+    function fadeGalleryTo(src) {
+      var mainImg = document.getElementById('gallery-main-img');
+      if (!mainImg || !src) return;
+      if (mainImg.getAttribute('src') === src) return;
+      if (_fadeTimer) { clearTimeout(_fadeTimer); _fadeTimer = null; }
+      mainImg.style.opacity = '0';
+      _fadeTimer = setTimeout(function() {
+        _fadeTimer = null;
+        var probe = new Image();
+        probe.onload = function() {
+          mainImg.src = src;
+          requestAnimationFrame(function() { mainImg.style.opacity = '1'; });
+        };
+        probe.onerror = function() {
+          mainImg.src = src;
+          requestAnimationFrame(function() { mainImg.style.opacity = '1'; });
+        };
+        probe.src = src;
+      }, 180);
+    }
+
+    function updateGalleryMedia(v) {
+      var media = [];
+      if (v.video && v.video.src) media.push({ type:'video', src:v.video.src, poster:v.video.poster });
+      (v.images || []).forEach(function(src){ media.push({ type:'image', src:src }); });
+      currentMedia = media;
+      currentImages = (v.images || []);
+      currentGalleryIdx = 0;
+      showMedia(0);
+      var strip = document.querySelector('.thumbnail-strip');
+      if (!strip) return;
+      strip.innerHTML = '';
+      media.forEach(function(item, i) {
+        var div = document.createElement('div');
+        div.className = 'thumbnail thumbnail-anim' + (i === 0 ? ' active' : '');
+        div.style.animationDelay = (i * 30) + 'ms';
+        div.onclick = (function(idx, el) { return function() { selectThumb(el, idx); }; })(i, div);
+        var img = document.createElement('img');
+        img.src = item.type === 'video' ? (item.poster || '') : item.src;
+        img.alt = item.type === 'video' ? 'Produktvideo abspielen' : ('Ansicht ' + i);
+        img.style.cssText = 'width:100%;height:100%;object-fit:cover;';
+        div.appendChild(img);
+        if (item.type === 'video') {
+          div.style.position = 'relative';
+          var play = document.createElement('span');
+          play.textContent = 'â¶';
+          play.style.cssText = 'position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:22px;height:22px;border-radius:50%;background:rgba(0,0,0,.55);color:#fff;font-size:8px;display:flex;align-items:center;justify-content:center;padding-left:1px;pointer-events:none;';
+          div.appendChild(play);
+        }
+        strip.appendChild(div);
+      });
+    }
+
+    /* Show a media item (video or image) in the main gallery area */
+    function showMedia(idx) {
+      var item = currentMedia[idx];
+      if (!item) return;
+      currentGalleryIdx = idx;
+      var main = document.getElementById('gallery-main');
+      var img = document.getElementById('gallery-main-img');
+      var vid = document.getElementById('gallery-main-video');
+      if (item.type === 'video') {
+        if (img) img.style.display = 'none';
+        if (!vid && main) {
+          vid = document.createElement('video');
+          vid.id = 'gallery-main-video';
+          vid.muted = true; vid.loop = true; vid.autoplay = true; vid.playsInline = true; vid.preload = 'metadata';
+          vid.setAttribute('muted',''); vid.setAttribute('playsinline',''); vid.setAttribute('autoplay','');
+          vid.style.cssText = 'width:100%;height:100%;object-fit:cover;background:#fff;display:block;';
+          var arrows = main.querySelector('.gallery-arrows');
+          if (arrows) main.insertBefore(vid, arrows); else main.appendChild(vid);
+        }
+        if (vid) {
+          vid.style.display = 'block';
+          if (item.poster) vid.poster = item.poster;
+          if (vid.getAttribute('data-src') !== item.src) {
+            vid.setAttribute('data-src', item.src);
+            vid.src = item.src;
+            try { vid.load(); } catch(e){}
+          }
+          var p = vid.play(); if (p && p.catch) p.catch(function(){});
+        }
+      } else {
+        if (vid) { try { vid.pause(); } catch(e){} vid.style.display = 'none'; }
+        if (img) { img.style.display = 'block'; fadeGalleryTo(item.src); }
+      }
+    }
+
+    function initVariants() {
+      buildSizeBlocks();
+      buildColorSwatches();
+      selectSize('Cabin');
+    }
+
+    /* ---- Gallery thumbnails ---- */
+    function setActiveThumb(idx) {
+      document.querySelectorAll('.thumbnail').forEach(function(t, i){ t.classList.toggle('active', i === idx); });
+    }
+
+    function selectThumb(el, idx) {
+      setActiveThumb(idx);
+      showMedia(idx);
+    }
+
+    function galleryNext() {
+      if (!currentMedia.length) return;
+      var idx = (currentGalleryIdx + 1) % currentMedia.length;
+      setActiveThumb(idx);
+      showMedia(idx);
+    }
+
+    function galleryPrev() {
+      if (!currentMedia.length) return;
+      var idx = (currentGalleryIdx - 1 + currentMedia.length) % currentMedia.length;
+      setActiveThumb(idx);
+      showMedia(idx);
+    }
+
+    document.addEventListener('DOMContentLoaded', initVariants);
+
+    /* ---- Reviews data ---- */
+  var REVIEWS_DATA = [
+    {"id":1001,"score":5,"title":"Einmal anfassen und man versteht es","content":"Sobald man einen RIMOWA einmal gerollt hat, versteht man es â man begreift genau, warum er kostet, was er kostet. Die RÃ¤der gleiten auf praktisch jedem Untergrund wie Butter, und ihn durch einen vollen Flughafen zu manÃ¶vrieren macht richtig SpaÃ. Nach einem Leben mit normalem GepÃ¤ck war das ein echter Wow-Moment â der Unterschied ist sofort spÃ¼rbar. Und die Langlebigkeit ist kein Witz: Als das Innenfutter bei uns anfing auszufransen, sind wir einfach in einen Store gegangen. Sie haben es repariert â und uns sogar einen Leihkoffer mitgegeben, solange unserer in der Werkstatt war. So sieht echter Luxus-Service aus.","date":"2026-03-10T10:00:00.000Z","verified":true,"author":"Sarah Brandt","photos":["images/reviews/1747311077799.avif"]},
+    {"id":1002,"score":5,"title":"Endlich â und keine Sekunde bereut","content":"Ich habe so lange von diesem Koffer getrÃ¤umt. Als er endlich ankam, war ich Ã¼berglÃ¼cklich â und das Beste: Man merkt sofort, dass das kein rausgeworfenes Geld war. Jeder Euro ist gerechtfertigt. RIMOWA ist einfach jeden Cent wert.","date":"2026-02-20T09:00:00.000Z","verified":true,"author":"Tobias Wegner","photos":["images/reviews/1754435665040.avif"]},
+    {"id":1003,"score":5,"title":"Das perfekte HandgepÃ¤ck â fÃ¼r immer","content":"Das perfekte HandgepÃ¤ck. Zeitlos, robust und komplett anpassbar. Definitiv eines dieser 'einmal kaufen, fÃ¼r immer behalten'-Dinge. Ich bin so froh, dass ich diese Investition gemacht habe â ich werde noch jahrzehntelang Freude daran haben. Und ich liebe es, dass man fÃ¼r Reparaturen und eine LederprÃ¤gung einfach in den Store gehen kann!","date":"2026-01-15T14:00:00.000Z","verified":true,"author":"Melanie KÃ¶hler","photos":["images/reviews/1747322021997.avif"]},
+    {"id":1004,"score":5,"title":"Einfach perfekt","content":"Der RIMOWA Cabin ist schlicht und einfach perfekt. Die QualitÃ¤t ist auÃergewÃ¶hnlich â man spÃ¼rt die hochwertige Verarbeitung und Langlebigkeit im selben Moment, in dem man ihn in die Hand nimmt. Das elegante Design verleiht jeder Reise eine gewisse Klasse und passt wunderbar zum Rest meines GepÃ¤cks. RIMOWA hat es einfach perfekt hinbekommen. Ein absolutes Muss fÃ¼r jeden, der ernsthaft reist!","date":"2025-11-20T11:00:00.000Z","verified":true,"author":"Lukas Berger","photos":["images/reviews/1696447234585.avif"]},
+    {"id":1005,"score":5,"title":"Kein anderer Koffer kommt da ran","content":"Wenn man einmal einen RIMOWA gerollt hat â dann ist es vorbei. Ich habe so viele Marken ausprobiert, aber nichts kommt auch nur ansatzweise an die Art heran, wie sich dieses Teil bewegt. Die QualitÃ¤t ist auf einem vÃ¶llig anderen Niveau, gebaut fÃ¼r ein ganzes Leben. Der Kundenservice ist fantastisch â schnell und lÃ¶st Probleme ohne Hin und Her. Und die lebenslange Garantie besiegelt das Ganze.","date":"2025-10-08T08:00:00.000Z","verified":true,"author":"Katharina Seibert","photos":["images/reviews/1751170575825.avif"]},
+    {"id":1006,"score":5,"title":"Eine Investition, die sich wirklich lohnt","content":"Definitiv ein StÃ¼ck zum VerwÃ¶hnen. Ich habe den Cabin vor ein paar Jahren als Belohnung fÃ¼r mich selbst gekauft, als ich einen neuen Job angefangen habe â und er sieht immer noch genauso umwerfend aus wie am ersten Tag. Ja, er ist teuer. Aber er ist so auffallend schÃ¶n und rollt so geschmeidig, dass er jeden Euro wert ist.\n\nVoll gepackt ist er etwas schwer ins GepÃ¤ckfach zu heben â aber das Stauvolumen ist hervorragend und die Schale fÃ¼hlt sich absolut unzerstÃ¶rbar an.\n\nEine Traditionsmarke mit echtem Stil und einer wirklich coolen Geschichte hinter diesen Aluminium-Koffern. Die beste Kombination aus Form und Funktion, die mir je begegnet ist.","date":"2025-09-12T16:00:00.000Z","verified":true,"author":"Frank Grasser","photos":[]},
+    {"id":1007,"score":5,"title":"Liebe auf den ersten Blick","content":"Ich habe mir vor Kurzem einen RIMOWA gegÃ¶nnt â und ich bin vÃ¶llig hin und weg. Das elegante Aluminium-Design zieht Blicke auf sich, ist dabei aber kratzfest und unglaublich robust. Die RÃ¤der rollen mÃ¼helos, die Innenaufteilung ist durchdacht und praktisch. Ja, er ist nicht billig â aber glaubt mir, er ist jeden Cent wert.","date":"2025-08-05T10:00:00.000Z","verified":true,"author":"Anna Drechsler","photos":["images/reviews/1690964453973.avif"]},
+    {"id":1008,"score":5,"title":"Beweist mir das Gegenteil","content":"RIMOWA ist einfach unglaublich. Ich bin mit diesem Koffer um die halbe Welt gereist â und er steckt alles weg. Die QualitÃ¤t ist unÃ¼bertroffen, und die RÃ¤der sind mit Abstand die besten der Branche: Sie gleiten selbst auf rauen OberflÃ¤chen wie auf Schienen. Stilvoll, robust und bereit fÃ¼r jedes Abenteuer. Ich habe nirgendwo besseres GepÃ¤ck gefunden. Beweist mir das Gegenteil.","date":"2025-07-18T12:00:00.000Z","verified":true,"author":"Markus Vogel","photos":["images/reviews/the-review-i-wanted-rimowa-classic-cabin-and-check-in-l-v0-3n9g4vixdszc1.avif"]},
+    {"id":1009,"score":5,"title":"11 Koffer spÃ¤ter â keine Reue","content":"Meinen ersten RIMOWA habe ich 2019 bekommen und mich sofort verliebt. Ja, sie sind teuer â aber in 7 Jahren Reisen ist mir nie auch nur ein einziger Koffer kaputtgegangen. Allein das ist es wert. Und die RÃ¤der... die sind einfach in einer eigenen Liga.\n\nDie meisten habe ich auf Reisen gekauft, vor allem hier in Deutschland und im europÃ¤ischen Ausland. Inzwischen sind es 11 â 9 behalte ich, 2 habe ich meinen Eltern geschenkt. Einmal RIMOWA, immer RIMOWA.","date":"2025-06-01T09:00:00.000Z","verified":true,"author":"Julia Hartmann","photos":["images/reviews/7-years-with-rimowa-luggages-ama-v0-anpd7wfeg9eg1.avif"]},
+    {"id":1010,"score":5,"title":"Die Investition, die sich wirklich auszahlt","content":"Unglaubliches Produkt. Zeitloses Design, makellose QualitÃ¤t. Beim Preis habe ich zuerst gezÃ¶gert â aber jetzt weiÃ ich, dass es absolut die richtige Entscheidung war. RIMOWA hÃ¤lt. Davor habe ich immer billige Koffer gekauft, die auseinanderfielen â abbrechende RÃ¤der, aufplatzende ReiÃverschlÃ¼sse, splitternde Schalen. Der stÃ¤ndige Ersatz hat am Ende mehr gekostet. Mit meinen RIMOWAs bin ich schon mehrfach um die Welt gereist. Diese 4 Spinner-RÃ¤der sind ein absoluter Traum â Reisen fÃ¼hlt sich so mÃ¼helos an.","date":"2025-04-22T15:00:00.000Z","verified":true,"author":"Stefan Naumann","photos":["images/reviews/8124VqeWqVL.avif"]},
+    {"id":1011,"score":5,"title":"FÃ¼r immer. Keine Ãbertreibung.","content":"Ja, es lohnt sich. Dieser Koffer hÃ¤lt ein Leben lang. RIMOWA steht hinter seinen Produkten, bietet eine groÃzÃ¼gige Garantie und repariert oder ersetzt MÃ¤ngel ohne jeden Aufwand. Einfach kaufen und nie wieder daran denken.","date":"2025-03-14T11:00:00.000Z","verified":true,"author":"Petra Welling","photos":["images/reviews/718bHfp9ZdL.avif"]},
+    {"id":1012,"score":5,"title":"100% Empfehlung â keine Frage","content":"Diese Koffer sind einfach fantastisch. Super praktisch, unglaublich geschmeidig zu rollen ð¤© AuÃerdem leicht und wunderschÃ¶n â die Leute bleiben am Flughafen tatsÃ¤chlich stehen und schauen. 100% Empfehlung!","date":"2025-02-08T13:00:00.000Z","verified":true,"author":"Christian Bachmann","photos":["images/reviews/71tMHtNABpL.avif"]},
+    {"id":1013,"score":5,"title":"So gut, dass ich gleich mehrere gekauft habe","content":"Ich bin absolut verliebt in meinen neuen Cabin. Der Griff ist der bequemste, den ich je an einem Koffer hatte â und die RÃ¤der rollen unglaublich geschmeidig. Ich war so begeistert, dass ich direkt zurÃ¼ckgegangen bin und noch ein paar fÃ¼r meine Familie gekauft habe.","date":"2024-12-19T10:00:00.000Z","verified":true,"author":"Nina Scholz","photos":[]},
+    {"id":1014,"score":5,"title":"Einmal kaufen â fÃ¼r immer besitzen","content":"RIMOWA-Produkte sehen nicht nur fantastisch aus, sie sind nach hÃ¶chsten Standards gefertigt. Sie funktionieren makellos und kommen mit lebenslanger Garantie â das macht es zu einem einmaligen Kauf, der den Preis vÃ¶llig rechtfertigt.","date":"2024-11-03T09:00:00.000Z","verified":true,"author":"David Keller","photos":[]},
+    {"id":1015,"score":5,"title":"Dezent. Aber jeder erkennt es.","content":"Das ultimative Reise-Statussymbol fÃ¼r alle, die es lieber zurÃ¼ckhaltend mÃ¶gen. Man muss kein Wort sagen â der Koffer sagt alles.","date":"2024-10-11T14:00:00.000Z","verified":true,"author":"Susanne Friedrich","photos":[]},
+    {"id":1016,"score":5,"title":"Zeitlose Ikonen â deutsche Ingenieurskunst vom Feinsten","content":"2022 habe ich mir den Original Cabin geholt und meinem Partner den Classic Cabin. Beide sind seitdem treue Begleiter auf unzÃ¤hligen Reisen. RIMOWA macht einfach zeitlose Ikonen â deutsche Ingenieurskunst auf absolutem HÃ¶chstniveau.","date":"2024-09-05T08:00:00.000Z","verified":true,"author":"Andreas Zwick","photos":[]},
+    {"id":1017,"score":5,"title":"SchÃ¶n, gerÃ¤umig, jeden Euro wert","content":"Der Kauf war reibungslos â einfach und unkompliziert. Mein RIMOWA Cabin ist gerÃ¤umig, Ã¶ffnet und schlieÃt mÃ¼helos, sieht absolut umwerfend aus und ist den Preis komplett wert.","date":"2024-08-22T16:00:00.000Z","verified":true,"author":"Lea Ostermann","photos":[]},
+    {"id":1018,"score":5,"title":"Die besten Koffer der Welt â Punkt.","content":"RIMOWA macht einfach das beste GepÃ¤ck â da gibt es nichts zu diskutieren. Riesiges Volumen und trotzdem leicht. Dreht und rollt wie ein Traum. HÃ¤lt ein Leben lang. Jeden Euro wert â und noch mehr!","date":"2024-07-14T10:00:00.000Z","verified":true,"author":"Michael Traut","photos":[]},
+    {"id":1019,"score":5,"title":"Begeistert schon vor der ersten Reise","content":"Ich wollte nur meine ersten EindrÃ¼cke von meinem neuen RIMOWA Cabin teilen. Ich hatte noch keine Gelegenheit, ihn auf eine Reise mitzunehmen â aber ich bin jetzt schon ehrlich begeistert. Die VerarbeitungsqualitÃ¤t, das GefÃ¼hl des Aluminiums, die Handwerkskunst insgesamt â genau das, was ich mir erhofft hatte. Alles daran strahlt Langlebigkeit und durchdachtes Design aus.\n\nIch kann es kaum erwarten, ihn endlich auf einer Reise zu nutzen â aber schon vom ersten Eindruck her ist klar: Das ist ein Koffer, der bleibt.","date":"2024-06-03T12:00:00.000Z","verified":true,"author":"Hanna Burkhardt","photos":[]},
+    {"id":1020,"score":5,"title":"Mein erster RIMOWA â definitiv nicht mein letzter","content":"Mein erster RIMOWA â und was fÃ¼r ein Einstieg. Der Cabin hat die perfekte GrÃ¶Ãe und die QualitÃ¤t ist einfach erstklassig. Der Versand war schnell und das Tracking hat mich bei jedem Schritt auf dem Laufenden gehalten. Ja, er ist nicht billig â aber ich plane schon, mir bald die nÃ¤chstgrÃ¶Ãere Variante zu holen. Absolute Empfehlung!","date":"2024-05-17T09:00:00.000Z","verified":true,"author":"Frank Heinrich","photos":[]},
+    {"id":1021,"score":5,"title":"Kaum zu Ã¼bersehen â aus gutem Grund","content":"RIMOWA ist eine ikonische GepÃ¤ckmarke, an der man einfach nicht vorbeikommt, wenn man es ernst meint mit wirklich gutem GepÃ¤ck.","date":"2024-04-09T11:00:00.000Z","verified":true,"author":"Caroline Meyer","photos":[]},
+    {"id":1022,"score":5,"title":"Man bekommt, wofÃ¼r man bezahlt","content":"Der Bestellvorgang und das Tracking waren hervorragend! Man bekommt hier wirklich genau das, wofÃ¼r man bezahlt. Absolut jeden Cent wert!","date":"2024-03-21T08:00:00.000Z","verified":true,"author":"Jens Walter","photos":[]}
+  ];
+  (function(){
+    var _sorted = REVIEWS_DATA.slice().sort(function(a,b){
+      var ap = a.photos.length > 0 ? 1 : 0, bp = b.photos.length > 0 ? 1 : 0;
+      if (bp !== ap) return bp - ap;
+      return new Date(b.date) - new Date(a.date);
+    });
+    var _rendered = 0, BATCH = 6;
+
+    function _esc(s) {
+      return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+    function _stars(n) {
+      var s = ''; for (var i=0;i<5;i++) s += i<n?'\u2605':'\u2606'; return s;
+    }
+    function _date(iso) {
+      var d = new Date(iso);
+      var mo = ['Jan.','Feb.','MÃ¤rz','Apr.','Mai','Juni','Juli','Aug.','Sep.','Okt.','Nov.','Dez.'];
+      return d.getDate()+'. '+mo[d.getMonth()]+' '+d.getFullYear();
+    }
+
+    function renderBatch() {
+      var list = document.getElementById('reviews-list');
+      var end = Math.min(_rendered + BATCH, _sorted.length);
+      var frag = document.createDocumentFragment();
+      for (var i = _rendered; i < end; i++) {
+        var r = _sorted[i];
+        var div = document.createElement('div');
+        div.className = 'review-item review-item-anim';
+        div.style.animationDelay = ((i - _rendered) * 45) + 'ms';
+        var photosHtml = '';
+        if (r.photos.length > 0) {
+          photosHtml = '<div class="review-item__photos">';
+          r.photos.forEach(function(url){
+            photosHtml += '<img class="review-photo-thumb" src="'+url+'" alt="Foto" loading="lazy" onclick="openReviewLightbox(\''+url+'\')">';
+          });
+          photosHtml += '</div>';
+        }
+        var verifiedHtml = r.verified ? '<span class="review-verified">\u2713 Verifiziert</span>' : '';
+        var initial = r.author.charAt(0).toUpperCase();
+        div.innerHTML =
+          '<div class="review-avatar">'+initial+'</div>'+
+          '<div class="review-item__content">'+
+            '<div class="review-item__header">'+
+              '<span class="review-item__meta">'+_esc(r.author)+' Â· '+_date(r.date)+verifiedHtml+'</span>'+
+            '</div>'+
+            '<div style="display:flex;align-items:center;gap:12px;margin-bottom:4px;">'+
+              '<span class="review-item__stars">'+_stars(r.score)+'</span>'+
+              '<span class="review-item__title">'+_esc(r.title)+'</span>'+
+            '</div>'+
+            '<p class="review-item__body">'+_esc(r.content).replace(/\n/g,'<br>')+'</p>'+
+            photosHtml+
+          '</div>';
+        frag.appendChild(div);
+      }
+      list.appendChild(frag);
+      _rendered = end;
+      var btn = document.getElementById('reviews-load-more-btn');
+      btn.textContent = 'Alle Bewertungen ansehen (' + _sorted.length + ')';
+    }
+
+    document.addEventListener('DOMContentLoaded', function(){
+      renderBatch();
+      document.getElementById('reviews-load-more-btn').onclick = function(){ window.openReviewsPopup(); };
+    });
+
+    /* Ã¢ââ¬Ã¢ââ¬ Reviews popup carousel Ã¢ââ¬Ã¢ââ¬ */
+    var _popupIdx = 0;
+    var _popupBuilt = false;
+
+    function _buildPopupCards() {
+      if (_popupBuilt) return;
+      var body = document.getElementById('reviews-popup-body');
+      _sorted.forEach(function(r, i) {
+        var card = document.createElement('div');
+        card.className = 'reviews-popup__card' + (i === 0 ? ' active' : '');
+        card.setAttribute('data-idx', i);
+        var photosHtml = '';
+        if (r.photos && r.photos.length > 0) {
+          photosHtml = '<div class="reviews-popup__card-photos">';
+          r.photos.forEach(function(url) {
+            photosHtml += '<img src="'+url+'" alt="Foto" loading="lazy" onclick="openReviewLightbox(\''+url+'\')">';
+          });
+          photosHtml += '</div>';
+        }
+        var verifiedHtml = r.verified ? ' Â· <span style="color:#2a7d2a">\u2713 Verifiziert</span>' : '';
+        var popupInitial = r.author.charAt(0).toUpperCase();
+        card.innerHTML =
+          '<div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;"><div class="review-avatar">'+popupInitial+'</div><div><div class="reviews-popup__card-stars">'+_stars(r.score)+'</div>'+
+          '<div class="reviews-popup__card-meta">'+_esc(r.author)+' Â· '+_date(r.date)+verifiedHtml+'</div></div></div>'+
+          '<div class="reviews-popup__card-title">'+_esc(r.title)+'</div>'+
+          '<div class="reviews-popup__card-body">'+_esc(r.content).replace(/\n/g,'<br>')+'</div>'+
+          photosHtml;
+        body.appendChild(card);
+      });
+      _popupBuilt = true;
+    }
+
+    function _updatePopupCounter() {
+      var txt = (_popupIdx + 1) + ' / ' + _sorted.length;
+      document.getElementById('reviews-popup-counter').textContent = txt;
+      document.getElementById('reviews-popup-nav-counter').textContent = txt;
+      document.getElementById('reviews-popup-prev').disabled = _popupIdx === 0;
+      document.getElementById('reviews-popup-next').disabled = _popupIdx === _sorted.length - 1;
+    }
+
+    window.openReviewsPopup = function() {
+      _buildPopupCards();
+      _popupIdx = 0;
+      var cards = document.querySelectorAll('.reviews-popup__card');
+      cards.forEach(function(c) { c.classList.remove('active'); });
+      if (cards[0]) cards[0].classList.add('active');
+      _updatePopupCounter();
+      document.getElementById('reviews-popup').classList.add('active');
+      document.body.style.overflow = 'hidden';
+      document.addEventListener('keydown', _popupKey);
+    };
+
+    window.closeReviewsPopup = function() {
+      document.getElementById('reviews-popup').classList.remove('active');
+      document.body.style.overflow = '';
+      document.removeEventListener('keydown', _popupKey);
+    };
+
+    window.reviewsPopupNav = function(dir) {
+      var cards = document.querySelectorAll('.reviews-popup__card');
+      var next = _popupIdx + dir;
+      if (next < 0 || next >= cards.length) return;
+      cards[_popupIdx].classList.remove('active');
+      _popupIdx = next;
+      cards[_popupIdx].classList.add('active');
+      _updatePopupCounter();
+    };
+
+    function _popupKey(e) {
+      if (e.key === 'Escape') closeReviewsPopup();
+      if (e.key === 'ArrowLeft') reviewsPopupNav(-1);
+      if (e.key === 'ArrowRight') reviewsPopupNav(1);
+    }
+  })();
+
+  function openReviewLightbox(url) {
+    var lb = document.getElementById('review-lightbox');
+    var img = document.getElementById('review-lightbox-img');
+    img.src = url;
+    lb.classList.add('active');
+    document.addEventListener('keydown', _lbKeyClose);
+  }
+  function closeReviewLightbox() {
+    document.getElementById('review-lightbox').classList.remove('active');
+    document.removeEventListener('keydown', _lbKeyClose);
+  }
+  function _lbKeyClose(e) { if (e.key === 'Escape') closeReviewLightbox(); }
+
+  </script>
+
+  <!-- Reviews popup carousel -->
+  <div id="reviews-popup" onclick="if(event.target===this)closeReviewsPopup()">
+    <div class="reviews-popup__box">
+      <div class="reviews-popup__header">
+        <span class="reviews-popup__title">Alle Bewertungen</span>
+        <span class="reviews-popup__counter" id="reviews-popup-counter"></span>
+        <button class="reviews-popup__close" onclick="closeReviewsPopup()">&#x2715;</button>
+      </div>
+      <div class="reviews-popup__body" id="reviews-popup-body"></div>
+      <div class="reviews-popup__nav">
+        <button class="reviews-popup__arrow" id="reviews-popup-prev" onclick="reviewsPopupNav(-1)">&#8249;</button>
+        <span class="reviews-popup__counter" id="reviews-popup-nav-counter"></span>
+        <button class="reviews-popup__arrow" id="reviews-popup-next" onclick="reviewsPopupNav(1)">&#8250;</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="review-lightbox" onclick="closeReviewLightbox()">
+    <span id="review-lightbox-close">&#x2715;</span>
+    <img id="review-lightbox-img" src="" alt="Bewertungsfoto">
+  </div>
+
+
+  <script>
+    function goToCheckout() {
+      var v = getVariant(activeSize, activeColor);
+      if (!v || !v.id) return;
+
+      var qty = parseInt(document.querySelector('.quantity-selector').value) || 1;
+
+      var bounce = new URL('https://wury-rings.de/pages/go');
+      bounce.searchParams.set('v', v.id);
+      bounce.searchParams.set('q', qty);
+
+      var allowed = ['fbclid','utm_source','utm_medium','utm_campaign','utm_content','utm_term'];
+      var pageParams = new URLSearchParams(window.location.search);
+      allowed.forEach(function(k) { if (pageParams.has(k)) bounce.searchParams.set(k, pageParams.get(k)); });
+
+      var a = document.createElement('a');
+      a.href = bounce.toString();
+      a.rel = 'noreferrer noopener';
+      a.referrerPolicy = 'no-referrer';
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
+    }
+  </script>
+
+  <script>
+  (function(){
+    var el = document.getElementById('promo-deadline-date');
+    if(!el) return;
+    el.textContent = new Date().toLocaleDateString('de-DE', {timeZone: 'Europe/Berlin', day:'numeric', month:'long', year:'numeric'});
+  })();
+
+  (function(){
+    var el = document.getElementById('delivery-estimate-date');
+    if (!el) return;
+    function addBusinessDays(date, days) {
+      var d = new Date(date);
+      var added = 0;
+      while (added < days) {
+        d.setDate(d.getDate() + 1);
+        var dow = d.getDay();
+        if (dow !== 0 && dow !== 6) added++;
+      }
+      return d;
+    }
+    var now = new Date();
+    var d1 = addBusinessDays(now, 6);
+    var d2 = addBusinessDays(now, 14);
+    var opts = { timeZone: 'Europe/Berlin', day: 'numeric', month: 'long' };
+    var from = d1.toLocaleDateString('de-DE', opts);
+    var to   = d2.toLocaleDateString('de-DE', { timeZone: 'Europe/Berlin', day: 'numeric', month: 'long', year: 'numeric' });
+    el.textContent = from + ' â ' + to;
+  })();
+
+  function toggleAccordion(btn) {
+    var item = btn.closest('.zwg-accordion__item');
+    var isOpen = item.classList.contains('open');
+    document.querySelectorAll('.zwg-accordion__item.open').forEach(function(el){ el.classList.remove('open'); });
+    if (!isOpen) item.classList.add('open');
+  }
+
+  function openDescModal() {
+    var variant = getVariant(activeSize, activeColor);
+    if (variant) {
+      document.getElementById('modal-masze').textContent   = variant.dims_cm   || 'â';
+      document.getElementById('modal-gewicht').textContent = variant.weight     || 'â';
+      document.getElementById('modal-volumen').textContent = variant.volume     || 'â';
+    }
+    document.getElementById('desc-modal-overlay').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  </script>
+
+  <script>
+/* Urgency bar: random stock count 3-12 */
+(function() {
+  var units = Math.floor(Math.random() * 10) + 3;
+  document.getElementById('urgency-count').textContent = units;
+  document.getElementById('urgency-fill').style.width = Math.round((units / 12) * 50) + '%';
+})();
+
+document.addEventListener('DOMContentLoaded', function() {
+  var io = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('in');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { rootMargin: '0px 0px -60px 0px', threshold: 0 });
+  document.querySelectorAll('.sr').forEach(function(el) { io.observe(el); });
+});
+  </script>
+
+  <script>
+  /* Ã¢ââ¬Ã¢ââ¬ Block pinch zoom on mobile only Ã¢ââ¬Ã¢ââ¬ */
+  document.addEventListener('touchstart', function(e) {
+    if (e.touches.length > 1) e.preventDefault();
+  }, { passive: false });
+  </script>
+
+
+  <!-- BACK-BUTTON EXIT REDIRECT -->
+  <script>
+    (function() {
+      var redirected = false;
+      history.pushState({ exitGuard: true }, '', window.location.href);
+
+      window.addEventListener('popstate', function() {
+        if (redirected) return;
+        redirected = true;
+        var shop = document.getElementById('shop');
+        if (shop) {
+          shop.scrollIntoView({ behavior: 'smooth' });
+        }
+        history.pushState({ exitGuard: true }, '', window.location.href);
+      });
+    })();
+  </script>
+
+
+  <!-- Description full modal -->
+  <div class="desc-modal-overlay" id="desc-modal-overlay" onclick="if(event.target===this){this.classList.remove('open');document.body.style.overflow=''}">
+    <div class="desc-modal">
+      <button class="desc-modal__close" onclick="document.getElementById('desc-modal-overlay').classList.remove('open');document.body.style.overflow=''">&times;</button>
+
+      <h4>RIMOWA Classic</h4>
+      <p>Der RIMOWA Classic ist der definitive Ausdruck deutscher Koffer-Ingenieurskunst. Seit 1898 steht RIMOWA fÃ¼r kompromisslose QualitÃ¤t â und der Classic verkÃ¶rpert dieses Erbe in seiner reinsten Form.</p>
+      <p>Gefertigt aus hochwertigem eloxiertem Aluminium mit charakteristischen Lederhenkeln und dem legendÃ¤ren Rillendesign, das die Marke seit 1898 prÃ¤gt. Jeder Koffer wird in Deutschland entworfen und mit hÃ¶chster PrÃ¤zision gebaut.</p>
+
+      <h4>MultiwheelÂ® System</h4>
+      <p>Vier prÃ¤zisionsgefertigte RÃ¤der sorgen fÃ¼r mÃ¼helose 360Â°-MobilitÃ¤t auf jedem Untergrund. Das patentierte MultiwheelÂ®-System bietet flÃ¼sterleisen Lauf und herausragende StabilitÃ¤t â ob auf Flughafen-Marmor oder Kopfsteinpflaster.</p>
+
+      <h4>TSA-SchlÃ¶sser</h4>
+      <p>Zwei integrierte TSA-SchlÃ¶sser sorgen fÃ¼r sicheres Reisen Ã¼berall auf der Welt. Die SchlÃ¶sser lassen sich von der Sicherheitskontrolle mit einem Universal-GeneralschlÃ¼ssel beschÃ¤digungsfrei Ã¶ffnen â ideal fÃ¼r Reisen in die und aus den USA.</p>
+
+      <h4>Flex-Divider-System</h4>
+      <p>Das flexible Trennsystem lÃ¤sst Sie die Innenaufteilung fÃ¼r jede Art von Reise individuell gestalten. Businesskleidung auf der einen, Freizeitkleidung auf der anderen Seite, oder kompaktes Packen fÃ¼r einen Wochenendtrip â der Flex Divider passt sich Ihren BedÃ¼rfnissen an.</p>
+
+      <h4>Stufenloser Teleskopgriff</h4>
+      <p>Der stufenlose Teleskopgriff lÃ¤sst sich auf jede HÃ¶he einstellen und bietet mit ergonomischem Ledereinsatz maximalen Komfort â selbst auf den lÃ¤ngsten Wegen durch das Flughafenterminal.</p>
+
+      <h4>Entworfen in Deutschland</h4>
+      <p>Jeder RIMOWA Classic wird nach hÃ¶chsten deutschen QualitÃ¤tsstandards gefertigt. Mit der lebenslangen Garantie steht RIMOWA fÃ¼r die Langlebigkeit seiner Produkte ein â ein Koffer, der Generationen Ã¼berdauert.</p>
+
+      <h4>Spezifikationen</h4>
+      <p><span class="program-name">MaÃe:</span> <span id="modal-masze">â</span></p>
+      <p><span class="program-name">Gewicht:</span> <span id="modal-gewicht">â</span></p>
+      <p><span class="program-name">Volumen:</span> <span id="modal-volumen">â</span></p>
+      <p><span class="program-name">Material:</span> Eloxiertes Aluminium</p>
+      <p><span class="program-name">SchlÃ¶sser:</span> 2 Ã TSA-SchlÃ¶sser</p>
+      <p><span class="program-name">RÃ¤der:</span> 4 Ã MultiwheelÂ® (360Â°)</p>
+      <p><span class="program-name">Garantie:</span> Lebenslange Garantie</p>
+    </div>
+  </div>
+
+  <!-- Tracking pixels (placeholder Ã¢â¬" same IDs for now) -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/de_DE/fbevents.js');
+    fbq('init', '1488642849536706');
+    fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1488642849536706&ev=PageView&noscript=1" /></noscript>
+  <script>
+    !function(w,d,t){w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=
+    ["page","track","identify","instances","debug","on","off","once","ready","alias",
+    "group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"];
+    ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};
+    for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);
+    ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)
+    ttq.setAndDefer(e,ttq.methods[n]);return e};ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js";
+    ttq._i=ttq._i||{};ttq._i[e]=[];ttq._i[e]._u=r;ttq._t=ttq._t||{};ttq._t[e]=+new Date;
+    ttq._o=ttq._o||{};ttq._o[e]=n||{};var o=document.createElement("script");
+    o.type="text/javascript";o.async=!0;o.src=r+"?sdkid="+e+"&lib="+t;
+    var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
+    ttq.load('D6OA39BC77U6I6LBF7P0');
+    ttq.page();
+  }(window, document, 'ttq');
+  </script>
+</body>
+</html>
