@@ -1,26 +1,22 @@
-
-<!DOCTYPE html>
-<html lang="de-DE">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
-  <meta name="description" content="RIMOWA Classic â Der ikonische Aluminium-Koffer mit Lederhenkeln, MultiwheelÂ®-System, TSA-SchlÃ¶ssern und lebenslanger Garantie. Entworfen in Deutschland." />
-  <title>RIMOWA Classic â Der Aluminium-Koffer mit Kultstatus</title>
-
-
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Jost:wght@300;400;500;700&display=swap" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Jost:wght@300;400;500;700&display=swap" media="print" onload="this.media='all'" />
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=Jost:wght@300;400;500;700&display=swap" /></noscript>
-
-  <link rel="preconnect" href="https://wury-rings.de" crossorigin />
-
-  <!-- Preload hero image for faster LCP -->
-  <link rel="preload" as="image" href="images/products/97353004_poster.avif" />
-
-  <style>
-    /* Ã¢ââ¬Ã¢ââ¬ TOKENS Ã¢ââ¬Ã¢ââ¬ */
+
+<!DOCTYPE html>
+
+<html lang="de-DE">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<meta content="RIMOWA Classic — Der ikonische Aluminium-Koffer mit Lederhenkeln, Multiwheel®-System, TSA-Schlössern und lebenslanger Garantie. Entworfen in Deutschland." name="description"/>
+<title>RIMOWA Classic — Der Aluminium-Koffer mit Kultstatus</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&amp;family=Jost:wght@300;400;500;700&amp;display=swap" rel="preload"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&amp;family=Jost:wght@300;400;500;700&amp;display=swap" media="print" onload="this.media='all'" rel="stylesheet"/>
+<noscript><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&amp;family=Jost:wght@300;400;500;700&amp;display=swap" rel="stylesheet"/></noscript>
+<link crossorigin="" href="https://wury-rings.de" rel="preconnect"/>
+<!-- Preload hero image for faster LCP -->
+<link as="image" href="images/products/97353004_poster.avif" rel="preload"/>
+<style>
+    /* â”€â”€ TOKENS â”€â”€ */
     :root {
       --bg-primary: #FFFFFF;
       --bg-alternate: #F5F4F2;
@@ -45,7 +41,7 @@
       --t-fast: 150ms ease; --t-base: 200ms ease; --t-slow: 300ms ease;
     }
 
-    /* Ã¢ââ¬Ã¢ââ¬ RESET Ã¢ââ¬Ã¢ââ¬ */
+    /* â”€â”€ RESET â”€â”€ */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; touch-action: pan-x pan-y; overflow-x: hidden; }
     body { font-family: var(--font-ui); color: var(--text-body); background: var(--bg-primary); overflow-x: hidden; }
@@ -54,7 +50,7 @@
     button { font-family: var(--font-ui); cursor: pointer; border: none; touch-action: manipulation; }
     a { touch-action: manipulation; }
 
-    /* Ã¢ââ¬Ã¢ââ¬ LAYOUT Ã¢ââ¬Ã¢ââ¬ */
+    /* â”€â”€ LAYOUT â”€â”€ */
     :root { --cpad: 78px; }
     @media (max-width: 767px) { :root { --cpad: 24px; } }
     .container { max-width: 1280px; margin: 0 auto; padding: 0 var(--cpad); }
@@ -109,7 +105,7 @@
     }
     .feature-card--full { grid-column: 1 / -1; }
 
-    /* Ã¢ââ¬Ã¢ââ¬ How it works Ã¢â¬" carousel Ã¢ââ¬Ã¢ââ¬ */
+    /* â”€â”€ How it works â€" carousel â”€â”€ */
     .steps-carousel {
       position: relative;
       overflow: hidden;
@@ -203,7 +199,7 @@
       transition: width 4.5s linear;
     }
 
-    /* Ã¢ââ¬Ã¢ââ¬ Description modal Ã¢ââ¬Ã¢ââ¬ */
+    /* â”€â”€ Description modal â”€â”€ */
     .desc-modal-overlay {
       position: fixed; inset: 0; z-index: 9999;
       background: rgba(0,0,0,0.55);
@@ -257,7 +253,7 @@
     }
     .btn--ver-mas:hover { opacity: 0.75; }
 
-    /* Ã¢ââ¬Ã¢ââ¬ Use cases grid Ã¢ââ¬Ã¢ââ¬ */
+    /* â”€â”€ Use cases grid â”€â”€ */
     .usecases-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -312,7 +308,7 @@
     }
     .text-center { text-align: center; }
 
-    /* Ã¢ââ¬Ã¢ââ¬ TYPOGRAPHY Ã¢ââ¬Ã¢ââ¬ */
+    /* â”€â”€ TYPOGRAPHY â”€â”€ */
     .label {
       display: block; font-size: 11px; font-weight: 500;
       letter-spacing: 0.12em; text-transform: uppercase; color: var(--text-muted);
@@ -335,7 +331,7 @@
 
 
 
-    /* Ã¢ââ¬Ã¢ââ¬ BUTTONS Ã¢ââ¬Ã¢ââ¬ */
+    /* â”€â”€ BUTTONS â”€â”€ */
     .btn {
       display: inline-block; font-size: 13px; font-weight: 700; letter-spacing: 0.1em;
       text-transform: uppercase; border-radius: 0; padding: 12px 40px;
@@ -353,14 +349,14 @@
     .btn--campaign { color: #fff; background: var(--cta-campaign); border: none; }
     .btn--campaign:hover { background: var(--cta-campaign-hover); }
 
-    /* Ã¢ââ¬Ã¢ââ¬ TRUST BADGES Ã¢ââ¬Ã¢ââ¬ */
+    /* â”€â”€ TRUST BADGES â”€â”€ */
     .badge {
       display: inline-flex; align-items: center; gap: var(--space-2xs); font-size: 12px; font-weight: 400;
       letter-spacing: 0.04em; padding: 6px 12px; border-radius: 2px;
     }
     .badge__icon { font-size: 14px; }
 
-    /* Ã¢ââ¬Ã¢ââ¬ DIAGONAL SECTION TRANSITIONS Ã¢ââ¬Ã¢ââ¬ */
+    /* â”€â”€ DIAGONAL SECTION TRANSITIONS â”€â”€ */
     .section--dark + .section::before,
     .section--dark + .section--alt::before {
       content: '';
@@ -373,7 +369,7 @@
       z-index: 1;
     }
 
-    /* Ã¢ââ¬Ã¢ââ¬ SCROLL REVEAL Ã¢ââ¬Ã¢ââ¬ */
+    /* â”€â”€ SCROLL REVEAL â”€â”€ */
     .sr { opacity: 0; transform: translateY(24px); transition: opacity 0.6s ease, transform 0.6s ease; }
     .sr.in { opacity: 1; transform: none; }
     .d1 { transition-delay: 120ms; }
@@ -382,9 +378,9 @@
 
 
 
-    /* Ã¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢Â
-       SECTION 8 Ã¢â¬" FAQ + CTA
-    Ã¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢Â */
+    /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+       SECTION 8 â€" FAQ + CTA
+    â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
     .faq-wrap { max-width: 720px; margin: 0 auto; }
     .faq { margin-bottom: 0px; }
     .faq__item { border-top: 1px solid var(--grey-100); }
@@ -405,9 +401,9 @@
     #faq { padding-bottom: var(--space-lg) !important; }
     #reviews { padding-bottom: 0px; }
 
-    /* Ã¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢Â
+    /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
        FOOTER
-    Ã¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢Â */
+    â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
     .footer { background: var(--bg-dark); padding: var(--space-2xl) 0; border-top: 1px solid rgba(255,255,255,0.08); }
     .footer__inner { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-lg); }
     .footer__logo { font-family: var(--font-display); font-size: 18px; font-weight: 700; color: #fff; letter-spacing: 0.15em; display: block; margin-bottom: 4px; }
@@ -415,7 +411,7 @@
     .footer__legal { font-size: 12px; color: rgba(255,255,255,0.35); line-height: 1.5; }
 
     /* ============================================================
-       #SHOP Ã¢â¬" Gallery + Variant Selector + Reviews
+       #SHOP â€" Gallery + Variant Selector + Reviews
     ============================================================ */
     #shop { padding-top: 0; }
     #shop .shop-grid {
@@ -644,7 +640,7 @@
     }
     .reviews-load-more-btn:hover { background-color: var(--grey-100); }
 
-    /* Film grain Ã¢â¬" static, no animation */
+    /* Film grain â€" static, no animation */
     .page-grain {
       position: fixed; inset: 0; z-index: 9998; pointer-events: none;
       opacity: 0.04;
@@ -734,9 +730,9 @@
 
 
 
-    /* Ã¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢Â
-       MOBILE OPTIMIZATIONS Ã¢â¬" max-width: 767px
-    Ã¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢ÂÃ¢â¢Â */
+    /* â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•
+       MOBILE OPTIMIZATIONS â€" max-width: 767px
+    â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â•â• */
 
     @media (max-width: 767px) {
       .section { padding: 48px 0; }
@@ -777,7 +773,7 @@
       .footer__since { display: block; margin-top: 2px; }
     }
 
-    /* Ã¢ââ¬Ã¢ââ¬ Promo deadline strip Ã¢ââ¬Ã¢ââ¬ */
+    /* â”€â”€ Promo deadline strip â”€â”€ */
     .delivery-estimate {
       display: flex;
       align-items: center;
@@ -813,7 +809,7 @@
       letter-spacing: 0;
     }
 
-    /* Ã¢ââ¬Ã¢ââ¬ Trust badges Ã¢ââ¬Ã¢ââ¬ */
+    /* â”€â”€ Trust badges â”€â”€ */
     .trust-badges {
       display: flex;
       flex-wrap: wrap;
@@ -844,7 +840,7 @@
       flex-shrink: 0;
     }
 
-    /* Ã¢ââ¬Ã¢ââ¬ Accordion Ã¢ââ¬Ã¢ââ¬ */
+    /* â”€â”€ Accordion â”€â”€ */
     .description-accordion {
       border-top: 1px solid var(--grey-100);
       margin-top: 24px;
@@ -903,7 +899,7 @@
       }
     }
 
-    /* Ã¢ââ¬Ã¢ââ¬ Color swatches Ã¢ââ¬Ã¢ââ¬ */
+    /* â”€â”€ Color swatches â”€â”€ */
     .color-swatches { display: flex; gap: 8px; margin-bottom: var(--space-xs); }
     .color-swatch {
       width: 32px; height: 32px; border-radius: 50%; border: 2px solid transparent;
@@ -914,148 +910,129 @@
     .color-swatch:hover { transform: scale(1.1); }
     .color-swatch img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
 
-  </style>
-
-</head>
-<body>
-
-  <!-- Grain overlay -->
-  <div class="page-grain" aria-hidden="true"></div>
-
-
-  <!-- SECTION 1 Ã¢â¬" SHOP (gallery + variants + cart) -->
-  <section class="section section--alt" id="shop">
-    <div class="container">
-
-      <div class="shop-grid">
-
-        <!-- Main media: full-width story (9:16) -->
-        <div class="shop-gallery-col">
-          <div class="gallery-main" id="gallery-main">
-            <img id="gallery-main-img" src="images/products/97353004_1.avif" alt="RIMOWA Classic Cabin Silber" loading="eager" fetchpriority="high" width="1080" height="1920" style="width:100%;height:100%;object-fit:contain;" />
-            <div class="gallery-arrows">
-              <button class="arrow" aria-label="Previous image" onclick="galleryPrev()">&#8249;</button>
-              <button class="arrow" aria-label="Next image" onclick="galleryNext()">&#8250;</button>
-            </div>
-          </div>
-        </div>
-
-        <!-- Product info + variant selector (panel below media) -->
-        <div class="shop-info">
-         <div class="buy-panel"><div class="buy-panel__inner">
-          <div class="thumbnail-strip" id="thumbnail-strip"></div>
-          <p class="shop-brand">Wury x RIMOWA</p>
-          <h2 class="shop-title">RIMOWA Classic</h2>
-
-          <a class="shop-rating" href="#reviews-anchor" style="text-decoration:none;color:inherit;cursor:pointer;">
-            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
-            <span class="rating-count">4,8 (1.935 Bewertungen)</span>
-          </a>
-
-          <div class="price-row">
-            <div class="shop-price" id="product-price-sale">229,00 â¬</div>
-            <div class="shop-price-old" id="product-price-compare">1.625,00 â¬</div>
-            <div class="sale-badge" id="product-sale-badge">-88%</div>
-          </div>
-
-
-          <div class="availability-section">
-            <span id="stock-indicator" class="in-stock">Auf Lager</span>
-          </div>
-
-          <!-- Color selector -->
-          <div class="size-label">Farbe: <span id="selected-color-name">Silber</span></div>
-          <div class="color-swatches" id="color-swatches"></div>
-
-          <!-- Size selector -->
-          <div class="size-label">GrÃ¶Ãe: <span id="selected-size-name">Cabin</span><span id="selected-size-dims" style="font-weight:400;color:var(--text-muted);margin-left:8px;font-size:11px;">55 Ã 40 Ã 23 cm Â· 35 L</span></div>
-          <div class="size__blocks-container" id="size-blocks-container"></div>
-          <div id="size-ideal-line" style="font-family:var(--font-ui);font-size:12px;color:var(--text-muted);margin-top:10px;">Ideal fÃ¼r <strong style="color:var(--text-body);font-weight:500;">3â4 Tage</strong> Reise</div>
-
-          <div class="delivery-estimate">
-            <span>Voraussichtliche Lieferung: <strong id="delivery-estimate-date"></strong></span>
-          </div>
-
-          <div class="urgency-bar" role="status" aria-live="polite">
-            <div class="urgency-bar__label">
-              Nur noch <strong><span id="urgency-count">â</span> StÃ¼ck verfÃ¼gbar</strong> â exklusives Deutschland-Kontingent zu diesem Preis.
-            </div>
-            <div class="urgency-bar__track">
-              <div class="urgency-bar__fill" id="urgency-fill"></div>
-            </div>
-          </div>
-
-          <div class="purchase-area">
-            <select class="quantity-selector" aria-label="Quantity">
-              <option>1</option><option>2</option><option>3</option>
-            </select>
-            <button class="shop-add-btn" onclick="goToCheckout()">
-              <svg width="18" height="16" viewBox="0 0 18 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 1H3L4 10H14L16 4H5" stroke="white" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
-                <circle cx="6" cy="13.5" r="1.2" fill="white"/>
-                <circle cx="12" cy="13.5" r="1.2" fill="white"/>
-              </svg>
+  </style>
+</head>
+<body>
+<!-- Grain overlay -->
+<div aria-hidden="true" class="page-grain"></div>
+<!-- SECTION 1 â€" SHOP (gallery + variants + cart) -->
+<section class="section section--alt" id="shop">
+<div class="container">
+<div class="shop-grid">
+<!-- Main media: full-width story (9:16) -->
+<div class="shop-gallery-col">
+<div class="gallery-main" id="gallery-main">
+<img alt="RIMOWA Classic Cabin Silber" fetchpriority="high" height="1920" id="gallery-main-img" loading="eager" src="assets/97353004_1.avif" style="width:100%;height:100%;object-fit:contain;" width="1080"/>
+<div class="gallery-arrows">
+<button aria-label="Previous image" class="arrow" onclick="galleryPrev()">‹</button>
+<button aria-label="Next image" class="arrow" onclick="galleryNext()">›</button>
+</div>
+</div>
+</div>
+<!-- Product info + variant selector (panel below media) -->
+<div class="shop-info">
+<div class="buy-panel"><div class="buy-panel__inner">
+<div class="thumbnail-strip" id="thumbnail-strip"></div>
+<p class="shop-brand">Wury x RIMOWA</p>
+<h2 class="shop-title">RIMOWA Classic</h2>
+<a class="shop-rating" href="#reviews-anchor" style="text-decoration:none;color:inherit;cursor:pointer;">
+<span class="stars">★★★★★</span>
+<span class="rating-count">4,8 (1.935 Bewertungen)</span>
+</a>
+<div class="price-row">
+<div class="shop-price" id="product-price-sale">229,00 €</div>
+<div class="shop-price-old" id="product-price-compare">1.625,00 €</div>
+<div class="sale-badge" id="product-sale-badge">-88%</div>
+</div>
+<div class="availability-section">
+<span class="in-stock" id="stock-indicator">Auf Lager</span>
+</div>
+<!-- Color selector -->
+<div class="size-label">Farbe: <span id="selected-color-name">Silber</span></div>
+<div class="color-swatches" id="color-swatches"></div>
+<!-- Size selector -->
+<div class="size-label">Größe: <span id="selected-size-name">Cabin</span><span id="selected-size-dims" style="font-weight:400;color:var(--text-muted);margin-left:8px;font-size:11px;">55 × 40 × 23 cm · 35 L</span></div>
+<div class="size__blocks-container" id="size-blocks-container"></div>
+<div id="size-ideal-line" style="font-family:var(--font-ui);font-size:12px;color:var(--text-muted);margin-top:10px;">Ideal für <strong style="color:var(--text-body);font-weight:500;">3–4 Tage</strong> Reise</div>
+<div class="delivery-estimate">
+<span>Voraussichtliche Lieferung: <strong id="delivery-estimate-date"></strong></span>
+</div>
+<div aria-live="polite" class="urgency-bar" role="status">
+<div class="urgency-bar__label">
+              Nur noch <strong><span id="urgency-count">—</span> Stück verfügbar</strong> — exklusives Deutschland-Kontingent zu diesem Preis.
+            </div>
+<div class="urgency-bar__track">
+<div class="urgency-bar__fill" id="urgency-fill"></div>
+</div>
+</div>
+<div class="purchase-area">
+<select aria-label="Quantity" class="quantity-selector">
+<option>1</option><option>2</option><option>3</option>
+</select>
+<button class="shop-add-btn" onclick="goToCheckout()">
+<svg fill="none" height="16" viewbox="0 0 18 16" width="18" xmlns="http://www.w3.org/2000/svg">
+<path d="M1 1H3L4 10H14L16 4H5" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.4"></path>
+<circle cx="6" cy="13.5" fill="white" r="1.2"></circle>
+<circle cx="12" cy="13.5" fill="white" r="1.2"></circle>
+</svg>
               Jetzt kaufen
-            </button>
-          </div>
-
-          <!-- Promo deadline -->
-          <div class="promo-deadline">
-            <span class="promo-deadline__icon"></span>
-            <span>ð©ðª Exklusives Angebot fÃ¼r Deutschland â streng limitiert. GÃ¼ltig bis <span class="promo-deadline__date" id="promo-deadline-date"></span></span>
-          </div>
-
-          <!-- Trust badges -->
-          <div class="trust-badges">
-            <span class="trust-badge-item">Kostenloser Versand in Deutschland â immer</span>
-            <span class="trust-badge-item">100% sicherer Checkout</span>
-            <span class="trust-badge-item">Lebenslange Garantie</span>
-            <span class="trust-badge-item">Exklusiv fÃ¼r Deutschland</span>
-          </div>
-         </div></div><!-- /buy-panel -->
-
-          <!-- How it works Ã¢â¬" carousel -->
-          <div id="how-it-works" style="margin-top:24px;">
-            <h3 class="sr" style="font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--text-primary);text-align:center;margin-bottom:4px;">Warum RIMOWA Classic?</h3>
-            <p class="sr" style="font-family:var(--font-ui);color:var(--text-muted);font-size:13px;text-align:center;margin-bottom:16px;">128 Jahre deutsche Ingenieurskunst in jedem Detail.</p>
-            <div class="steps-carousel sr" id="steps-carousel">
-              <div class="steps-track" id="steps-track">
-                <div class="step-slide">
-                  <div class="step-slide__img"><img src="images/products/97353004_1.avif" alt="Schritt 1 â Eloxiertes Aluminium" loading="lazy"></div>
-                  <div class="step-slide__content">
-                    <div class="step-slide__step">Schritt 01</div>
-                    <div class="step-slide__title">Eloxiertes Aluminium</div>
-                    <div class="step-slide__body">Leicht, robust und unverkennbar. Die ikonischen Rillen sind nicht nur Design â sie verstÃ¤rken die Struktur.</div>
-                  </div>
-                </div>
-                <div class="step-slide">
-                  <div class="step-slide__img"><img src="images/products/97353004_2.avif" alt="Schritt 2 â MultiwheelÂ®-System" loading="lazy"></div>
-                  <div class="step-slide__content">
-                    <div class="step-slide__step">Schritt 02</div>
-                    <div class="step-slide__title">MultiwheelÂ® System</div>
-                    <div class="step-slide__body">Vier leichtgÃ¤ngige RÃ¤der fÃ¼r 360Â°-MobilitÃ¤t. FlÃ¼sterleise und mÃ¼helos auf jedem Untergrund.</div>
-                  </div>
-                </div>
-                <div class="step-slide">
-                  <div class="step-slide__img"><img src="images/products/97353004_3.avif" alt="Schritt 3 â TSA-SchlÃ¶sser" loading="lazy"></div>
-                  <div class="step-slide__content">
-                    <div class="step-slide__step">Schritt 03</div>
-                    <div class="step-slide__title">TSA-SchlÃ¶sser</div>
-                    <div class="step-slide__body">Integrierte TSA-SchlÃ¶sser fÃ¼r sicheres Reisen weltweit. Kein zusÃ¤tzliches VorhÃ¤ngeschloss nÃ¶tig.</div>
-                  </div>
-                </div>
-              </div>
-              <div class="steps-arrows">
-                <button class="arrow" aria-label="Previous" onclick="stepsGo(-1)">&#8249;</button>
-                <button class="arrow" aria-label="Next" onclick="stepsGo(1)">&#8250;</button>
-              </div>
-              <div class="steps-dots" id="steps-dots">
-                <button class="steps-dot active" onclick="stepsTo(0)"></button>
-                <button class="steps-dot" onclick="stepsTo(1)"></button>
-                <button class="steps-dot" onclick="stepsTo(2)"></button>
-              </div>
-            </div>
-            <script>
+            </button>
+</div>
+<!-- Promo deadline -->
+<div class="promo-deadline">
+<span class="promo-deadline__icon"></span>
+<span>🇩🇪 Exklusives Angebot für Deutschland — streng limitiert. Gültig bis <span class="promo-deadline__date" id="promo-deadline-date"></span></span>
+</div>
+<!-- Trust badges -->
+<div class="trust-badges">
+<span class="trust-badge-item">Kostenloser Versand in Deutschland — immer</span>
+<span class="trust-badge-item">100% sicherer Checkout</span>
+<span class="trust-badge-item">Lebenslange Garantie</span>
+<span class="trust-badge-item">Exklusiv für Deutschland</span>
+</div>
+</div></div><!-- /buy-panel -->
+<!-- How it works â€" carousel -->
+<div id="how-it-works" style="margin-top:24px;">
+<h3 class="sr" style="font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--text-primary);text-align:center;margin-bottom:4px;">Warum RIMOWA Classic?</h3>
+<p class="sr" style="font-family:var(--font-ui);color:var(--text-muted);font-size:13px;text-align:center;margin-bottom:16px;">128 Jahre deutsche Ingenieurskunst in jedem Detail.</p>
+<div class="steps-carousel sr" id="steps-carousel">
+<div class="steps-track" id="steps-track">
+<div class="step-slide">
+<div class="step-slide__img"><img alt="Schritt 1 — Eloxiertes Aluminium" loading="lazy" src="assets/97353004_1.avif"/></div>
+<div class="step-slide__content">
+<div class="step-slide__step">Schritt 01</div>
+<div class="step-slide__title">Eloxiertes Aluminium</div>
+<div class="step-slide__body">Leicht, robust und unverkennbar. Die ikonischen Rillen sind nicht nur Design — sie verstärken die Struktur.</div>
+</div>
+</div>
+<div class="step-slide">
+<div class="step-slide__img"><img alt="Schritt 2 — Multiwheel®-System" loading="lazy" src="assets/97353004_2.avif"/></div>
+<div class="step-slide__content">
+<div class="step-slide__step">Schritt 02</div>
+<div class="step-slide__title">Multiwheel® System</div>
+<div class="step-slide__body">Vier leichtgängige Räder für 360°-Mobilität. Flüsterleise und mühelos auf jedem Untergrund.</div>
+</div>
+</div>
+<div class="step-slide">
+<div class="step-slide__img"><img alt="Schritt 3 — TSA-Schlösser" loading="lazy" src="assets/97353004_3.avif"/></div>
+<div class="step-slide__content">
+<div class="step-slide__step">Schritt 03</div>
+<div class="step-slide__title">TSA-Schlösser</div>
+<div class="step-slide__body">Integrierte TSA-Schlösser für sicheres Reisen weltweit. Kein zusätzliches Vorhängeschloss nötig.</div>
+</div>
+</div>
+</div>
+<div class="steps-arrows">
+<button aria-label="Previous" class="arrow" onclick="stepsGo(-1)">‹</button>
+<button aria-label="Next" class="arrow" onclick="stepsGo(1)">›</button>
+</div>
+<div class="steps-dots" id="steps-dots">
+<button class="steps-dot active" onclick="stepsTo(0)"></button>
+<button class="steps-dot" onclick="stepsTo(1)"></button>
+<button class="steps-dot" onclick="stepsTo(2)"></button>
+</div>
+</div>
+<script>
             (function(){
               var idx=0, total=3, track, dots, autoTimer;
               function go(i){
@@ -1080,251 +1057,233 @@
                 track.addEventListener('touchend',function(e){var dx=e.changedTouches[0].clientX-sx;if(Math.abs(dx)>40){go(idx+(dx<0?1:-1));resetAuto();}},{passive:true});
               });
             })();
-            </script>
-          </div>
-
-          <!-- Use cases grid Ã¢â¬" RIMOWA scenarios -->
-          <div id="use-cases" style="margin-top:24px;">
-            <h3 class="sr" style="font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--text-primary);text-align:center;margin-bottom:4px;">
-              FÃ¼r jede Reise. <span style="color:var(--cta-campaign);">Ohne Kompromisse.</span>
-            </h3>
-            <p class="sr" style="font-family:var(--font-ui);color:var(--text-muted);font-size:13px;text-align:center;margin-bottom:16px;">Entdecken Sie die RIMOWA Classic Kollektion.</p>
-            <div class="usecases-grid">
-              <div class="usecase-card sr">
-                <div class="usecase-card__img"><img src="images/products/97353004_4.avif" alt="GeschÃ¤ftsreise" loading="lazy"></div>
-                <div class="usecase-card__body">
-                  <div class="usecase-card__title">GeschÃ¤ftsreise</div>
-                  <div class="usecase-card__desc">Cabin-GrÃ¶Ãe als HandgepÃ¤ck zugelassen. Gemacht fÃ¼r GeschÃ¤ftsreisen.</div>
-                </div>
-              </div>
-              <div class="usecase-card sr">
-                <div class="usecase-card__img"><img src="images/products/97353004_5.avif" alt="Wochenendtrip" loading="lazy"></div>
-                <div class="usecase-card__body">
-                  <div class="usecase-card__title">Wochenendtrip</div>
-                  <div class="usecase-card__desc"><span id="usecase-volume">35 L</span> Volumen â genug fÃ¼r ein langes Wochenende, kompakt genug fÃ¼rs HandgepÃ¤ckfach.</div>
-                </div>
-              </div>
-              <div class="usecase-card sr">
-                <div class="usecase-card__img"><img src="images/products/97353004_1.avif" alt="Zeitloses Design" loading="lazy"></div>
-                <div class="usecase-card__body">
-                  <div class="usecase-card__title">Zeitloses Design</div>
-                  <div class="usecase-card__desc">Die ikonischen Rillen seit 1898. Jede Delle erzÃ¤hlt eine Geschichte.</div>
-                </div>
-              </div>
-              <div class="usecase-card sr">
-                <div class="usecase-card__img"><img src="images/products/97353004_2.avif" alt="Familienurlaub" loading="lazy"></div>
-                <div class="usecase-card__body">
-                  <div class="usecase-card__title">Familienurlaub</div>
-                  <div class="usecase-card__desc">Flex-Divider-System fÃ¼r eine anpassbare Aufteilung. Alles an seinem Platz.</div>
-                </div>
-              </div>
-              <div class="usecase-card sr">
-                <div class="usecase-card__img"><img src="images/products/97353004_3.avif" alt="Abenteuerreise" loading="lazy"></div>
-                <div class="usecase-card__body">
-                  <div class="usecase-card__title">Abenteuerreise</div>
-                  <div class="usecase-card__desc">Aluminium steckt StÃ¶Ãe weg, die Polycarbonat zerstÃ¶ren wÃ¼rden.</div>
-                </div>
-              </div>
-              <div class="usecase-card sr">
-                <div class="usecase-card__img"><img src="images/products/97353004_4.avif" alt="Stilvoll ankommen" loading="lazy"></div>
-                <div class="usecase-card__body">
-                  <div class="usecase-card__title">Stilvoll ankommen</div>
-                  <div class="usecase-card__desc">Made in Germany. Lebenslange Garantie. Ein Koffer fÃ¼r Generationen.</div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Accordion -->
-          <div class="description-accordion">
-
-            <div class="zwg-accordion__item open">
-              <button class="zwg-accordion__header" onclick="toggleAccordion(this)">
+            </script>
+</div>
+<!-- Use cases grid â€" RIMOWA scenarios -->
+<div id="use-cases" style="margin-top:24px;">
+<h3 class="sr" style="font-family:var(--font-display);font-size:20px;font-weight:700;color:var(--text-primary);text-align:center;margin-bottom:4px;">
+              Für jede Reise. <span style="color:var(--cta-campaign);">Ohne Kompromisse.</span>
+</h3>
+<p class="sr" style="font-family:var(--font-ui);color:var(--text-muted);font-size:13px;text-align:center;margin-bottom:16px;">Entdecken Sie die RIMOWA Classic Kollektion.</p>
+<div class="usecases-grid">
+<div class="usecase-card sr">
+<div class="usecase-card__img"><img alt="Geschäftsreise" loading="lazy" src="assets/97353004_4.avif"/></div>
+<div class="usecase-card__body">
+<div class="usecase-card__title">Geschäftsreise</div>
+<div class="usecase-card__desc">Cabin-Größe als Handgepäck zugelassen. Gemacht für Geschäftsreisen.</div>
+</div>
+</div>
+<div class="usecase-card sr">
+<div class="usecase-card__img"><img alt="Wochenendtrip" loading="lazy" src="assets/97353004_5.avif"/></div>
+<div class="usecase-card__body">
+<div class="usecase-card__title">Wochenendtrip</div>
+<div class="usecase-card__desc"><span id="usecase-volume">35 L</span> Volumen — genug für ein langes Wochenende, kompakt genug fürs Handgepäckfach.</div>
+</div>
+</div>
+<div class="usecase-card sr">
+<div class="usecase-card__img"><img alt="Zeitloses Design" loading="lazy" src="assets/97353004_1.avif"/></div>
+<div class="usecase-card__body">
+<div class="usecase-card__title">Zeitloses Design</div>
+<div class="usecase-card__desc">Die ikonischen Rillen seit 1898. Jede Delle erzählt eine Geschichte.</div>
+</div>
+</div>
+<div class="usecase-card sr">
+<div class="usecase-card__img"><img alt="Familienurlaub" loading="lazy" src="assets/97353004_2.avif"/></div>
+<div class="usecase-card__body">
+<div class="usecase-card__title">Familienurlaub</div>
+<div class="usecase-card__desc">Flex-Divider-System für eine anpassbare Aufteilung. Alles an seinem Platz.</div>
+</div>
+</div>
+<div class="usecase-card sr">
+<div class="usecase-card__img"><img alt="Abenteuerreise" loading="lazy" src="assets/97353004_3.avif"/></div>
+<div class="usecase-card__body">
+<div class="usecase-card__title">Abenteuerreise</div>
+<div class="usecase-card__desc">Aluminium steckt Stöße weg, die Polycarbonat zerstören würden.</div>
+</div>
+</div>
+<div class="usecase-card sr">
+<div class="usecase-card__img"><img alt="Stilvoll ankommen" loading="lazy" src="assets/97353004_4.avif"/></div>
+<div class="usecase-card__body">
+<div class="usecase-card__title">Stilvoll ankommen</div>
+<div class="usecase-card__desc">Made in Germany. Lebenslange Garantie. Ein Koffer für Generationen.</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Accordion -->
+<div class="description-accordion">
+<div class="zwg-accordion__item open">
+<button class="zwg-accordion__header" onclick="toggleAccordion(this)">
                 Beschreibung
-                <span class="acc-icon">&#8964;</span>
-              </button>
-              <div class="zwg-accordion__content" id="acc-desc-content">
-                <p>Der RIMOWA Classic ist die Stilikone unter den Reisekoffern. Gefertigt aus hochwertigem eloxiertem Aluminium mit charakteristischen Lederhenkeln und dem unverkennbaren Rillendesign, das seit 1898 den MaÃstab setzt.</p>
-                <p>Ausgestattet mit dem <strong>MultiwheelÂ®-System</strong> fÃ¼r mÃ¼helose 360Â°-MobilitÃ¤t, <strong>TSA-SchlÃ¶ssern</strong> fÃ¼r Sicherheit weltweit und dem <strong>Flex-Divider-System</strong> fÃ¼r flexibles Packen.</p>
-                <button class="btn--ver-mas" onclick="openDescModal()">Mehr erfahren âº</button>
-              </div>
-            </div>
-
-            <div class="zwg-accordion__item">
-              <button class="zwg-accordion__header" onclick="toggleAccordion(this)">
+                <span class="acc-icon">⌄</span>
+</button>
+<div class="zwg-accordion__content" id="acc-desc-content">
+<p>Der RIMOWA Classic ist die Stilikone unter den Reisekoffern. Gefertigt aus hochwertigem eloxiertem Aluminium mit charakteristischen Lederhenkeln und dem unverkennbaren Rillendesign, das seit 1898 den Maßstab setzt.</p>
+<p>Ausgestattet mit dem <strong>Multiwheel®-System</strong> für mühelose 360°-Mobilität, <strong>TSA-Schlössern</strong> für Sicherheit weltweit und dem <strong>Flex-Divider-System</strong> für flexibles Packen.</p>
+<button class="btn--ver-mas" onclick="openDescModal()">Mehr erfahren ›</button>
+</div>
+</div>
+<div class="zwg-accordion__item">
+<button class="zwg-accordion__header" onclick="toggleAccordion(this)">
                 Spezifikationen
-                <span class="acc-icon">&#8964;</span>
-              </button>
-              <div class="zwg-accordion__content" id="acc-details-content"></div>
-            </div>
-
-            <div class="zwg-accordion__item">
-              <button class="zwg-accordion__header" onclick="toggleAccordion(this)">
+                <span class="acc-icon">⌄</span>
+</button>
+<div class="zwg-accordion__content" id="acc-details-content"></div>
+</div>
+<div class="zwg-accordion__item">
+<button class="zwg-accordion__header" onclick="toggleAccordion(this)">
                 Lieferumfang
-                <span class="acc-icon">&#8964;</span>
-              </button>
-              <div class="zwg-accordion__content">
-                <p>Ihr RIMOWA Classic enthÃ¤lt:</p>
-                <ul>
-                  <li>1 Ã RIMOWA Classic Koffer (eloxiertes Aluminium, Lederhenkel)</li>
-                  <li>1 Ã Flex-Divider-System (Polyester)</li>
-                  <li>2 Ã TSA-SchlÃ¶sser (integriert)</li>
-                  <li>1 Ã Stufenloser Teleskopgriff</li>
-                  <li>1 Ã Gratis LederanhÃ¤nger fÃ¼rs GepÃ¤ck</li>
-                  <li>1 Ã RIMOWA Sticker</li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="zwg-accordion__item">
-              <button class="zwg-accordion__header" onclick="toggleAccordion(this)">
-                Versand & RÃ¼ckgabe
-                <span class="acc-icon">&#8964;</span>
-              </button>
-              <div class="zwg-accordion__content">
-                <p>Kostenloser Versand innerhalb Deutschlands â immer. Lieferung in 6â14 Werktagen.</p>
-                <p>Kostenlose RÃ¼ckgabe innerhalb von 30 Tagen nach Erhalt. Der Koffer muss in Originalverpackung und im Originalzustand zurÃ¼ckgesendet werden.</p>
-              </div>
-            </div>
-
-          </div>
-          <!-- / Accordion -->
-
-        </div>
-
-      </div>
-
-
-
-    </div>
-  </section>
-
-  <!-- REVIEWS -->
-  <section class="section section--alt" id="reviews" style="padding-top:0;padding-bottom:calc(var(--space-4xl) / 2);">
-    <div class="container">
-      <div class="reviews-section" id="reviews-anchor">
-        <div class="reviews-summary">
-          <h2 class="reviews-section__title">Kundenbewertungen</h2>
-          <div class="reviews-summary__cols">
-            <div class="reviews-summary__score">
-              <div class="review-score-big">4,8</div>
-              <div class="review-stars-big">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
-              <div class="review-count-text">1.935 Bewertungen</div>
-            </div>
-            <div class="reviews-summary__bars">
-              <div class="reviews-bar-row">
-                <span class="reviews-bar-label">5 &#9733;</span>
-                <div class="reviews-bar-track"><div class="reviews-bar-fill" style="width:78%;"></div></div>
-                <span class="reviews-bar-pct">78%</span>
-              </div>
-              <div class="reviews-bar-row">
-                <span class="reviews-bar-label">4 &#9733;</span>
-                <div class="reviews-bar-track"><div class="reviews-bar-fill" style="width:14%;"></div></div>
-                <span class="reviews-bar-pct">14%</span>
-              </div>
-              <div class="reviews-bar-row">
-                <span class="reviews-bar-label">3 &#9733;</span>
-                <div class="reviews-bar-track"><div class="reviews-bar-fill" style="width:5%;"></div></div>
-                <span class="reviews-bar-pct">5%</span>
-              </div>
-              <div class="reviews-bar-row">
-                <span class="reviews-bar-label">2 &#9733;</span>
-                <div class="reviews-bar-track"><div class="reviews-bar-fill" style="width:2%;"></div></div>
-                <span class="reviews-bar-pct">2%</span>
-              </div>
-              <div class="reviews-bar-row">
-                <span class="reviews-bar-label">1 &#9733;</span>
-                <div class="reviews-bar-track"><div class="reviews-bar-fill" style="width:1%;"></div></div>
-                <span class="reviews-bar-pct">1%</span>
-              </div>
-            </div>
-          </div>
-          <button class="write-review-btn">Bewertung schreiben</button>
-        </div>
-
-        <div style="margin:16px 0;text-align:center;">
-          <button onclick="window.openReviewsPopup()" style="background:none;border:none;padding:0;font-size:14px;color:var(--text-muted);text-decoration:underline;cursor:pointer;">Bewertungen mit Fotos ansehen</button>
-        </div>
-
-        <div id="reviews-list"></div>
-        <div class="reviews-load-more-wrap" id="reviews-load-more-wrap">
-          <button class="reviews-load-more-btn" id="reviews-load-more-btn">Mehr Bewertungen laden</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="section section--alt" id="faq" style="padding-top:0;">
-    <div class="container faq-wrap">
-      <h2 class="section-subtitle text-center sr">HÃUFIG GESTELLTE FRAGEN</h2>
-
-      <div class="faq sr">
-        <div class="faq__item">
-          <button class="faq__q" aria-expanded="false">
-            <span>Woraus besteht der RIMOWA Classic?</span><span class="faq__icon">+</span>
-          </button>
-          <div class="faq__a"><p>Der RIMOWA Classic besteht aus hochwertigem eloxiertem Aluminium. Das Innenfutter ist aus Polyester, die Henkel aus echtem Leder und die RÃ¤der aus Hartkunststoff. Die FÃ¤cher des Flex Dividers sind ebenfalls aus Polyester.</p></div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__q" aria-expanded="false">
-            <span>Was deckt die lebenslange Garantie ab?</span><span class="faq__icon">+</span>
-          </button>
-          <div class="faq__a"><p>RIMOWA gewÃ¤hrt eine lebenslange Garantie auf alle Koffer der Classic Collection. Sie deckt Herstellungsfehler und Materialversagen bei normalem Gebrauch ab. Normale Gebrauchsspuren oder durch Fluggesellschaften verursachte SchÃ¤den sind nicht abgedeckt.</p></div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__q" aria-expanded="false">
-            <span>Passt der Cabin als HandgepÃ¤ck?</span><span class="faq__icon">+</span>
-          </button>
-          <div class="faq__a"><p>Ja. Der RIMOWA Classic Cabin (55 Ã 40 Ã 23 cm) erfÃ¼llt die IATA-HandgepÃ¤ckempfehlungen und passt in die GepÃ¤ckfÃ¤cher der meisten groÃen Fluggesellschaften wie Lufthansa, Eurowings, Condor und Discover Airlines. FÃ¼r Billigflieger mit strengeren MaÃvorgaben (z. B. Ryanair oder Wizz Air) empfehlen wir den Cabin S (55 Ã 40 Ã 20 cm).</p></div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__q" aria-expanded="false">
-            <span>Was sind TSA-SchlÃ¶sser?</span><span class="faq__icon">+</span>
-          </button>
-          <div class="faq__a"><p>TSA-SchlÃ¶sser lassen sich von der Sicherheitskontrolle mit einem Universal-GeneralschlÃ¼ssel Ã¶ffnen â ohne das Schloss zu beschÃ¤digen. Ihr Koffer bleibt wÃ¤hrend der gesamten Reise sicher verschlossen und kann an jeder Sicherheitskontrolle dennoch geprÃ¼ft werden. Besonders praktisch bei Reisen in die USA.</p></div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__q" aria-expanded="false">
-            <span>Bekommt das Aluminium leicht Dellen?</span><span class="faq__icon">+</span>
-          </button>
-          <div class="faq__a"><p>Aluminium ist von Natur aus weicher als Polycarbonat und kann bei grober Behandlung Dellen bekommen. Bei RIMOWA gehÃ¶rt das zum Charakter â jede Delle erzÃ¤hlt eine Reisegeschichte. Dennoch ist das Material extrem robust und schÃ¼tzt Ihre Sachen zuverlÃ¤ssig.</p></div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__q" aria-expanded="false">
-            <span>Wie viel wiegt der Koffer?</span><span class="faq__icon">+</span>
-          </button>
-          <div class="faq__a"><p>Gewicht und MaÃe variieren je nach GrÃ¶Ãe: <strong>Cabin S</strong> wiegt 4,2 kg, fasst 33 Liter und misst 55 Ã 40 Ã 20 cm. <strong>Cabin</strong> wiegt 4,3 kg, fasst 36 Liter und misst 55 Ã 40 Ã 23 cm. <strong>Check-In M</strong> wiegt 5,3 kg, fasst 60 Liter und misst 70 Ã 47 Ã 25 cm. <strong>Check-In L</strong> wiegt 6,0 kg, fasst 85 Liter und misst 78 Ã 52 Ã 27 cm. <strong>Trunk</strong> wiegt 6,0 kg, fasst 100 Liter und misst 75 Ã 47 Ã 36 cm. Alle werden aus hochwertigem eloxiertem Aluminium mit Lederhenkeln gefertigt.</p></div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__q" aria-expanded="false">
-            <span>Was ist im Lieferumfang enthalten?</span><span class="faq__icon">+</span>
-          </button>
-          <div class="faq__a"><p>Ihr Koffer wird mit einem gratis LederanhÃ¤nger fÃ¼rs GepÃ¤ck und einem RIMOWA Sticker geliefert. Der Flex Divider, die TSA-SchlÃ¶sser und der stufenlos verstellbare Teleskopgriff sind alle fest integriert.</p></div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__q" aria-expanded="false">
-            <span>In welchen Farben gibt es den Classic?</span><span class="faq__icon">+</span>
-          </button>
-          <div class="faq__a"><p>Der RIMOWA Classic ist in drei Farben erhÃ¤ltlich: Silber, Titan und Schwarz. Alle drei bestehen aus demselben hochwertigen eloxierten Aluminium mit echten Lederhenkeln.</p></div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__q" aria-expanded="false">
-            <span>Wie reinige und pflege ich meinen Aluminium-Koffer?</span><span class="faq__icon">+</span>
-          </button>
-          <div class="faq__a"><p>Wischen Sie die OberflÃ¤che mit einem weichen, feuchten Tuch ab. Vermeiden Sie scheuernde Reinigungsmittel oder aggressive Chemikalien. Bei hartnÃ¤ckigen Flecken empfiehlt RIMOWA eine milde Seife mit warmem Wasser.</p></div>
-        </div>
-        <div class="faq__item">
-          <button class="faq__q" aria-expanded="false">
-            <span>Wie funktioniert die RÃ¼ckgabe?</span><span class="faq__icon">+</span>
-          </button>
-          <div class="faq__a"><p>Sie haben 30 Tage ab Erhalt Zeit, den Koffer in Originalverpackung und im Originalzustand zurÃ¼ckzusenden. Der RÃ¼ckversand ist kostenlos. Sobald wir den Artikel erhalten haben, prÃ¼fen wir ihn und erstatten den Betrag innerhalb von 5â7 Werktagen.</p></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <script>
+                <span class="acc-icon">⌄</span>
+</button>
+<div class="zwg-accordion__content">
+<p>Ihr RIMOWA Classic enthält:</p>
+<ul>
+<li>1 × RIMOWA Classic Koffer (eloxiertes Aluminium, Lederhenkel)</li>
+<li>1 × Flex-Divider-System (Polyester)</li>
+<li>2 × TSA-Schlösser (integriert)</li>
+<li>1 × Stufenloser Teleskopgriff</li>
+<li>1 × Gratis Lederanhänger fürs Gepäck</li>
+<li>1 × RIMOWA Sticker</li>
+</ul>
+</div>
+</div>
+<div class="zwg-accordion__item">
+<button class="zwg-accordion__header" onclick="toggleAccordion(this)">
+                Versand &amp; Rückgabe
+                <span class="acc-icon">⌄</span>
+</button>
+<div class="zwg-accordion__content">
+<p>Kostenloser Versand innerhalb Deutschlands — immer. Lieferung in 6–14 Werktagen.</p>
+<p>Kostenlose Rückgabe innerhalb von 30 Tagen nach Erhalt. Der Koffer muss in Originalverpackung und im Originalzustand zurückgesendet werden.</p>
+</div>
+</div>
+</div>
+<!-- / Accordion -->
+</div>
+</div>
+</div>
+</section>
+<!-- REVIEWS -->
+<section class="section section--alt" id="reviews" style="padding-top:0;padding-bottom:calc(var(--space-4xl) / 2);">
+<div class="container">
+<div class="reviews-section" id="reviews-anchor">
+<div class="reviews-summary">
+<h2 class="reviews-section__title">Kundenbewertungen</h2>
+<div class="reviews-summary__cols">
+<div class="reviews-summary__score">
+<div class="review-score-big">4,8</div>
+<div class="review-stars-big">★★★★★</div>
+<div class="review-count-text">1.935 Bewertungen</div>
+</div>
+<div class="reviews-summary__bars">
+<div class="reviews-bar-row">
+<span class="reviews-bar-label">5 ★</span>
+<div class="reviews-bar-track"><div class="reviews-bar-fill" style="width:78%;"></div></div>
+<span class="reviews-bar-pct">78%</span>
+</div>
+<div class="reviews-bar-row">
+<span class="reviews-bar-label">4 ★</span>
+<div class="reviews-bar-track"><div class="reviews-bar-fill" style="width:14%;"></div></div>
+<span class="reviews-bar-pct">14%</span>
+</div>
+<div class="reviews-bar-row">
+<span class="reviews-bar-label">3 ★</span>
+<div class="reviews-bar-track"><div class="reviews-bar-fill" style="width:5%;"></div></div>
+<span class="reviews-bar-pct">5%</span>
+</div>
+<div class="reviews-bar-row">
+<span class="reviews-bar-label">2 ★</span>
+<div class="reviews-bar-track"><div class="reviews-bar-fill" style="width:2%;"></div></div>
+<span class="reviews-bar-pct">2%</span>
+</div>
+<div class="reviews-bar-row">
+<span class="reviews-bar-label">1 ★</span>
+<div class="reviews-bar-track"><div class="reviews-bar-fill" style="width:1%;"></div></div>
+<span class="reviews-bar-pct">1%</span>
+</div>
+</div>
+</div>
+<button class="write-review-btn">Bewertung schreiben</button>
+</div>
+<div style="margin:16px 0;text-align:center;">
+<button onclick="window.openReviewsPopup()" style="background:none;border:none;padding:0;font-size:14px;color:var(--text-muted);text-decoration:underline;cursor:pointer;">Bewertungen mit Fotos ansehen</button>
+</div>
+<div id="reviews-list"></div>
+<div class="reviews-load-more-wrap" id="reviews-load-more-wrap">
+<button class="reviews-load-more-btn" id="reviews-load-more-btn">Mehr Bewertungen laden</button>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ -->
+<section class="section section--alt" id="faq" style="padding-top:0;">
+<div class="container faq-wrap">
+<h2 class="section-subtitle text-center sr">HÄUFIG GESTELLTE FRAGEN</h2>
+<div class="faq sr">
+<div class="faq__item">
+<button aria-expanded="false" class="faq__q">
+<span>Woraus besteht der RIMOWA Classic?</span><span class="faq__icon">+</span>
+</button>
+<div class="faq__a"><p>Der RIMOWA Classic besteht aus hochwertigem eloxiertem Aluminium. Das Innenfutter ist aus Polyester, die Henkel aus echtem Leder und die Räder aus Hartkunststoff. Die Fächer des Flex Dividers sind ebenfalls aus Polyester.</p></div>
+</div>
+<div class="faq__item">
+<button aria-expanded="false" class="faq__q">
+<span>Was deckt die lebenslange Garantie ab?</span><span class="faq__icon">+</span>
+</button>
+<div class="faq__a"><p>RIMOWA gewährt eine lebenslange Garantie auf alle Koffer der Classic Collection. Sie deckt Herstellungsfehler und Materialversagen bei normalem Gebrauch ab. Normale Gebrauchsspuren oder durch Fluggesellschaften verursachte Schäden sind nicht abgedeckt.</p></div>
+</div>
+<div class="faq__item">
+<button aria-expanded="false" class="faq__q">
+<span>Passt der Cabin als Handgepäck?</span><span class="faq__icon">+</span>
+</button>
+<div class="faq__a"><p>Ja. Der RIMOWA Classic Cabin (55 × 40 × 23 cm) erfüllt die IATA-Handgepäckempfehlungen und passt in die Gepäckfächer der meisten großen Fluggesellschaften wie Lufthansa, Eurowings, Condor und Discover Airlines. Für Billigflieger mit strengeren Maßvorgaben (z. B. Ryanair oder Wizz Air) empfehlen wir den Cabin S (55 × 40 × 20 cm).</p></div>
+</div>
+<div class="faq__item">
+<button aria-expanded="false" class="faq__q">
+<span>Was sind TSA-Schlösser?</span><span class="faq__icon">+</span>
+</button>
+<div class="faq__a"><p>TSA-Schlösser lassen sich von der Sicherheitskontrolle mit einem Universal-Generalschlüssel öffnen — ohne das Schloss zu beschädigen. Ihr Koffer bleibt während der gesamten Reise sicher verschlossen und kann an jeder Sicherheitskontrolle dennoch geprüft werden. Besonders praktisch bei Reisen in die USA.</p></div>
+</div>
+<div class="faq__item">
+<button aria-expanded="false" class="faq__q">
+<span>Bekommt das Aluminium leicht Dellen?</span><span class="faq__icon">+</span>
+</button>
+<div class="faq__a"><p>Aluminium ist von Natur aus weicher als Polycarbonat und kann bei grober Behandlung Dellen bekommen. Bei RIMOWA gehört das zum Charakter — jede Delle erzählt eine Reisegeschichte. Dennoch ist das Material extrem robust und schützt Ihre Sachen zuverlässig.</p></div>
+</div>
+<div class="faq__item">
+<button aria-expanded="false" class="faq__q">
+<span>Wie viel wiegt der Koffer?</span><span class="faq__icon">+</span>
+</button>
+<div class="faq__a"><p>Gewicht und Maße variieren je nach Größe: <strong>Cabin S</strong> wiegt 4,2 kg, fasst 33 Liter und misst 55 × 40 × 20 cm. <strong>Cabin</strong> wiegt 4,3 kg, fasst 36 Liter und misst 55 × 40 × 23 cm. <strong>Check-In M</strong> wiegt 5,3 kg, fasst 60 Liter und misst 70 × 47 × 25 cm. <strong>Check-In L</strong> wiegt 6,0 kg, fasst 85 Liter und misst 78 × 52 × 27 cm. <strong>Trunk</strong> wiegt 6,0 kg, fasst 100 Liter und misst 75 × 47 × 36 cm. Alle werden aus hochwertigem eloxiertem Aluminium mit Lederhenkeln gefertigt.</p></div>
+</div>
+<div class="faq__item">
+<button aria-expanded="false" class="faq__q">
+<span>Was ist im Lieferumfang enthalten?</span><span class="faq__icon">+</span>
+</button>
+<div class="faq__a"><p>Ihr Koffer wird mit einem gratis Lederanhänger fürs Gepäck und einem RIMOWA Sticker geliefert. Der Flex Divider, die TSA-Schlösser und der stufenlos verstellbare Teleskopgriff sind alle fest integriert.</p></div>
+</div>
+<div class="faq__item">
+<button aria-expanded="false" class="faq__q">
+<span>In welchen Farben gibt es den Classic?</span><span class="faq__icon">+</span>
+</button>
+<div class="faq__a"><p>Der RIMOWA Classic ist in drei Farben erhältlich: Silber, Titan und Schwarz. Alle drei bestehen aus demselben hochwertigen eloxierten Aluminium mit echten Lederhenkeln.</p></div>
+</div>
+<div class="faq__item">
+<button aria-expanded="false" class="faq__q">
+<span>Wie reinige und pflege ich meinen Aluminium-Koffer?</span><span class="faq__icon">+</span>
+</button>
+<div class="faq__a"><p>Wischen Sie die Oberfläche mit einem weichen, feuchten Tuch ab. Vermeiden Sie scheuernde Reinigungsmittel oder aggressive Chemikalien. Bei hartnäckigen Flecken empfiehlt RIMOWA eine milde Seife mit warmem Wasser.</p></div>
+</div>
+<div class="faq__item">
+<button aria-expanded="false" class="faq__q">
+<span>Wie funktioniert die Rückgabe?</span><span class="faq__icon">+</span>
+</button>
+<div class="faq__a"><p>Sie haben 30 Tage ab Erhalt Zeit, den Koffer in Originalverpackung und im Originalzustand zurückzusenden. Der Rückversand ist kostenlos. Sobald wir den Artikel erhalten haben, prüfen wir ihn und erstatten den Betrag innerhalb von 5–7 Werktagen.</p></div>
+</div>
+</div>
+</div>
+</section>
+<script>
     document.querySelectorAll('.faq__q').forEach(function(btn) {
       btn.addEventListener('click', function() {
         var item = btn.closest('.faq__item');
@@ -1339,133 +1298,128 @@
         }
       });
     });
-  </script>
-
-  <section class="section section--alt" style="padding-top:var(--space-xl);padding-bottom:0;">
-    <div class="container" style="text-align:center;">
-      <button class="btn btn--campaign" style="padding:9px 29px;" onclick="goToShop()">ANGEBOT SICHERN</button>
-    </div>
-  </section>
-
-  <!-- FEATURES â RIMOWA Classic -->
-  <section class="section section--alt" id="features">
-    <div class="container">
-      <h2 class="section-title text-center sr" style="font-family:var(--font-display);text-transform:none;font-size:clamp(24px,3vw,36px);letter-spacing:0;margin-bottom:var(--space-xl);">
+  </script>
+<section class="section section--alt" style="padding-top:var(--space-xl);padding-bottom:0;">
+<div class="container" style="text-align:center;">
+<button class="btn btn--campaign" onclick="goToShop()" style="padding:9px 29px;">ANGEBOT SICHERN</button>
+</div>
+</section>
+<!-- FEATURES — RIMOWA Classic -->
+<section class="section section--alt" id="features">
+<div class="container">
+<h2 class="section-title text-center sr" style="font-family:var(--font-display);text-transform:none;font-size:clamp(24px,3vw,36px);letter-spacing:0;margin-bottom:var(--space-xl);">
         Deutsche Ingenieurskunst. Seit 1898.
-      </h2>
-      <div class="feature-cards">
-        <div class="feature-card sr">
-          <div class="feature-card__img">
-            <img src="images/products/97353004_1.avif" alt="Eloxiertes Aluminium" loading="lazy">
-          </div>
-          <div class="feature-card__title">Eloxiertes Aluminium</div>
-          <div class="feature-card__body">Premium-Aluminium mit dem legendÃ¤ren Rillendesign. Leicht, langlebig und unverkennbar â ein Koffer, der Charakter entwickelt.</div>
-        </div>
-        <div class="feature-card sr">
-          <div class="feature-card__img">
-            <img src="images/products/97353004_2.avif" alt="Multiwheel System" loading="lazy">
-          </div>
-          <div class="feature-card__title">MultiwheelÂ® System</div>
-          <div class="feature-card__body">Vier prÃ¤zisionsgefertigte RÃ¤der fÃ¼r mÃ¼helose 360Â°-MobilitÃ¤t. FlÃ¼sterleise, grundsolide und zuverlÃ¤ssig auf jedem Untergrund.</div>
-        </div>
-        <div class="feature-card sr">
-          <div class="feature-card__img">
-            <img src="images/products/97353004_3.avif" alt="TSA-SchlÃ¶sser" loading="lazy">
-          </div>
-          <div class="feature-card__title">TSA-SchlÃ¶sser</div>
-          <div class="feature-card__body">Zwei integrierte TSA-SchlÃ¶sser fÃ¼r maximale Sicherheit, wohin Sie auch reisen. Weltweit anerkannt â kein zusÃ¤tzliches ZubehÃ¶r nÃ¶tig.</div>
-        </div>
-        <div class="feature-card sr">
-          <div class="feature-card__img">
-            <img src="images/products/97353004_4.avif" alt="Flex Divider" loading="lazy">
-          </div>
-          <div class="feature-card__title">Flex-Divider-System</div>
-          <div class="feature-card__body">Das flexible Trennsystem passt sich Ihrem Packstil an. GeschÃ¤ftsreise oder Wochenendtrip â fÃ¼r jede Reise die passende Aufteilung.</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container footer__inner">
-      <div>
-        <span class="footer__logo">RIMOWA</span>
-      </div>
-      <div class="footer__legal">
-        Â© 2026 RIMOWA (LVMH). Alle Rechte vorbehalten.<br>
+      </h2>
+<div class="feature-cards">
+<div class="feature-card sr">
+<div class="feature-card__img">
+<img alt="Eloxiertes Aluminium" loading="lazy" src="assets/97353004_1.avif"/>
+</div>
+<div class="feature-card__title">Eloxiertes Aluminium</div>
+<div class="feature-card__body">Premium-Aluminium mit dem legendären Rillendesign. Leicht, langlebig und unverkennbar — ein Koffer, der Charakter entwickelt.</div>
+</div>
+<div class="feature-card sr">
+<div class="feature-card__img">
+<img alt="Multiwheel System" loading="lazy" src="assets/97353004_2.avif"/>
+</div>
+<div class="feature-card__title">Multiwheel® System</div>
+<div class="feature-card__body">Vier präzisionsgefertigte Räder für mühelose 360°-Mobilität. Flüsterleise, grundsolide und zuverlässig auf jedem Untergrund.</div>
+</div>
+<div class="feature-card sr">
+<div class="feature-card__img">
+<img alt="TSA-Schlösser" loading="lazy" src="assets/97353004_3.avif"/>
+</div>
+<div class="feature-card__title">TSA-Schlösser</div>
+<div class="feature-card__body">Zwei integrierte TSA-Schlösser für maximale Sicherheit, wohin Sie auch reisen. Weltweit anerkannt — kein zusätzliches Zubehör nötig.</div>
+</div>
+<div class="feature-card sr">
+<div class="feature-card__img">
+<img alt="Flex Divider" loading="lazy" src="assets/97353004_4.avif"/>
+</div>
+<div class="feature-card__title">Flex-Divider-System</div>
+<div class="feature-card__body">Das flexible Trennsystem passt sich Ihrem Packstil an. Geschäftsreise oder Wochenendtrip — für jede Reise die passende Aufteilung.</div>
+</div>
+</div>
+</div>
+</section>
+<!-- FOOTER -->
+<footer class="footer">
+<div class="container footer__inner">
+<div>
+<span class="footer__logo">RIMOWA</span>
+</div>
+<div class="footer__legal">
+        © 2026 RIMOWA (LVMH). Alle Rechte vorbehalten.<br/>
         Die lebenslange Garantie deckt Herstellungsfehler und Materialversagen bei normalem Gebrauch ab.
-      </div>
-    </div>
-  </footer>
-
-  <script>
+      </div>
+</div>
+</footer>
+<script>
 
     // Smooth scroll to top
     function goToShop() {
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-  </script>
-  <script>
+  </script>
+<script>
 
-    /* ---- SHOP: Full Variant Matrix (Size Ãâ Color) ---- */
+    /* ---- SHOP: Full Variant Matrix (Size Ã— Color) ---- */
 
-    /* Ã¢ââ¬Ã¢ââ¬ Variant data Ã¢ââ¬Ã¢ââ¬ */
+    /* â”€â”€ Variant data â”€â”€ */
     var VARIANTS = {
       'Cabin S': {
-        'Silver':   { id:'51282808176873', sku:'CRA-CS-SLV', price:'199.00', compare:'1550.00', dims_cm:'55 Ã 40 Ã 20 cm', weight:'4.2 kg', volume:'33 L', days:'2â3 Tage', status:'limited',
+        'Silver':   { id:'51282808176873', sku:'CRA-CS-SLV', price:'199.00', compare:'1550.00', dims_cm:'55 × 40 × 20 cm', weight:'4.2 kg', volume:'33 L', days:'2–3 Tage', status:'limited',
           video:{ src:'videos/97352004_clas_cabins_mobile.mp4', poster:'images/products/97352004_poster.avif' },
           images:['images/products/97352004_1.avif','images/products/97352004_2.avif','images/products/97352004_3.avif','images/products/97352004_4.avif','images/products/97352004_5.avif'] },
-        'Titanium': { id:'51282808144105', sku:'CRA-CS-TIT', price:'199.00', compare:'1550.00', dims_cm:'55 Ã 40 Ã 20 cm', weight:'4.2 kg', volume:'33 L', days:'2â3 Tage', status:'limited',
+        'Titanium': { id:'51282808144105', sku:'CRA-CS-TIT', price:'199.00', compare:'1550.00', dims_cm:'55 × 40 × 20 cm', weight:'4.2 kg', volume:'33 L', days:'2–3 Tage', status:'limited',
           video:{ src:'videos/97353044_CLA_CABIN_TITAN_mobile.mp4', poster:'images/products/97353044_poster.avif' },
           images:['images/products/97353044_1.avif','images/products/97353044_2.avif','images/products/97353044_3.avif','images/products/97353044_4.avif','images/products/97353044_5.avif'] },
-        'Black':    { id:'51282808209641', sku:'CRA-CS-BLK', price:'199.00', compare:'1550.00', dims_cm:'55 Ã 40 Ã 20 cm', weight:'4.2 kg', volume:'33 L', days:'2â3 Tage', status:'limited',
+        'Black':    { id:'51282808209641', sku:'CRA-CS-BLK', price:'199.00', compare:'1550.00', dims_cm:'55 × 40 × 20 cm', weight:'4.2 kg', volume:'33 L', days:'2–3 Tage', status:'limited',
           video:{ src:'videos/97353014_CLAS_cabin_mobile.mp4', poster:'images/products/97353014_poster.avif' },
           images:['images/products/97353014_1.avif','images/products/97353014_2.avif','images/products/97353014_3.avif','images/products/97353014_4.avif','images/products/97353014_5.avif'] }
       },
       'Cabin': {
-        'Silver':   { id:'51282808275177', sku:'CRA-C-SLV', price:'229.00', compare:'1625.00', dims_cm:'55 Ã 40 Ã 23 cm', weight:'4.3 kg', volume:'36 L', days:'3â4 Tage', status:'in_stock',
+        'Silver':   { id:'51282808275177', sku:'CRA-C-SLV', price:'229.00', compare:'1625.00', dims_cm:'55 × 40 × 23 cm', weight:'4.3 kg', volume:'36 L', days:'3–4 Tage', status:'in_stock',
           video:{ src:'videos/97353004_CLA_CABIN_SILVER_mobile.mp4', poster:'images/products/97353004_poster.avif' },
           images:['images/products/97353004_1.avif','images/products/97353004_2.avif','images/products/97353004_3.avif','images/products/97353004_4.avif','images/products/97353004_5.avif','images/products/97353004_6.avif'] },
-        'Titanium': { id:'51282808242409', sku:'CRA-C-TIT', price:'229.00', compare:'1625.00', dims_cm:'55 Ã 40 Ã 23 cm', weight:'4.3 kg', volume:'36 L', days:'3â4 Tage', status:'in_stock',
+        'Titanium': { id:'51282808242409', sku:'CRA-C-TIT', price:'229.00', compare:'1625.00', dims_cm:'55 × 40 × 23 cm', weight:'4.3 kg', volume:'36 L', days:'3–4 Tage', status:'in_stock',
           video:{ src:'videos/97353044_CLA_CABIN_TITAN_mobile.mp4', poster:'images/products/97353044_poster.avif' },
           images:['images/products/97353044_1.avif','images/products/97353044_2.avif','images/products/97353044_3.avif','images/products/97353044_4.avif','images/products/97353044_5.avif'] },
-        'Black':    { id:'51282808307945', sku:'CRA-C-BLK', price:'229.00', compare:'1625.00', dims_cm:'55 Ã 40 Ã 23 cm', weight:'4.3 kg', volume:'36 L', days:'3â4 Tage', status:'in_stock',
+        'Black':    { id:'51282808307945', sku:'CRA-C-BLK', price:'229.00', compare:'1625.00', dims_cm:'55 × 40 × 23 cm', weight:'4.3 kg', volume:'36 L', days:'3–4 Tage', status:'in_stock',
           video:{ src:'videos/97353014_CLAS_cabin_mobile.mp4', poster:'images/products/97353014_poster.avif' },
           images:['images/products/97353014_1.avif','images/products/97353014_2.avif','images/products/97353014_3.avif','images/products/97353014_4.avif','images/products/97353014_5.avif'] }
       },
       'Check-In M': {
-        'Silver':   { id:'51282808373481', sku:'CRA-INM-SLV', price:'269.00', compare:'1825.00', dims_cm:'70 Ã 47 Ã 25 cm', weight:'5.3 kg', volume:'60 L', days:'1 Woche', status:'in_stock',
+        'Silver':   { id:'51282808373481', sku:'CRA-INM-SLV', price:'269.00', compare:'1825.00', dims_cm:'70 × 47 × 25 cm', weight:'5.3 kg', volume:'60 L', days:'1 Woche', status:'in_stock',
           video:{ src:'videos/97363004_CLAS_Checkm_mobile.mp4', poster:'images/products/97363004_poster.avif' },
           images:['images/products/97363004_1.avif','images/products/97363004_2.avif','images/products/97363004_3.avif','images/products/97363004_4.avif','images/products/97363004_5.avif'] },
-        'Titanium': { id:'51282808340713', sku:'CRA-INM-TIT', price:'269.00', compare:'1825.00', dims_cm:'70 Ã 47 Ã 25 cm', weight:'5.3 kg', volume:'60 L', days:'1 Woche', status:'in_stock',
+        'Titanium': { id:'51282808340713', sku:'CRA-INM-TIT', price:'269.00', compare:'1825.00', dims_cm:'70 × 47 × 25 cm', weight:'5.3 kg', volume:'60 L', days:'1 Woche', status:'in_stock',
           video:{ src:'videos/97373044_CLA_CHECK-INL_TITAN_mobile.mp4', poster:'images/products/97373044_poster.avif' },
           images:['images/products/97373044_1.avif','images/products/97373044_2.avif','images/products/97373044_3.avif','images/products/97373044_4.avif','images/products/97373044_5.avif'] },
-        'Black':    { id:'51282808406249', sku:'CRA-INM-BLK', price:'269.00', compare:'1825.00', dims_cm:'70 Ã 47 Ã 25 cm', weight:'5.3 kg', volume:'60 L', days:'1 Woche', status:'in_stock',
+        'Black':    { id:'51282808406249', sku:'CRA-INM-BLK', price:'269.00', compare:'1825.00', dims_cm:'70 × 47 × 25 cm', weight:'5.3 kg', volume:'60 L', days:'1 Woche', status:'in_stock',
           video:{ src:'videos/97373014_CLAS_checkL_mobile.mp4', poster:'images/products/97373014_poster.avif' },
           images:['images/products/97373014_1.avif','images/products/97373014_2.avif','images/products/97373014_3.avif','images/products/97373014_4.avif','images/products/97373014_5.avif'] }
       },
       'Check-In L': {
-        'Silver':   { id:'51282808471785', sku:'CRA-INL-SLV', price:'299.00', compare:'2000.00', dims_cm:'78 Ã 52 Ã 27 cm', weight:'6.0 kg', volume:'85 L', days:'14â15 Tage', status:'in_stock',
+        'Silver':   { id:'51282808471785', sku:'CRA-INL-SLV', price:'299.00', compare:'2000.00', dims_cm:'78 × 52 × 27 cm', weight:'6.0 kg', volume:'85 L', days:'14–15 Tage', status:'in_stock',
           video:{ src:'videos/97373004_CLA_CHECK-IN-L_SILVER_mobile.mp4', poster:'images/products/97373004_poster.avif' },
           images:['images/products/97373004_1.avif','images/products/97373004_2.avif','images/products/97373004_3.avif','images/products/97373004_4.avif','images/products/97373004_5.avif'] },
-        'Titanium': { id:'51282808439017', sku:'CRA-INL-TIT', price:'299.00', compare:'2000.00', dims_cm:'78 Ã 52 Ã 27 cm', weight:'6.0 kg', volume:'85 L', days:'14â15 Tage', status:'in_stock',
+        'Titanium': { id:'51282808439017', sku:'CRA-INL-TIT', price:'299.00', compare:'2000.00', dims_cm:'78 × 52 × 27 cm', weight:'6.0 kg', volume:'85 L', days:'14–15 Tage', status:'in_stock',
           video:{ src:'videos/97373044_CLA_CHECK-INL_TITAN_mobile.mp4', poster:'images/products/97373044_poster.avif' },
           images:['images/products/97373044_1.avif','images/products/97373044_2.avif','images/products/97373044_3.avif','images/products/97373044_4.avif','images/products/97373044_5.avif'] },
-        'Black':    { id:'51282808504553', sku:'CRA-INL-BLK', price:'299.00', compare:'2000.00', dims_cm:'78 Ã 52 Ã 27 cm', weight:'6.0 kg', volume:'85 L', days:'14â15 Tage', status:'in_stock',
+        'Black':    { id:'51282808504553', sku:'CRA-INL-BLK', price:'299.00', compare:'2000.00', dims_cm:'78 × 52 × 27 cm', weight:'6.0 kg', volume:'85 L', days:'14–15 Tage', status:'in_stock',
           video:{ src:'videos/97373014_CLAS_checkL_mobile.mp4', poster:'images/products/97373014_poster.avif' },
           images:['images/products/97373014_1.avif','images/products/97373014_2.avif','images/products/97373014_3.avif','images/products/97373014_4.avif','images/products/97373014_5.avif'] }
       },
       'Trunk': {
-        'Silver':   { id:'51282808570089', sku:'CRA-T-SLV', price:'369.00', compare:'2400.00', dims_cm:'75 Ã 47 Ã 36 cm', weight:'6.0 kg', volume:'100 L', days:'16â17 Tage', status:'limited',
+        'Silver':   { id:'51282808570089', sku:'CRA-T-SLV', price:'369.00', compare:'2400.00', dims_cm:'75 × 47 × 36 cm', weight:'6.0 kg', volume:'100 L', days:'16–17 Tage', status:'limited',
           video:{ src:'videos/97375004_CLA_TRUNK_SILVER_mobile.mp4', poster:'images/products/97375004_poster.avif' },
           images:['images/products/97375004_1.avif','images/products/97375004_2.avif','images/products/97375004_3.avif','images/products/97375004_4.avif','images/products/97375004_5.avif','images/products/97375004_6.avif'] },
-        'Titanium': { id:'51282808537321', sku:'CRA-T-TIT', price:'369.00', compare:'2400.00', dims_cm:'75 Ã 47 Ã 36 cm', weight:'6.0 kg', volume:'100 L', days:'16â17 Tage', status:'limited',
+        'Titanium': { id:'51282808537321', sku:'CRA-T-TIT', price:'369.00', compare:'2400.00', dims_cm:'75 × 47 × 36 cm', weight:'6.0 kg', volume:'100 L', days:'16–17 Tage', status:'limited',
           video:{ src:'videos/97375044_CLA_TRUNK_TITAN_mobile.mp4', poster:'images/products/97375044_poster.avif' },
           images:['images/products/97375044_1.avif','images/products/97375044_2.avif','images/products/97375044_3.avif','images/products/97375044_4.avif','images/products/97375044_5.avif'] },
-        'Black':    { id:'51282808602857', sku:'CRA-T-BLK', price:'369.00', compare:'2400.00', dims_cm:'75 Ã 47 Ã 36 cm', weight:'6.0 kg', volume:'100 L', days:'16â17 Tage', status:'limited',
+        'Black':    { id:'51282808602857', sku:'CRA-T-BLK', price:'369.00', compare:'2400.00', dims_cm:'75 × 47 × 36 cm', weight:'6.0 kg', volume:'100 L', days:'16–17 Tage', status:'limited',
           video:{ src:'videos/97375014_CLAS_trunk_mobile.mp4', poster:'images/products/97375014_poster.avif' },
           images:['images/products/97375014_1.avif','images/products/97375014_2.avif','images/products/97375014_3.avif','images/products/97375014_4.avif','images/products/97375014_5.avif'] }
       }
@@ -1486,13 +1440,13 @@
 
     /* Static specs shared by all variants */
     var SPECS_SHARED = [
-      ['Material (AuÃen)', 'Eloxiertes Aluminium'],
+      ['Material (Außen)', 'Eloxiertes Aluminium'],
       ['Material (Innen)', 'Polyester'],
       ['Material (Henkel)', 'Leder'],
-      ['Material (RÃ¤der)', 'Hartkunststoff'],
-      ['Material (TrennwÃ¤nde)', 'Polyester'],
-      ['SchlÃ¶sser', 'TSA-SchlÃ¶sser'],
-      ['RÃ¤der', 'RIMOWA MultiwheelÂ®-System (4 RÃ¤der, 360Â°)'],
+      ['Material (Räder)', 'Hartkunststoff'],
+      ['Material (Trennwände)', 'Polyester'],
+      ['Schlösser', 'TSA-Schlösser'],
+      ['Räder', 'RIMOWA Multiwheel®-System (4 Räder, 360°)'],
       ['Teleskopgriff', 'Stufenlos verstellbar'],
       ['Entworfen in', 'Deutschland'],
       ['Garantie', 'Lebenslange Garantie']
@@ -1524,7 +1478,7 @@
       return ALL_COLORS.filter(function(c) { return !!s[c.name]; });
     }
 
-    /* Ã¢ââ¬Ã¢ââ¬ Build color swatches (filtered by current size) Ã¢ââ¬Ã¢ââ¬ */
+    /* â”€â”€ Build color swatches (filtered by current size) â”€â”€ */
     function buildColorSwatches() {
       var container = document.getElementById('color-swatches');
       container.innerHTML = '';
@@ -1554,7 +1508,7 @@
       applyVariant();
     }
 
-    /* Ã¢ââ¬Ã¢ââ¬ Build size blocks Ã¢ââ¬Ã¢ââ¬ */
+    /* â”€â”€ Build size blocks â”€â”€ */
     function buildSizeBlocks() {
       var container = document.getElementById('size-blocks-container');
       container.innerHTML = '';
@@ -1579,7 +1533,7 @@
       });
       document.getElementById('selected-size-name').textContent = sizeName;
       var dimsVariant = getVariant(sizeName, activeColor) || getVariant(sizeName, Object.keys(VARIANTS[sizeName]||{})[0]);
-      document.getElementById('selected-size-dims').textContent = dimsVariant ? dimsVariant.dims_cm + ' Â· ' + dimsVariant.volume : '';
+      document.getElementById('selected-size-dims').textContent = dimsVariant ? dimsVariant.dims_cm + ' · ' + dimsVariant.volume : '';
 
       /* If current color not available for new size, pick first available */
       var colors = getColorsForSize(sizeName);
@@ -1592,7 +1546,7 @@
       applyVariant();
     }
 
-    /* Ã¢ââ¬Ã¢ââ¬ Apply variant: update price, gallery, stock, specs Ã¢ââ¬Ã¢ââ¬ */
+    /* â”€â”€ Apply variant: update price, gallery, stock, specs â”€â”€ */
     function applyVariant() {
       var v = getVariant(activeSize, activeColor);
       if (!v) return;
@@ -1631,7 +1585,7 @@
 
       /* Ideal trip length */
       var idealEl = document.getElementById('size-ideal-line');
-      if (idealEl && v.days) idealEl.innerHTML = 'Ideal fÃ¼r <strong style="color:var(--text-body);font-weight:500;">' + v.days + '</strong> Reise';
+      if (idealEl && v.days) idealEl.innerHTML = 'Ideal für <strong style="color:var(--text-body);font-weight:500;">' + v.days + '</strong> Reise';
 
       /* Specs accordion */
       updateSpecsForVariant(v);
@@ -1664,9 +1618,9 @@
       if (!detEl) return;
       var specs = [];
       specs.push(['SKU', v.sku]);
-      specs.push(['GrÃ¶Ãe', activeSize]);
+      specs.push(['Größe', activeSize]);
       specs.push(['Farbe', COLOR_LABELS[activeColor] || activeColor]);
-      specs.push(['MaÃe (cm)', v.dims_cm]);
+      specs.push(['Maße (cm)', v.dims_cm]);
       if (v.weight && v.weight !== 'N/A') specs.push(['Gewicht', v.weight]);
       if (v.volume && v.volume !== 'N/A') specs.push(['Volumen', v.volume]);
       specs = specs.concat(SPECS_SHARED);
@@ -1722,7 +1676,7 @@
         if (item.type === 'video') {
           div.style.position = 'relative';
           var play = document.createElement('span');
-          play.textContent = 'â¶';
+          play.textContent = '▶';
           play.style.cssText = 'position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:22px;height:22px;border-radius:50%;background:rgba(0,0,0,.55);color:#fff;font-size:8px;display:flex;align-items:center;justify-content:center;padding-left:1px;pointer-events:none;';
           div.appendChild(play);
         }
@@ -1799,28 +1753,28 @@
 
     /* ---- Reviews data ---- */
   var REVIEWS_DATA = [
-    {"id":1001,"score":5,"title":"Einmal anfassen und man versteht es","content":"Sobald man einen RIMOWA einmal gerollt hat, versteht man es â man begreift genau, warum er kostet, was er kostet. Die RÃ¤der gleiten auf praktisch jedem Untergrund wie Butter, und ihn durch einen vollen Flughafen zu manÃ¶vrieren macht richtig SpaÃ. Nach einem Leben mit normalem GepÃ¤ck war das ein echter Wow-Moment â der Unterschied ist sofort spÃ¼rbar. Und die Langlebigkeit ist kein Witz: Als das Innenfutter bei uns anfing auszufransen, sind wir einfach in einen Store gegangen. Sie haben es repariert â und uns sogar einen Leihkoffer mitgegeben, solange unserer in der Werkstatt war. So sieht echter Luxus-Service aus.","date":"2026-03-10T10:00:00.000Z","verified":true,"author":"Sarah Brandt","photos":["images/reviews/1747311077799.avif"]},
-    {"id":1002,"score":5,"title":"Endlich â und keine Sekunde bereut","content":"Ich habe so lange von diesem Koffer getrÃ¤umt. Als er endlich ankam, war ich Ã¼berglÃ¼cklich â und das Beste: Man merkt sofort, dass das kein rausgeworfenes Geld war. Jeder Euro ist gerechtfertigt. RIMOWA ist einfach jeden Cent wert.","date":"2026-02-20T09:00:00.000Z","verified":true,"author":"Tobias Wegner","photos":["images/reviews/1754435665040.avif"]},
-    {"id":1003,"score":5,"title":"Das perfekte HandgepÃ¤ck â fÃ¼r immer","content":"Das perfekte HandgepÃ¤ck. Zeitlos, robust und komplett anpassbar. Definitiv eines dieser 'einmal kaufen, fÃ¼r immer behalten'-Dinge. Ich bin so froh, dass ich diese Investition gemacht habe â ich werde noch jahrzehntelang Freude daran haben. Und ich liebe es, dass man fÃ¼r Reparaturen und eine LederprÃ¤gung einfach in den Store gehen kann!","date":"2026-01-15T14:00:00.000Z","verified":true,"author":"Melanie KÃ¶hler","photos":["images/reviews/1747322021997.avif"]},
-    {"id":1004,"score":5,"title":"Einfach perfekt","content":"Der RIMOWA Cabin ist schlicht und einfach perfekt. Die QualitÃ¤t ist auÃergewÃ¶hnlich â man spÃ¼rt die hochwertige Verarbeitung und Langlebigkeit im selben Moment, in dem man ihn in die Hand nimmt. Das elegante Design verleiht jeder Reise eine gewisse Klasse und passt wunderbar zum Rest meines GepÃ¤cks. RIMOWA hat es einfach perfekt hinbekommen. Ein absolutes Muss fÃ¼r jeden, der ernsthaft reist!","date":"2025-11-20T11:00:00.000Z","verified":true,"author":"Lukas Berger","photos":["images/reviews/1696447234585.avif"]},
-    {"id":1005,"score":5,"title":"Kein anderer Koffer kommt da ran","content":"Wenn man einmal einen RIMOWA gerollt hat â dann ist es vorbei. Ich habe so viele Marken ausprobiert, aber nichts kommt auch nur ansatzweise an die Art heran, wie sich dieses Teil bewegt. Die QualitÃ¤t ist auf einem vÃ¶llig anderen Niveau, gebaut fÃ¼r ein ganzes Leben. Der Kundenservice ist fantastisch â schnell und lÃ¶st Probleme ohne Hin und Her. Und die lebenslange Garantie besiegelt das Ganze.","date":"2025-10-08T08:00:00.000Z","verified":true,"author":"Katharina Seibert","photos":["images/reviews/1751170575825.avif"]},
-    {"id":1006,"score":5,"title":"Eine Investition, die sich wirklich lohnt","content":"Definitiv ein StÃ¼ck zum VerwÃ¶hnen. Ich habe den Cabin vor ein paar Jahren als Belohnung fÃ¼r mich selbst gekauft, als ich einen neuen Job angefangen habe â und er sieht immer noch genauso umwerfend aus wie am ersten Tag. Ja, er ist teuer. Aber er ist so auffallend schÃ¶n und rollt so geschmeidig, dass er jeden Euro wert ist.\n\nVoll gepackt ist er etwas schwer ins GepÃ¤ckfach zu heben â aber das Stauvolumen ist hervorragend und die Schale fÃ¼hlt sich absolut unzerstÃ¶rbar an.\n\nEine Traditionsmarke mit echtem Stil und einer wirklich coolen Geschichte hinter diesen Aluminium-Koffern. Die beste Kombination aus Form und Funktion, die mir je begegnet ist.","date":"2025-09-12T16:00:00.000Z","verified":true,"author":"Frank Grasser","photos":[]},
-    {"id":1007,"score":5,"title":"Liebe auf den ersten Blick","content":"Ich habe mir vor Kurzem einen RIMOWA gegÃ¶nnt â und ich bin vÃ¶llig hin und weg. Das elegante Aluminium-Design zieht Blicke auf sich, ist dabei aber kratzfest und unglaublich robust. Die RÃ¤der rollen mÃ¼helos, die Innenaufteilung ist durchdacht und praktisch. Ja, er ist nicht billig â aber glaubt mir, er ist jeden Cent wert.","date":"2025-08-05T10:00:00.000Z","verified":true,"author":"Anna Drechsler","photos":["images/reviews/1690964453973.avif"]},
-    {"id":1008,"score":5,"title":"Beweist mir das Gegenteil","content":"RIMOWA ist einfach unglaublich. Ich bin mit diesem Koffer um die halbe Welt gereist â und er steckt alles weg. Die QualitÃ¤t ist unÃ¼bertroffen, und die RÃ¤der sind mit Abstand die besten der Branche: Sie gleiten selbst auf rauen OberflÃ¤chen wie auf Schienen. Stilvoll, robust und bereit fÃ¼r jedes Abenteuer. Ich habe nirgendwo besseres GepÃ¤ck gefunden. Beweist mir das Gegenteil.","date":"2025-07-18T12:00:00.000Z","verified":true,"author":"Markus Vogel","photos":["images/reviews/the-review-i-wanted-rimowa-classic-cabin-and-check-in-l-v0-3n9g4vixdszc1.avif"]},
-    {"id":1009,"score":5,"title":"11 Koffer spÃ¤ter â keine Reue","content":"Meinen ersten RIMOWA habe ich 2019 bekommen und mich sofort verliebt. Ja, sie sind teuer â aber in 7 Jahren Reisen ist mir nie auch nur ein einziger Koffer kaputtgegangen. Allein das ist es wert. Und die RÃ¤der... die sind einfach in einer eigenen Liga.\n\nDie meisten habe ich auf Reisen gekauft, vor allem hier in Deutschland und im europÃ¤ischen Ausland. Inzwischen sind es 11 â 9 behalte ich, 2 habe ich meinen Eltern geschenkt. Einmal RIMOWA, immer RIMOWA.","date":"2025-06-01T09:00:00.000Z","verified":true,"author":"Julia Hartmann","photos":["images/reviews/7-years-with-rimowa-luggages-ama-v0-anpd7wfeg9eg1.avif"]},
-    {"id":1010,"score":5,"title":"Die Investition, die sich wirklich auszahlt","content":"Unglaubliches Produkt. Zeitloses Design, makellose QualitÃ¤t. Beim Preis habe ich zuerst gezÃ¶gert â aber jetzt weiÃ ich, dass es absolut die richtige Entscheidung war. RIMOWA hÃ¤lt. Davor habe ich immer billige Koffer gekauft, die auseinanderfielen â abbrechende RÃ¤der, aufplatzende ReiÃverschlÃ¼sse, splitternde Schalen. Der stÃ¤ndige Ersatz hat am Ende mehr gekostet. Mit meinen RIMOWAs bin ich schon mehrfach um die Welt gereist. Diese 4 Spinner-RÃ¤der sind ein absoluter Traum â Reisen fÃ¼hlt sich so mÃ¼helos an.","date":"2025-04-22T15:00:00.000Z","verified":true,"author":"Stefan Naumann","photos":["images/reviews/8124VqeWqVL.avif"]},
-    {"id":1011,"score":5,"title":"FÃ¼r immer. Keine Ãbertreibung.","content":"Ja, es lohnt sich. Dieser Koffer hÃ¤lt ein Leben lang. RIMOWA steht hinter seinen Produkten, bietet eine groÃzÃ¼gige Garantie und repariert oder ersetzt MÃ¤ngel ohne jeden Aufwand. Einfach kaufen und nie wieder daran denken.","date":"2025-03-14T11:00:00.000Z","verified":true,"author":"Petra Welling","photos":["images/reviews/718bHfp9ZdL.avif"]},
-    {"id":1012,"score":5,"title":"100% Empfehlung â keine Frage","content":"Diese Koffer sind einfach fantastisch. Super praktisch, unglaublich geschmeidig zu rollen ð¤© AuÃerdem leicht und wunderschÃ¶n â die Leute bleiben am Flughafen tatsÃ¤chlich stehen und schauen. 100% Empfehlung!","date":"2025-02-08T13:00:00.000Z","verified":true,"author":"Christian Bachmann","photos":["images/reviews/71tMHtNABpL.avif"]},
-    {"id":1013,"score":5,"title":"So gut, dass ich gleich mehrere gekauft habe","content":"Ich bin absolut verliebt in meinen neuen Cabin. Der Griff ist der bequemste, den ich je an einem Koffer hatte â und die RÃ¤der rollen unglaublich geschmeidig. Ich war so begeistert, dass ich direkt zurÃ¼ckgegangen bin und noch ein paar fÃ¼r meine Familie gekauft habe.","date":"2024-12-19T10:00:00.000Z","verified":true,"author":"Nina Scholz","photos":[]},
-    {"id":1014,"score":5,"title":"Einmal kaufen â fÃ¼r immer besitzen","content":"RIMOWA-Produkte sehen nicht nur fantastisch aus, sie sind nach hÃ¶chsten Standards gefertigt. Sie funktionieren makellos und kommen mit lebenslanger Garantie â das macht es zu einem einmaligen Kauf, der den Preis vÃ¶llig rechtfertigt.","date":"2024-11-03T09:00:00.000Z","verified":true,"author":"David Keller","photos":[]},
-    {"id":1015,"score":5,"title":"Dezent. Aber jeder erkennt es.","content":"Das ultimative Reise-Statussymbol fÃ¼r alle, die es lieber zurÃ¼ckhaltend mÃ¶gen. Man muss kein Wort sagen â der Koffer sagt alles.","date":"2024-10-11T14:00:00.000Z","verified":true,"author":"Susanne Friedrich","photos":[]},
-    {"id":1016,"score":5,"title":"Zeitlose Ikonen â deutsche Ingenieurskunst vom Feinsten","content":"2022 habe ich mir den Original Cabin geholt und meinem Partner den Classic Cabin. Beide sind seitdem treue Begleiter auf unzÃ¤hligen Reisen. RIMOWA macht einfach zeitlose Ikonen â deutsche Ingenieurskunst auf absolutem HÃ¶chstniveau.","date":"2024-09-05T08:00:00.000Z","verified":true,"author":"Andreas Zwick","photos":[]},
-    {"id":1017,"score":5,"title":"SchÃ¶n, gerÃ¤umig, jeden Euro wert","content":"Der Kauf war reibungslos â einfach und unkompliziert. Mein RIMOWA Cabin ist gerÃ¤umig, Ã¶ffnet und schlieÃt mÃ¼helos, sieht absolut umwerfend aus und ist den Preis komplett wert.","date":"2024-08-22T16:00:00.000Z","verified":true,"author":"Lea Ostermann","photos":[]},
-    {"id":1018,"score":5,"title":"Die besten Koffer der Welt â Punkt.","content":"RIMOWA macht einfach das beste GepÃ¤ck â da gibt es nichts zu diskutieren. Riesiges Volumen und trotzdem leicht. Dreht und rollt wie ein Traum. HÃ¤lt ein Leben lang. Jeden Euro wert â und noch mehr!","date":"2024-07-14T10:00:00.000Z","verified":true,"author":"Michael Traut","photos":[]},
-    {"id":1019,"score":5,"title":"Begeistert schon vor der ersten Reise","content":"Ich wollte nur meine ersten EindrÃ¼cke von meinem neuen RIMOWA Cabin teilen. Ich hatte noch keine Gelegenheit, ihn auf eine Reise mitzunehmen â aber ich bin jetzt schon ehrlich begeistert. Die VerarbeitungsqualitÃ¤t, das GefÃ¼hl des Aluminiums, die Handwerkskunst insgesamt â genau das, was ich mir erhofft hatte. Alles daran strahlt Langlebigkeit und durchdachtes Design aus.\n\nIch kann es kaum erwarten, ihn endlich auf einer Reise zu nutzen â aber schon vom ersten Eindruck her ist klar: Das ist ein Koffer, der bleibt.","date":"2024-06-03T12:00:00.000Z","verified":true,"author":"Hanna Burkhardt","photos":[]},
-    {"id":1020,"score":5,"title":"Mein erster RIMOWA â definitiv nicht mein letzter","content":"Mein erster RIMOWA â und was fÃ¼r ein Einstieg. Der Cabin hat die perfekte GrÃ¶Ãe und die QualitÃ¤t ist einfach erstklassig. Der Versand war schnell und das Tracking hat mich bei jedem Schritt auf dem Laufenden gehalten. Ja, er ist nicht billig â aber ich plane schon, mir bald die nÃ¤chstgrÃ¶Ãere Variante zu holen. Absolute Empfehlung!","date":"2024-05-17T09:00:00.000Z","verified":true,"author":"Frank Heinrich","photos":[]},
-    {"id":1021,"score":5,"title":"Kaum zu Ã¼bersehen â aus gutem Grund","content":"RIMOWA ist eine ikonische GepÃ¤ckmarke, an der man einfach nicht vorbeikommt, wenn man es ernst meint mit wirklich gutem GepÃ¤ck.","date":"2024-04-09T11:00:00.000Z","verified":true,"author":"Caroline Meyer","photos":[]},
-    {"id":1022,"score":5,"title":"Man bekommt, wofÃ¼r man bezahlt","content":"Der Bestellvorgang und das Tracking waren hervorragend! Man bekommt hier wirklich genau das, wofÃ¼r man bezahlt. Absolut jeden Cent wert!","date":"2024-03-21T08:00:00.000Z","verified":true,"author":"Jens Walter","photos":[]}
+    {"id":1001,"score":5,"title":"Einmal anfassen und man versteht es","content":"Sobald man einen RIMOWA einmal gerollt hat, versteht man es — man begreift genau, warum er kostet, was er kostet. Die Räder gleiten auf praktisch jedem Untergrund wie Butter, und ihn durch einen vollen Flughafen zu manövrieren macht richtig Spaß. Nach einem Leben mit normalem Gepäck war das ein echter Wow-Moment — der Unterschied ist sofort spürbar. Und die Langlebigkeit ist kein Witz: Als das Innenfutter bei uns anfing auszufransen, sind wir einfach in einen Store gegangen. Sie haben es repariert — und uns sogar einen Leihkoffer mitgegeben, solange unserer in der Werkstatt war. So sieht echter Luxus-Service aus.","date":"2026-03-10T10:00:00.000Z","verified":true,"author":"Sarah Brandt","photos":["assets/1747311077799.avif"]},
+    {"id":1002,"score":5,"title":"Endlich — und keine Sekunde bereut","content":"Ich habe so lange von diesem Koffer geträumt. Als er endlich ankam, war ich überglücklich — und das Beste: Man merkt sofort, dass das kein rausgeworfenes Geld war. Jeder Euro ist gerechtfertigt. RIMOWA ist einfach jeden Cent wert.","date":"2026-02-20T09:00:00.000Z","verified":true,"author":"Tobias Wegner","photos":["assets/1754435665040.avif"]},
+    {"id":1003,"score":5,"title":"Das perfekte Handgepäck — für immer","content":"Das perfekte Handgepäck. Zeitlos, robust und komplett anpassbar. Definitiv eines dieser 'einmal kaufen, für immer behalten'-Dinge. Ich bin so froh, dass ich diese Investition gemacht habe — ich werde noch jahrzehntelang Freude daran haben. Und ich liebe es, dass man für Reparaturen und eine Lederprägung einfach in den Store gehen kann!","date":"2026-01-15T14:00:00.000Z","verified":true,"author":"Melanie Köhler","photos":["assets/1747322021997.avif"]},
+    {"id":1004,"score":5,"title":"Einfach perfekt","content":"Der RIMOWA Cabin ist schlicht und einfach perfekt. Die Qualität ist außergewöhnlich — man spürt die hochwertige Verarbeitung und Langlebigkeit im selben Moment, in dem man ihn in die Hand nimmt. Das elegante Design verleiht jeder Reise eine gewisse Klasse und passt wunderbar zum Rest meines Gepäcks. RIMOWA hat es einfach perfekt hinbekommen. Ein absolutes Muss für jeden, der ernsthaft reist!","date":"2025-11-20T11:00:00.000Z","verified":true,"author":"Lukas Berger","photos":["assets/1696447234585.avif"]},
+    {"id":1005,"score":5,"title":"Kein anderer Koffer kommt da ran","content":"Wenn man einmal einen RIMOWA gerollt hat — dann ist es vorbei. Ich habe so viele Marken ausprobiert, aber nichts kommt auch nur ansatzweise an die Art heran, wie sich dieses Teil bewegt. Die Qualität ist auf einem völlig anderen Niveau, gebaut für ein ganzes Leben. Der Kundenservice ist fantastisch — schnell und löst Probleme ohne Hin und Her. Und die lebenslange Garantie besiegelt das Ganze.","date":"2025-10-08T08:00:00.000Z","verified":true,"author":"Katharina Seibert","photos":["assets/1751170575825.avif"]},
+    {"id":1006,"score":5,"title":"Eine Investition, die sich wirklich lohnt","content":"Definitiv ein Stück zum Verwöhnen. Ich habe den Cabin vor ein paar Jahren als Belohnung für mich selbst gekauft, als ich einen neuen Job angefangen habe — und er sieht immer noch genauso umwerfend aus wie am ersten Tag. Ja, er ist teuer. Aber er ist so auffallend schön und rollt so geschmeidig, dass er jeden Euro wert ist.\n\nVoll gepackt ist er etwas schwer ins Gepäckfach zu heben — aber das Stauvolumen ist hervorragend und die Schale fühlt sich absolut unzerstörbar an.\n\nEine Traditionsmarke mit echtem Stil und einer wirklich coolen Geschichte hinter diesen Aluminium-Koffern. Die beste Kombination aus Form und Funktion, die mir je begegnet ist.","date":"2025-09-12T16:00:00.000Z","verified":true,"author":"Frank Grasser","photos":[]},
+    {"id":1007,"score":5,"title":"Liebe auf den ersten Blick","content":"Ich habe mir vor Kurzem einen RIMOWA gegönnt — und ich bin völlig hin und weg. Das elegante Aluminium-Design zieht Blicke auf sich, ist dabei aber kratzfest und unglaublich robust. Die Räder rollen mühelos, die Innenaufteilung ist durchdacht und praktisch. Ja, er ist nicht billig — aber glaubt mir, er ist jeden Cent wert.","date":"2025-08-05T10:00:00.000Z","verified":true,"author":"Anna Drechsler","photos":["assets/1690964453973.avif"]},
+    {"id":1008,"score":5,"title":"Beweist mir das Gegenteil","content":"RIMOWA ist einfach unglaublich. Ich bin mit diesem Koffer um die halbe Welt gereist — und er steckt alles weg. Die Qualität ist unübertroffen, und die Räder sind mit Abstand die besten der Branche: Sie gleiten selbst auf rauen Oberflächen wie auf Schienen. Stilvoll, robust und bereit für jedes Abenteuer. Ich habe nirgendwo besseres Gepäck gefunden. Beweist mir das Gegenteil.","date":"2025-07-18T12:00:00.000Z","verified":true,"author":"Markus Vogel","photos":["assets/the-review-i-wanted-rimowa-classic-cabin-and-check-in-l-v0-3n9g4vixdszc1.avif"]},
+    {"id":1009,"score":5,"title":"11 Koffer später — keine Reue","content":"Meinen ersten RIMOWA habe ich 2019 bekommen und mich sofort verliebt. Ja, sie sind teuer — aber in 7 Jahren Reisen ist mir nie auch nur ein einziger Koffer kaputtgegangen. Allein das ist es wert. Und die Räder... die sind einfach in einer eigenen Liga.\n\nDie meisten habe ich auf Reisen gekauft, vor allem hier in Deutschland und im europäischen Ausland. Inzwischen sind es 11 — 9 behalte ich, 2 habe ich meinen Eltern geschenkt. Einmal RIMOWA, immer RIMOWA.","date":"2025-06-01T09:00:00.000Z","verified":true,"author":"Julia Hartmann","photos":["assets/7-years-with-rimowa-luggages-ama-v0-anpd7wfeg9eg1.avif"]},
+    {"id":1010,"score":5,"title":"Die Investition, die sich wirklich auszahlt","content":"Unglaubliches Produkt. Zeitloses Design, makellose Qualität. Beim Preis habe ich zuerst gezögert — aber jetzt weiß ich, dass es absolut die richtige Entscheidung war. RIMOWA hält. Davor habe ich immer billige Koffer gekauft, die auseinanderfielen — abbrechende Räder, aufplatzende Reißverschlüsse, splitternde Schalen. Der ständige Ersatz hat am Ende mehr gekostet. Mit meinen RIMOWAs bin ich schon mehrfach um die Welt gereist. Diese 4 Spinner-Räder sind ein absoluter Traum — Reisen fühlt sich so mühelos an.","date":"2025-04-22T15:00:00.000Z","verified":true,"author":"Stefan Naumann","photos":["assets/8124VqeWqVL.avif"]},
+    {"id":1011,"score":5,"title":"Für immer. Keine Übertreibung.","content":"Ja, es lohnt sich. Dieser Koffer hält ein Leben lang. RIMOWA steht hinter seinen Produkten, bietet eine großzügige Garantie und repariert oder ersetzt Mängel ohne jeden Aufwand. Einfach kaufen und nie wieder daran denken.","date":"2025-03-14T11:00:00.000Z","verified":true,"author":"Petra Welling","photos":["assets/718bHfp9ZdL.avif"]},
+    {"id":1012,"score":5,"title":"100% Empfehlung — keine Frage","content":"Diese Koffer sind einfach fantastisch. Super praktisch, unglaublich geschmeidig zu rollen 🤩 Außerdem leicht und wunderschön — die Leute bleiben am Flughafen tatsächlich stehen und schauen. 100% Empfehlung!","date":"2025-02-08T13:00:00.000Z","verified":true,"author":"Christian Bachmann","photos":["assets/71tMHtNABpL.avif"]},
+    {"id":1013,"score":5,"title":"So gut, dass ich gleich mehrere gekauft habe","content":"Ich bin absolut verliebt in meinen neuen Cabin. Der Griff ist der bequemste, den ich je an einem Koffer hatte — und die Räder rollen unglaublich geschmeidig. Ich war so begeistert, dass ich direkt zurückgegangen bin und noch ein paar für meine Familie gekauft habe.","date":"2024-12-19T10:00:00.000Z","verified":true,"author":"Nina Scholz","photos":[]},
+    {"id":1014,"score":5,"title":"Einmal kaufen — für immer besitzen","content":"RIMOWA-Produkte sehen nicht nur fantastisch aus, sie sind nach höchsten Standards gefertigt. Sie funktionieren makellos und kommen mit lebenslanger Garantie — das macht es zu einem einmaligen Kauf, der den Preis völlig rechtfertigt.","date":"2024-11-03T09:00:00.000Z","verified":true,"author":"David Keller","photos":[]},
+    {"id":1015,"score":5,"title":"Dezent. Aber jeder erkennt es.","content":"Das ultimative Reise-Statussymbol für alle, die es lieber zurückhaltend mögen. Man muss kein Wort sagen — der Koffer sagt alles.","date":"2024-10-11T14:00:00.000Z","verified":true,"author":"Susanne Friedrich","photos":[]},
+    {"id":1016,"score":5,"title":"Zeitlose Ikonen — deutsche Ingenieurskunst vom Feinsten","content":"2022 habe ich mir den Original Cabin geholt und meinem Partner den Classic Cabin. Beide sind seitdem treue Begleiter auf unzähligen Reisen. RIMOWA macht einfach zeitlose Ikonen — deutsche Ingenieurskunst auf absolutem Höchstniveau.","date":"2024-09-05T08:00:00.000Z","verified":true,"author":"Andreas Zwick","photos":[]},
+    {"id":1017,"score":5,"title":"Schön, geräumig, jeden Euro wert","content":"Der Kauf war reibungslos — einfach und unkompliziert. Mein RIMOWA Cabin ist geräumig, öffnet und schließt mühelos, sieht absolut umwerfend aus und ist den Preis komplett wert.","date":"2024-08-22T16:00:00.000Z","verified":true,"author":"Lea Ostermann","photos":[]},
+    {"id":1018,"score":5,"title":"Die besten Koffer der Welt — Punkt.","content":"RIMOWA macht einfach das beste Gepäck — da gibt es nichts zu diskutieren. Riesiges Volumen und trotzdem leicht. Dreht und rollt wie ein Traum. Hält ein Leben lang. Jeden Euro wert — und noch mehr!","date":"2024-07-14T10:00:00.000Z","verified":true,"author":"Michael Traut","photos":[]},
+    {"id":1019,"score":5,"title":"Begeistert schon vor der ersten Reise","content":"Ich wollte nur meine ersten Eindrücke von meinem neuen RIMOWA Cabin teilen. Ich hatte noch keine Gelegenheit, ihn auf eine Reise mitzunehmen — aber ich bin jetzt schon ehrlich begeistert. Die Verarbeitungsqualität, das Gefühl des Aluminiums, die Handwerkskunst insgesamt — genau das, was ich mir erhofft hatte. Alles daran strahlt Langlebigkeit und durchdachtes Design aus.\n\nIch kann es kaum erwarten, ihn endlich auf einer Reise zu nutzen — aber schon vom ersten Eindruck her ist klar: Das ist ein Koffer, der bleibt.","date":"2024-06-03T12:00:00.000Z","verified":true,"author":"Hanna Burkhardt","photos":[]},
+    {"id":1020,"score":5,"title":"Mein erster RIMOWA — definitiv nicht mein letzter","content":"Mein erster RIMOWA — und was für ein Einstieg. Der Cabin hat die perfekte Größe und die Qualität ist einfach erstklassig. Der Versand war schnell und das Tracking hat mich bei jedem Schritt auf dem Laufenden gehalten. Ja, er ist nicht billig — aber ich plane schon, mir bald die nächstgrößere Variante zu holen. Absolute Empfehlung!","date":"2024-05-17T09:00:00.000Z","verified":true,"author":"Frank Heinrich","photos":[]},
+    {"id":1021,"score":5,"title":"Kaum zu übersehen — aus gutem Grund","content":"RIMOWA ist eine ikonische Gepäckmarke, an der man einfach nicht vorbeikommt, wenn man es ernst meint mit wirklich gutem Gepäck.","date":"2024-04-09T11:00:00.000Z","verified":true,"author":"Caroline Meyer","photos":[]},
+    {"id":1022,"score":5,"title":"Man bekommt, wofür man bezahlt","content":"Der Bestellvorgang und das Tracking waren hervorragend! Man bekommt hier wirklich genau das, wofür man bezahlt. Absolut jeden Cent wert!","date":"2024-03-21T08:00:00.000Z","verified":true,"author":"Jens Walter","photos":[]}
   ];
   (function(){
     var _sorted = REVIEWS_DATA.slice().sort(function(a,b){
@@ -1838,7 +1792,7 @@
     }
     function _date(iso) {
       var d = new Date(iso);
-      var mo = ['Jan.','Feb.','MÃ¤rz','Apr.','Mai','Juni','Juli','Aug.','Sep.','Okt.','Nov.','Dez.'];
+      var mo = ['Jan.','Feb.','März','Apr.','Mai','Juni','Juli','Aug.','Sep.','Okt.','Nov.','Dez.'];
       return d.getDate()+'. '+mo[d.getMonth()]+' '+d.getFullYear();
     }
 
@@ -1865,7 +1819,7 @@
           '<div class="review-avatar">'+initial+'</div>'+
           '<div class="review-item__content">'+
             '<div class="review-item__header">'+
-              '<span class="review-item__meta">'+_esc(r.author)+' Â· '+_date(r.date)+verifiedHtml+'</span>'+
+              '<span class="review-item__meta">'+_esc(r.author)+' · '+_date(r.date)+verifiedHtml+'</span>'+
             '</div>'+
             '<div style="display:flex;align-items:center;gap:12px;margin-bottom:4px;">'+
               '<span class="review-item__stars">'+_stars(r.score)+'</span>'+
@@ -1887,7 +1841,7 @@
       document.getElementById('reviews-load-more-btn').onclick = function(){ window.openReviewsPopup(); };
     });
 
-    /* Ã¢ââ¬Ã¢ââ¬ Reviews popup carousel Ã¢ââ¬Ã¢ââ¬ */
+    /* â”€â”€ Reviews popup carousel â”€â”€ */
     var _popupIdx = 0;
     var _popupBuilt = false;
 
@@ -1906,11 +1860,11 @@
           });
           photosHtml += '</div>';
         }
-        var verifiedHtml = r.verified ? ' Â· <span style="color:#2a7d2a">\u2713 Verifiziert</span>' : '';
+        var verifiedHtml = r.verified ? ' · <span style="color:#2a7d2a">\u2713 Verifiziert</span>' : '';
         var popupInitial = r.author.charAt(0).toUpperCase();
         card.innerHTML =
           '<div style="display:flex;align-items:center;gap:10px;margin-bottom:4px;"><div class="review-avatar">'+popupInitial+'</div><div><div class="reviews-popup__card-stars">'+_stars(r.score)+'</div>'+
-          '<div class="reviews-popup__card-meta">'+_esc(r.author)+' Â· '+_date(r.date)+verifiedHtml+'</div></div></div>'+
+          '<div class="reviews-popup__card-meta">'+_esc(r.author)+' · '+_date(r.date)+verifiedHtml+'</div></div></div>'+
           '<div class="reviews-popup__card-title">'+_esc(r.title)+'</div>'+
           '<div class="reviews-popup__card-body">'+_esc(r.content).replace(/\n/g,'<br>')+'</div>'+
           photosHtml;
@@ -1975,32 +1929,28 @@
   }
   function _lbKeyClose(e) { if (e.key === 'Escape') closeReviewLightbox(); }
 
-  </script>
-
-  <!-- Reviews popup carousel -->
-  <div id="reviews-popup" onclick="if(event.target===this)closeReviewsPopup()">
-    <div class="reviews-popup__box">
-      <div class="reviews-popup__header">
-        <span class="reviews-popup__title">Alle Bewertungen</span>
-        <span class="reviews-popup__counter" id="reviews-popup-counter"></span>
-        <button class="reviews-popup__close" onclick="closeReviewsPopup()">&#x2715;</button>
-      </div>
-      <div class="reviews-popup__body" id="reviews-popup-body"></div>
-      <div class="reviews-popup__nav">
-        <button class="reviews-popup__arrow" id="reviews-popup-prev" onclick="reviewsPopupNav(-1)">&#8249;</button>
-        <span class="reviews-popup__counter" id="reviews-popup-nav-counter"></span>
-        <button class="reviews-popup__arrow" id="reviews-popup-next" onclick="reviewsPopupNav(1)">&#8250;</button>
-      </div>
-    </div>
-  </div>
-
-  <div id="review-lightbox" onclick="closeReviewLightbox()">
-    <span id="review-lightbox-close">&#x2715;</span>
-    <img id="review-lightbox-img" src="" alt="Bewertungsfoto">
-  </div>
-
-
-  <script>
+  </script>
+<!-- Reviews popup carousel -->
+<div id="reviews-popup" onclick="if(event.target===this)closeReviewsPopup()">
+<div class="reviews-popup__box">
+<div class="reviews-popup__header">
+<span class="reviews-popup__title">Alle Bewertungen</span>
+<span class="reviews-popup__counter" id="reviews-popup-counter"></span>
+<button class="reviews-popup__close" onclick="closeReviewsPopup()">✕</button>
+</div>
+<div class="reviews-popup__body" id="reviews-popup-body"></div>
+<div class="reviews-popup__nav">
+<button class="reviews-popup__arrow" id="reviews-popup-prev" onclick="reviewsPopupNav(-1)">‹</button>
+<span class="reviews-popup__counter" id="reviews-popup-nav-counter"></span>
+<button class="reviews-popup__arrow" id="reviews-popup-next" onclick="reviewsPopupNav(1)">›</button>
+</div>
+</div>
+</div>
+<div id="review-lightbox" onclick="closeReviewLightbox()">
+<span id="review-lightbox-close">✕</span>
+<img alt="Bewertungsfoto" id="review-lightbox-img" src=""/>
+</div>
+<script>
     function goToCheckout() {
       var v = getVariant(activeSize, activeColor);
       if (!v || !v.id) return;
@@ -2023,9 +1973,8 @@
       a.click();
       document.body.removeChild(a);
     }
-  </script>
-
-  <script>
+  </script>
+<script>
   (function(){
     var el = document.getElementById('promo-deadline-date');
     if(!el) return;
@@ -2051,7 +2000,7 @@
     var opts = { timeZone: 'Europe/Berlin', day: 'numeric', month: 'long' };
     var from = d1.toLocaleDateString('de-DE', opts);
     var to   = d2.toLocaleDateString('de-DE', { timeZone: 'Europe/Berlin', day: 'numeric', month: 'long', year: 'numeric' });
-    el.textContent = from + ' â ' + to;
+    el.textContent = from + ' – ' + to;
   })();
 
   function toggleAccordion(btn) {
@@ -2064,16 +2013,15 @@
   function openDescModal() {
     var variant = getVariant(activeSize, activeColor);
     if (variant) {
-      document.getElementById('modal-masze').textContent   = variant.dims_cm   || 'â';
-      document.getElementById('modal-gewicht').textContent = variant.weight     || 'â';
-      document.getElementById('modal-volumen').textContent = variant.volume     || 'â';
+      document.getElementById('modal-masze').textContent   = variant.dims_cm   || '—';
+      document.getElementById('modal-gewicht').textContent = variant.weight     || '—';
+      document.getElementById('modal-volumen').textContent = variant.volume     || '—';
     }
     document.getElementById('desc-modal-overlay').classList.add('open');
     document.body.style.overflow = 'hidden';
   }
-  </script>
-
-  <script>
+  </script>
+<script>
 /* Urgency bar: random stock count 3-12 */
 (function() {
   var units = Math.floor(Math.random() * 10) + 3;
@@ -2092,18 +2040,15 @@ document.addEventListener('DOMContentLoaded', function() {
   }, { rootMargin: '0px 0px -60px 0px', threshold: 0 });
   document.querySelectorAll('.sr').forEach(function(el) { io.observe(el); });
 });
-  </script>
-
-  <script>
-  /* Ã¢ââ¬Ã¢ââ¬ Block pinch zoom on mobile only Ã¢ââ¬Ã¢ââ¬ */
+  </script>
+<script>
+  /* â”€â”€ Block pinch zoom on mobile only â”€â”€ */
   document.addEventListener('touchstart', function(e) {
     if (e.touches.length > 1) e.preventDefault();
   }, { passive: false });
-  </script>
-
-
-  <!-- BACK-BUTTON EXIT REDIRECT -->
-  <script>
+  </script>
+<!-- BACK-BUTTON EXIT REDIRECT -->
+<script>
     (function() {
       var redirected = false;
       history.pushState({ exitGuard: true }, '', window.location.href);
@@ -2118,46 +2063,36 @@ document.addEventListener('DOMContentLoaded', function() {
         history.pushState({ exitGuard: true }, '', window.location.href);
       });
     })();
-  </script>
-
-
-  <!-- Description full modal -->
-  <div class="desc-modal-overlay" id="desc-modal-overlay" onclick="if(event.target===this){this.classList.remove('open');document.body.style.overflow=''}">
-    <div class="desc-modal">
-      <button class="desc-modal__close" onclick="document.getElementById('desc-modal-overlay').classList.remove('open');document.body.style.overflow=''">&times;</button>
-
-      <h4>RIMOWA Classic</h4>
-      <p>Der RIMOWA Classic ist der definitive Ausdruck deutscher Koffer-Ingenieurskunst. Seit 1898 steht RIMOWA fÃ¼r kompromisslose QualitÃ¤t â und der Classic verkÃ¶rpert dieses Erbe in seiner reinsten Form.</p>
-      <p>Gefertigt aus hochwertigem eloxiertem Aluminium mit charakteristischen Lederhenkeln und dem legendÃ¤ren Rillendesign, das die Marke seit 1898 prÃ¤gt. Jeder Koffer wird in Deutschland entworfen und mit hÃ¶chster PrÃ¤zision gebaut.</p>
-
-      <h4>MultiwheelÂ® System</h4>
-      <p>Vier prÃ¤zisionsgefertigte RÃ¤der sorgen fÃ¼r mÃ¼helose 360Â°-MobilitÃ¤t auf jedem Untergrund. Das patentierte MultiwheelÂ®-System bietet flÃ¼sterleisen Lauf und herausragende StabilitÃ¤t â ob auf Flughafen-Marmor oder Kopfsteinpflaster.</p>
-
-      <h4>TSA-SchlÃ¶sser</h4>
-      <p>Zwei integrierte TSA-SchlÃ¶sser sorgen fÃ¼r sicheres Reisen Ã¼berall auf der Welt. Die SchlÃ¶sser lassen sich von der Sicherheitskontrolle mit einem Universal-GeneralschlÃ¼ssel beschÃ¤digungsfrei Ã¶ffnen â ideal fÃ¼r Reisen in die und aus den USA.</p>
-
-      <h4>Flex-Divider-System</h4>
-      <p>Das flexible Trennsystem lÃ¤sst Sie die Innenaufteilung fÃ¼r jede Art von Reise individuell gestalten. Businesskleidung auf der einen, Freizeitkleidung auf der anderen Seite, oder kompaktes Packen fÃ¼r einen Wochenendtrip â der Flex Divider passt sich Ihren BedÃ¼rfnissen an.</p>
-
-      <h4>Stufenloser Teleskopgriff</h4>
-      <p>Der stufenlose Teleskopgriff lÃ¤sst sich auf jede HÃ¶he einstellen und bietet mit ergonomischem Ledereinsatz maximalen Komfort â selbst auf den lÃ¤ngsten Wegen durch das Flughafenterminal.</p>
-
-      <h4>Entworfen in Deutschland</h4>
-      <p>Jeder RIMOWA Classic wird nach hÃ¶chsten deutschen QualitÃ¤tsstandards gefertigt. Mit der lebenslangen Garantie steht RIMOWA fÃ¼r die Langlebigkeit seiner Produkte ein â ein Koffer, der Generationen Ã¼berdauert.</p>
-
-      <h4>Spezifikationen</h4>
-      <p><span class="program-name">MaÃe:</span> <span id="modal-masze">â</span></p>
-      <p><span class="program-name">Gewicht:</span> <span id="modal-gewicht">â</span></p>
-      <p><span class="program-name">Volumen:</span> <span id="modal-volumen">â</span></p>
-      <p><span class="program-name">Material:</span> Eloxiertes Aluminium</p>
-      <p><span class="program-name">SchlÃ¶sser:</span> 2 Ã TSA-SchlÃ¶sser</p>
-      <p><span class="program-name">RÃ¤der:</span> 4 Ã MultiwheelÂ® (360Â°)</p>
-      <p><span class="program-name">Garantie:</span> Lebenslange Garantie</p>
-    </div>
-  </div>
-
-  <!-- Tracking pixels (placeholder Ã¢â¬" same IDs for now) -->
-  <script>
+  </script>
+<!-- Description full modal -->
+<div class="desc-modal-overlay" id="desc-modal-overlay" onclick="if(event.target===this){this.classList.remove('open');document.body.style.overflow=''}">
+<div class="desc-modal">
+<button class="desc-modal__close" onclick="document.getElementById('desc-modal-overlay').classList.remove('open');document.body.style.overflow=''">×</button>
+<h4>RIMOWA Classic</h4>
+<p>Der RIMOWA Classic ist der definitive Ausdruck deutscher Koffer-Ingenieurskunst. Seit 1898 steht RIMOWA für kompromisslose Qualität — und der Classic verkörpert dieses Erbe in seiner reinsten Form.</p>
+<p>Gefertigt aus hochwertigem eloxiertem Aluminium mit charakteristischen Lederhenkeln und dem legendären Rillendesign, das die Marke seit 1898 prägt. Jeder Koffer wird in Deutschland entworfen und mit höchster Präzision gebaut.</p>
+<h4>Multiwheel® System</h4>
+<p>Vier präzisionsgefertigte Räder sorgen für mühelose 360°-Mobilität auf jedem Untergrund. Das patentierte Multiwheel®-System bietet flüsterleisen Lauf und herausragende Stabilität — ob auf Flughafen-Marmor oder Kopfsteinpflaster.</p>
+<h4>TSA-Schlösser</h4>
+<p>Zwei integrierte TSA-Schlösser sorgen für sicheres Reisen überall auf der Welt. Die Schlösser lassen sich von der Sicherheitskontrolle mit einem Universal-Generalschlüssel beschädigungsfrei öffnen — ideal für Reisen in die und aus den USA.</p>
+<h4>Flex-Divider-System</h4>
+<p>Das flexible Trennsystem lässt Sie die Innenaufteilung für jede Art von Reise individuell gestalten. Businesskleidung auf der einen, Freizeitkleidung auf der anderen Seite, oder kompaktes Packen für einen Wochenendtrip — der Flex Divider passt sich Ihren Bedürfnissen an.</p>
+<h4>Stufenloser Teleskopgriff</h4>
+<p>Der stufenlose Teleskopgriff lässt sich auf jede Höhe einstellen und bietet mit ergonomischem Ledereinsatz maximalen Komfort — selbst auf den längsten Wegen durch das Flughafenterminal.</p>
+<h4>Entworfen in Deutschland</h4>
+<p>Jeder RIMOWA Classic wird nach höchsten deutschen Qualitätsstandards gefertigt. Mit der lebenslangen Garantie steht RIMOWA für die Langlebigkeit seiner Produkte ein — ein Koffer, der Generationen überdauert.</p>
+<h4>Spezifikationen</h4>
+<p><span class="program-name">Maße:</span> <span id="modal-masze">—</span></p>
+<p><span class="program-name">Gewicht:</span> <span id="modal-gewicht">—</span></p>
+<p><span class="program-name">Volumen:</span> <span id="modal-volumen">—</span></p>
+<p><span class="program-name">Material:</span> Eloxiertes Aluminium</p>
+<p><span class="program-name">Schlösser:</span> 2 × TSA-Schlösser</p>
+<p><span class="program-name">Räder:</span> 4 × Multiwheel® (360°)</p>
+<p><span class="program-name">Garantie:</span> Lebenslange Garantie</p>
+</div>
+</div>
+<!-- Tracking pixels (placeholder â€" same IDs for now) -->
+<script>
     !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
     n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
     n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
@@ -2165,10 +2100,9 @@ document.addEventListener('DOMContentLoaded', function() {
     document,'script','https://connect.facebook.net/de_DE/fbevents.js');
     fbq('init', '1488642849536706');
     fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1488642849536706&ev=PageView&noscript=1" /></noscript>
-  <script>
+  </script>
+<noscript><img height="1" src="https://www.facebook.com/tr?id=1488642849536706&amp;ev=PageView&amp;noscript=1" style="display:none" width="1"/></noscript>
+<script>
     !function(w,d,t){w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=
     ["page","track","identify","instances","debug","on","off","once","ready","alias",
     "group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"];
@@ -2183,6 +2117,6 @@ document.addEventListener('DOMContentLoaded', function() {
     ttq.load('D6OA39BC77U6I6LBF7P0');
     ttq.page();
   }(window, document, 'ttq');
-  </script>
-</body>
-</html>
+  </script>
+</body>
+</html>
