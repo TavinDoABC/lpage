@@ -2478,25 +2478,25 @@
 
     var SPECS_SHARED = [
 
-      ['Material (Außen)', 'Anodized Aluminum'],
+      ['Material (Exterior)', 'Anodized Aluminum'],
 
-      ['Material (Innen)', 'Polyester'],
+      ['Material (Interior)', 'Polyester'],
 
-      ['Material (Henkel)', 'Leather'],
+      ['Material (Handles)', 'Leather'],
 
-      ['Material (Räder)', 'Hard plastic'],
+      ['Material (Wheels)', 'Hard plastic'],
 
-      ['Material (Trennwände)', 'Polyester'],
+      ['Material (Dividers)', 'Polyester'],
 
-      ['Schlösser', 'TSA Locks'],
+      ['Locks', 'TSA Locks'],
 
-      ['Räder', 'RIMOWA Multiwheel® System (4 wheels, 360°)'],
+      ['Wheels', 'RIMOWA Multiwheel® System (4 wheels, 360°)'],
 
-      ['Teleskopgriff', 'Stageless adjustment'],
+      ['Telescopic Handle', 'Stageless adjustment'],
 
       ['Designed in', 'the USA'],
 
-      ['Garantie', 'Lifetime Guarantee']
+      ['Guarantee', 'Lifetime Guarantee']
 
     ];
 
@@ -2834,15 +2834,15 @@
 
       specs.push(['SKU', v.sku]);
 
-      specs.push(['Größe', activeSize]);
+      specs.push(['Size', activeSize]);
 
-      specs.push(['Farbe', COLOR_LABELS[activeColor] || activeColor]);
+      specs.push(['Color', COLOR_LABELS[activeColor] || activeColor]);
 
       specs.push(['Dimensions (cm)', v.dims_cm]);
 
-      if (v.weight && v.weight !== 'N/A') specs.push(['Gewicht', v.weight]);
+      if (v.weight && v.weight !== 'N/A') specs.push(['Weight', v.weight]);
 
-      if (v.volume && v.volume !== 'N/A') specs.push(['Volumen', v.volume]);
+      if (v.volume && v.volume !== 'N/A') specs.push(['Volume', v.volume]);
 
       specs = specs.concat(SPECS_SHARED);
 
